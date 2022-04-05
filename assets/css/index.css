@@ -66,9 +66,17 @@
     margin-bottom: 100px;
 }
 
-.services-title hr {
-    height: 3px;
+@media (max-width: 768px) {
+	.services-title img {
+		height: 15%;
+        width: 15%;
+    	}
 }
+
+
+/* .services-title hr {
+    height: 3px;
+} */
 
 
 /* Cards */
