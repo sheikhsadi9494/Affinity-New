@@ -356,7 +356,7 @@ i {
 .footer-goal-q .social-media {
     display: flex;
 
-    /* justify-content: space-between; */
+    /* justify-content: center; */
 }
 
 .footer-goal-q .social-media i{
@@ -415,9 +415,9 @@ i {
     .card-body {
         top: 8%;
     }
-    .card:first-child {
+    /* .card:first-child {
         margin-bottom: -10px;
-    }
+    } */
     .newsletter {
         padding: 10px 15px;
         flex-direction: column;
@@ -433,8 +433,8 @@ i {
     .footer>* {
         margin: 15px 0;
     }
-    .footer-goal .social-media {
-        justify-content: space-evenly;
+    .footer-goal-q .social-media {
+        justify-content: center;
     }
 }
 
