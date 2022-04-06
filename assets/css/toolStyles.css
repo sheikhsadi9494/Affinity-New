@@ -1,0 +1,70 @@
+#tab-1, #tab1 {
+    background-color: #0064EF;
+    color: white;
+}
+
+#tab-2, #tab2 {
+    background-color: #155183;
+    color: white;
+}
+
+#tab-3, #tab3 {
+    background-color: #5BC5D3;
+    color: white;
+}
+
+.tool {
+    box-shadow: -8px -8px 16px rgba(33, 33, 33, 0.14);
+}
+
+#myTabContent {
+   
+    border-radius: 0px 0px 60px 60px;
+}
+
+.calculator {
+    display: flex;
+    align-content: right;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: -8px -8px 16px rgba(0, 0, 0, 0.16), 8px 8px 16px rgba(0, 0, 0, 0.16);;
+}
+
+.card-body {
+    border-radius: 20%;
+}
+
+input {
+    background-color:  #FFC727;
+    border-radius: 60px;
+    border:  #FFC727;
+}
+
+.body {
+    border-radius: 0px 0px 60px 60px;
+}
+
+::placeholder {
+    font-size: larger;
+    padding: 1rem;
+    padding-left: 3rem;
+}
+
+.replace {
+    background-color: #FFC727;
+}
+
+#inputGroupSelect01 {
+    width: 15rem;
+    height: 2rem;
+}
+
+.input-group {
+    border-radius: 10px;
+}
+
+.fa-angles-right {
+    color: white;
+}
