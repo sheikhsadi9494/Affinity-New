@@ -189,11 +189,9 @@ input {
 }
 
 .navbar-brand img {
-    height: 90px;
-    width: 90px;
-    margin-top: 25px;
-
-    /* image-rendering: -webkit-optimize-contrast; */
+    height: 60px;
+    margin-top: 60px;
+    
 }
 
 .dropdown-menu.dropdown-menu-light.dropdown-mobile {
