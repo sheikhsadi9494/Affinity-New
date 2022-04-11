@@ -20,7 +20,7 @@ transform: rotate(90deg);
 } */
 
 .box {
-    background-color:#6367E5;
+    background-color:#155183;
 }
 
 
@@ -29,7 +29,7 @@ span {
 }
 
 .card {
-    background-color: #FFE43B;
+    background-color: #8ECFEF;
 }
 
 .head {
@@ -46,6 +46,9 @@ span {
     
 }
 
+#footer {
+    background-color: white;
+}
 .first {
     border-right: 2px solid rgba(0, 0, 0, 0.2);
     padding-right: 4rem;
