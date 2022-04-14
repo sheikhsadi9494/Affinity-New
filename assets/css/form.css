@@ -6,6 +6,7 @@
 
 .form .heading {
     display: flex;
+    margin-top: 50px;
   }
   
   .form h1 {
@@ -248,12 +249,12 @@
   
   #progressbar #personal:before {
     font-family: FontAwesome;
-    content: "\f5da"
+    content: "\f21a"
   }
   
   #progressbar #payment:before {
     font-family: FontAwesome;
-    content: "\f51c"
+    content: "\e00b"
   }
   
   #progressbar #confirm:before {
