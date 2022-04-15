@@ -296,11 +296,16 @@ Animation for card3
    }
   
    .send-btn{
-       background-color: #1566d1;
+       background-color: #4278f5;
        color: white;
         
        padding: 10px 60px ;
   
+   }
+   .send-btn:hover {
+    background-color: #034fff;
+    color: white;
+
    }
   
   
