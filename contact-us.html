@@ -284,8 +284,17 @@
 
                             <div class="col-12 d-flex flex-column">
                                 <label for="phone" class="form-label">Phone Number</label>
-
                                 <input type="tel" class="form-control" name="phone" id="phone" placeholder="Enter a valid Number" required minlength="10" pattern="^\d{10}$">
+                            </div>
+                            <div class="col-12 d-flex flex-column">
+                                <label for="enquiry" class="form-label">Type of Enquiry</label>
+                                <select class="form-control" id="enquiry" name="expertise">
+                                    <option hidden disabled selected value="Expertise">Select Type of Enpuery</option>
+                                    <option value="General Enquiry">General Enquiry</option>
+                                    <option value="Sales">Sales</option>
+                                    <option value="Tracking">Tracking</option>
+                                    <option value="Android Developement">Business Co-operation</option>
+                                  </select>
                             </div>
                             <div class="col-12">
                                 Message <br>
