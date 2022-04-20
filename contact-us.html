@@ -32,8 +32,10 @@
     <!-- fontawesome icons -->
     <script src="https://kit.fontawesome.com/858dca1c9d.js" crossorigin="anonymous"></script>
 
-       <!-- Custom CSS stylesheet -->
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
 
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="/assets/css/style.css"/>
@@ -113,7 +115,7 @@
     
                 <div class="col-lg-6 col-md-6 col-xl-6 col-sm-12 text-center">
 
-                    <h1 class="font-weight-bold mb-3">Contact us</h1>
+                    <!-- <h1 class="font-weight-bold mb-3">Contact us</h1> -->
                     <br>
                     <img src="assets/img/map.png" class="img-fluid" style="max-width: 80%;">
     
@@ -134,10 +136,9 @@
 
                 
                                 <!-- Post title -->
-                                <h3 class="font-weight-bold mb-3"><strong>Current Address</strong></h3>
+                                <h3 class="font-weight-bold mb-3"><strong>Corporate Address</strong></h3>
                                 <!-- Excerpt -->
                                 <p class="dark-grey-text">
-                                    Complete Address with pincode <br>
                                     Suite No: 310, Commodity Exchange Building <br>
                                     Plot No: 2, 3, & 4, Sector-19, Vashi <br>
                                     Navi Mumbai - 400705 <br>
@@ -239,7 +240,7 @@
       <!-- Contact us  -->
 
       <div class="contact container d-flex flex-column flex-lg-row align-items-center">
-      <div class="left-side">
+      <!-- <div class="left-side">
           <h1 class="fw-bolder">Contact Us</h1>
           <br>
 
@@ -247,7 +248,7 @@
 
 
 
-      </div>
+      </div> -->
 
      
   </div>
@@ -272,26 +273,26 @@
                     <div class="right-side">
 
 
-                        <form class="row g-3" autocomplete="off" name="affinity" method="post">
-                            <div class="col-md-6">
+                        <form class="row g-3" autocomplete="off" id="affinity" name="affinity" method="post">
+                            <div class="form-group col-md-6">
                                 <label for="fname" class="form-label">First Name</label>
                                 <input type="text" class="form-control" id="fname" placeholder="Type here" name="First_Name" required>
                             </div>
-                            <div class="col-md-6">
+                            <div class="form-group col-md-6">
                                 <label for="lname" class="form-label">Last Name</label>
                                 <input type="text" class="form-control" id="lname" placeholder="Type here" name="Last_Name" required>
                             </div>
-                            <div class="col-12">
+                            <div class="form-group col-12">
                                 <label for="email" class="form-label">E-mail Id</label>
-                                <input type="email" class="form-control" id="email" placeholder="example@gmail.com" name="email" required>
+                                <input type="email" class="form-control" id="email" placeholder="example@gmail.com" name="email">
                             </div>
 
 
-                            <div class="col-12 d-flex flex-column">
+                            <div class="form-group col-12 d-flex flex-column">
                                 <label for="phone" class="form-label">Phone Number</label>
-                                <input type="number" class="form-control" name="phone" id="phone" placeholder="Enter a valid Number" required minlength="10" pattern="^\d{10}$">
+                                <input type="tel" class="form-control" name="phone" id="phone" placeholder="Enter a valid Number" required minlength="10" pattern="^\d{10}$">
                             </div>
-                            <div class="col-12 d-flex flex-column">
+                            <div class="form-group col-12 d-flex flex-column">
                                 <label for="enquiry" class="form-label">Type of Enquiry</label>
                                 <select class="form-control" id="enquiry" name="enquiry">
                                     <option hidden disabled selected value="Expertise">Select Type of Enpuery</option>
@@ -301,7 +302,7 @@
                                     <option value="Android Developement">Business Co-operation</option>
                                   </select>
                             </div>
-                            <div class="col-12">
+                            <div class="form-group col-12">
                                 Message <br>
                                 <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Type your message here" required></textarea>
                             </div>
@@ -328,7 +329,7 @@
   <div id="footer"></div>
 
 
-  <script>
+  <!-- <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxBOtVFr-NZ1umoFl3ce3RyqlrnCy69Gh1P41MGe41Dvy2zmeMO07zhwbm3yEOIUe-I0w/exec'
     const form = document.forms['affinity']
 
@@ -341,11 +342,11 @@
             .then(response => location.reload())
             .catch(error => console.error('Error!', error.message))
     })
-</script>
+</script> -->
 
 
     
-    
+<script src="./assets/js/form.js"></script>
 
 
     <script type="text/javascript" src="assets/js/main.js"></script>

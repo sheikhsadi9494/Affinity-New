@@ -6,6 +6,90 @@ $(document).ready(function() {
     var steps = $("fieldset").length;
   
     setProgressBar(current);
+
+
+    var bannedDomains = ["gmail.com", "mail.com", "Gmail.com", "yahoo.com", "Yahoo.com", "aol.com", "Aol.com", "outlook.com", "Outlook.com"];
+
+        $.validator.addMethod('domainNotBanned', function(value, elem, param) {
+        var domain = value.split('@')[1];
+        return bannedDomains.indexOf(domain) < 0;
+        }, "<p style='color:red; margin-top: -5px;'>You have to use company email (Ex.official@company.com).</p>");
+
+        // // Banning specific addresses
+        // var bannedEmails = ["skygoal@gmail.com", "abc@gmail.com"];
+
+        // $.validator.addMethod('emailNotBanned', function(value, elem, param) {
+        // return bannedEmails.indexOf(value) < 0;
+        // }, 'This email address is banned.');
+
+
+
+        // Contact-us-validation //
+
+        $(".btn").click(function(){
+
+            console.log("Contact us form is working")
+            var form = $("#affinity");
+
+
+            form.validate({
+                errorElement: 'span',
+                errorClass: 'help-block',
+                highlight: function(element, errorClass, validClass) {
+                    $(element).closest('.form-group').addClass("has-error");
+                },
+                unhighlight: function(element, errorClass, validClass) {
+                    $(element).closest('.form-group').removeClass("has-error");
+                },
+                rules: {
+
+                    email: {
+                        email: true,
+                        domainNotBanned: true,
+                    },
+
+                },
+                messages: {
+                    
+                    email: {
+                        required: "<p style='color:red; margin-top: -10px;'>Required</h1>",
+                    }
+                }
+
+
+
+
+
+            });
+
+
+            if(form.valid() === true){
+
+                console.log("Form is valid")
+
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbxBOtVFr-NZ1umoFl3ce3RyqlrnCy69Gh1P41MGe41Dvy2zmeMO07zhwbm3yEOIUe-I0w/exec'
+                const form = document.forms['affinity']
+
+                form.addEventListener('submit', e => {
+                    e.preventDefault()
+                    fetch(scriptURL, {
+                            method: 'POST',
+                            body: new FormData(form)
+                        })
+                        .then(response => location.reload())
+                        .catch(error => console.error('Error!', error.message))
+                })
+            }
+                    
+                    
+         });
+
+
+
+
+              
+         
+
   
   
     $(".next").click(function() {
@@ -37,15 +121,19 @@ $(document).ready(function() {
                 },
                 emailid: {
                     required: true,
+                    email: true,
+                    domainNotBanned: true,
                 },
                 companyname: {
                     required: true,
                 },
                 name: {
                     required: true,
+                    // emailRegex: true,
                 },
                 email: {
-                    required: true,
+                    email: true,
+                    domainNotBanned: true,
                 },
                 address: {
                     required: true,
