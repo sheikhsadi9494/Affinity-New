@@ -61,9 +61,14 @@ body {
     text-decoration: none;
     background-color: #0A78879C;
     color: #ffffff;
+
     /* border-bottom: 2px solid rgb(0, 0, 0); */
     border-radius: 8px 8px 8px 8px;
 }
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
 
 .nav-item .nav-link {
     font-weight: 500;
@@ -82,12 +87,10 @@ body {
 
 
 
-
-
 .dropdown-menu.dropdown-menu-light.dropdown-mobile {
     right: auto;
     /* left: -200px; */
-    margin-top: 20px;
+    /* margin-top: 20px; */
     border-color: rgba(85, 85, 85, 0);
     border: solid #1e21255e 0.5px;
     /* box-shadow: 0px 2px 5px 2px #888; */
@@ -96,13 +99,13 @@ body {
 .dropdown-item {
     display: flex;
     width: auto;
-    padding: 0 5px 0 5px;
-    font-size: 13px;
+    /* padding: 0 5px 0 5px; */
+    font-weight: 500;
 }
 
 .dropdown-item:hover {
-    color: #1e2125;
-    background-color: #e9ecef00;
+    color: #ffffff;
+    background-color: #0a78874d;
 }
 
 .dropdown-item img {
@@ -116,7 +119,7 @@ body {
 .companies-dropdown,
 .institutes-dropdown {
     display: flex;
-    padding-top: 10px;
+   
 }
 
 .products-dropdown ul,
@@ -182,11 +185,10 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    margin-top: 10px;
   }
 
   .swiper-slide {
-    /* text-align: center; */
+    text-align: center;
     font-size: 18px;
     background: #fff;
 
@@ -203,14 +205,21 @@ body {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+    
   }
 
   .swiper-slide img {
     display: block;
-    width: 90%;
-    height: 50%;
-    object-fit: cover;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
   }
+
+  .wrap{
+      overflow: hidden;
+      max-height: 500px;
+  }
+  
 
   
 

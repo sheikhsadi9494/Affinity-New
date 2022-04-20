@@ -14,7 +14,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Latest compiled JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script> -->
 
     <!-- Google fonts CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,8 +32,9 @@
     <!-- fontawesome icons -->
     <script src="https://kit.fontawesome.com/858dca1c9d.js" crossorigin="anonymous"></script>
 
-       <!-- Custom CSS stylesheet -->
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
 
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="/assets/css/style.css"/>
@@ -101,7 +102,7 @@
     <br>
 
     <section>
-        <div class="container-fluid" style=" background-image: url('assets/img/bggggg.png'); background-size:100% 100%; background-repeat: no-repeat; padding: 100px;">
+        <div class="container-fluid" style=" background-image: url('assets/img/bggggg.png'); background-size:100% 100%; background-repeat: no-repeat;">
 
             <div class="row" style="flex-direction: row;">
 
@@ -113,7 +114,7 @@
     
                 <div class="col-lg-6 col-md-6 col-xl-6 col-sm-12 text-center">
 
-                    <h1 class="font-weight-bold mb-3">Contact us</h1>
+                    <!-- <h1 class="font-weight-bold mb-3">Contact us</h1> -->
                     <br>
                     <img src="assets/img/map.png" class="img-fluid" style="max-width: 80%;">
     
@@ -134,10 +135,15 @@
 
                 
                                 <!-- Post title -->
-                                <h3 class="font-weight-bold mb-3"><strong>Current Address</strong></h3>
+                                <h3 class="font-weight-bold mb-3"><strong>Corporate Address</strong></h3>
                                 <!-- Excerpt -->
                                 <p class="dark-grey-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa lacus, cras condimentum pellentesque dolor commodo. Augue proin neque fusce a.
+                                    Suite No: 310, Commodity Exchange Building <br>
+                                    Plot No: 2, 3, & 4, Sector-19, Vashi <br>
+                                    Navi Mumbai - 400705 <br>
+
+                                    Office  timings  9.30am to 6.30pm (Monday to Saturday. 2nd and 4th Saturday holiday)
+
                                 </p>
                              
                 
@@ -157,10 +163,11 @@
                             <div class="col-lg-7 col-xl-8">
                 
                                 <!-- Post title -->
-                                <h3 class="font-weight-bold mb-3"><strong>Current Address</strong></h3>
+                                <h3 class="font-weight-bold mb-3"><strong>E-mail</strong></h3>
                                 <!-- Excerpt -->
                                 <p class="dark-grey-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa lacus, cras condimentum pellentesque dolor commodo. Augue proin neque fusce a.
+                                    For any quires reach us our team at Email:<br>
+                                    <a href="mailto:info@affinitytrans.com">info@affinitytrans.com</a>                                
                                 </p>
                              
                 
@@ -177,10 +184,11 @@
                             <div class="col-lg-7 col-xl-8">
                 
                                 <!-- Post title -->
-                                <h3 class="font-weight-bold mb-3"><strong>Current Address</strong></h3>
+                                <h3 class="font-weight-bold mb-3"><strong>Phone Number</strong></h3>
                                 <!-- Excerpt -->
                                 <p class="dark-grey-text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc massa lacus, cras condimentum pellentesque dolor commodo. Augue proin neque fusce a.
+                                    For any quires reach us our team at Phone :<br>
+                                    <a href="tel:+919082547675">+91-9082547675</a>                                
                                 </p>
                              
                 
@@ -231,7 +239,7 @@
       <!-- Contact us  -->
 
       <div class="contact container d-flex flex-column flex-lg-row align-items-center">
-      <div class="left-side">
+      <!-- <div class="left-side">
           <h1 class="fw-bolder">Contact Us</h1>
           <br>
 
@@ -239,7 +247,7 @@
 
 
 
-      </div>
+      </div> -->
 
      
   </div>
@@ -264,33 +272,43 @@
                     <div class="right-side">
 
 
-                        <form class="row g-3">
-                            <div class="col-md-6">
+                        <form class="row g-3" autocomplete="off" id="affinity" name="affinity" method="post">
+
+                            <div class="form-group col-md-6">
                                 <label for="fname" class="form-label">First Name</label>
-                                <input type="text" class="form-control" id="fname" placeholder="Type here" required>
+                                <input type="text" class="form-control" id="fname" placeholder="Type here" name="First_Name" >
                             </div>
-                            <div class="col-md-6">
+                            <div class="form-group col-md-6">
                                 <label for="lname" class="form-label">Last Name</label>
-                                <input type="text" class="form-control" id="lname" placeholder="Type here" required>
+                                <input type="text" class="form-control" id="lname" placeholder="Type here" name="Last_Name" >
                             </div>
-                            <div class="col-12">
+                            <div class="form-group col-12">
                                 <label for="email" class="form-label">E-mail Id</label>
-                                <input type="email" class="form-control" id="email" placeholder="example@gmail.com" required>
+                                <input type="email" class="form-control" id="email" placeholder="example@gmail.com" name="email">
                             </div>
 
 
-                            <div class="col-12 d-flex flex-column">
+                            <div class="form-group col-12 d-flex flex-column">
                                 <label for="phone" class="form-label">Phone Number</label>
-
-                                <input type="tel" class="form-control" name="phone" id="phone" placeholder="Enter a valid Number" required minlength="10" pattern="^\d{10}$">
+                                <input type="tel" class="form-control" name="phone" id="phone" placeholder="Enter a valid Number"  minlength="10" pattern="^\d{10}$">
                             </div>
-                            <div class="col-12">
+                            <div class="form-group col-12 d-flex flex-column">
+                                <label for="enquiry" class="form-label">Type of Enquiry</label>
+                                <select class="form-control" id="enquiry" name="enquiry">
+                                    <option hidden disabled selected value="Expertise">Select Type of Enpuery</option>
+                                    <option value="General Enquiry">General Enquiry</option>
+                                    <option value="Sales">Sales</option>
+                                    <option value="Tracking">Tracking</option>
+                                    <option value="Android Developement">Business Co-operation</option>
+                                  </select>
+                            </div>
+                            <div class="form-group col-12">
                                 Message <br>
-                                <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Type your message here" required></textarea>
+                                <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
                             </div>
                             <div>
 
-                                <button class="btn send-btn">Send</button>
+                                <button class="btn send-btn" type="submit" name="submit">Send</button>
 
                             </div>
                         </form>
@@ -311,8 +329,24 @@
   <div id="footer"></div>
 
 
+  <!-- <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxBOtVFr-NZ1umoFl3ce3RyqlrnCy69Gh1P41MGe41Dvy2zmeMO07zhwbm3yEOIUe-I0w/exec'
+    const form = document.forms['affinity']
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+            .then(response => location.reload())
+            .catch(error => console.error('Error!', error.message))
+    })
+</script> -->
+
+
     
-    
+<script src="./assets/js/form.js"></script>
 
 
     <script type="text/javascript" src="assets/js/main.js"></script>

@@ -303,6 +303,85 @@ input {
     }
 }
 
+
+
+/* Footer */
+
+.footer {
+    /* background-color: #ffffff; */
+    background: #F8F4FF;
+
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+.footer h6,
+i {
+    /* color: #1566d1; */
+    margin-right: 15px;
+}
+
+.footer a {
+    display: block;
+    font-weight: 500;
+    /* color: #404040; */
+    text-decoration: none;
+    margin: 12px 0;
+}
+
+.footer>* {
+    margin: 15px 15px;
+}
+
+.skygoal-logo,
+.footer-our-products a,
+.footer-about-company a,
+.contact-us a {
+    color: #767676;
+}
+
+.skygoal-logo img {
+    height: 60px;
+    width: auto;
+}
+
+.footer-goal {
+    /* flex-basis: 25%; */
+    flex-grow: 0;
+}
+
+
+
+.footer-goal p {
+    padding: 10px;
+}
+
+.footer-goal-q {
+    flex-basis: 25%;
+    flex-grow: 0;
+
+}
+
+.footer-goal-q p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.footer-goal-q .social-media {
+    display: flex;
+
+    /* justify-content: center; */
+}
+
+.footer-goal-q .social-media i{
+    color: #076FFF;
+    
+    /* justify-content: space-between; */
+}
+
+
 @media (min-width: 1200px) and (max-width: 1440px) {
     /* heigth of navbar */
     #navbar_top {
@@ -354,4 +433,18 @@ input {
     .sign-up {
         width: 50%;
     }
+
+    /* footer */
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer>* {
+        margin: 15px 0;
+    }
+    .footer-goal-q .social-media {
+        justify-content: center;
+    }
+
+    
 }
