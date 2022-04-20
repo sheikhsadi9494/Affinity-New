@@ -199,8 +199,8 @@
 
 
                                         <div class="form-group col-12">
-                                            <label class="fieldlabels">District *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Select Your District"></i>
-                                            <select class="form-control" id="District" name="District">
+                                            <label class="fieldlabels">City *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Select Your City"></i>
+                                            <select class="form-control" id="City" name="City">
                                                 <option disabled value="" selected="selected">Please select State first *</option>
                                                
                                               </select>
@@ -212,7 +212,7 @@
 
                                         <div class="form-group col-12 pincode">
                                             <label class="fieldlabels">ZIP Code *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Enter Your Zipcode"></i>
-                                            <input type="number" class="form-control" id="Zipcode" name="Zipcode" placeholder="Zipcode">
+                                            <input type="number" class="form-control" id="Zipcode" name="Zipcode" placeholder="Zipcode"  min="0" oninput="this.value = Math.abs(this.value)">
                                         </div>
 
 
@@ -239,7 +239,10 @@
 
                                             <label class="fieldlabels">Commodity Nature*</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Select Your Country"></i>
                                             <select class="form-control" id="CommodityNature" name="CommodityNature">
-                                                <option disabled value="" selected="selected">Please select Any One*</option>
+                                                <option disabled  value="" selected="selected">Please select Any One*</option>
+
+                                                <option value="Air">Air</option>
+                                                <option value="Sea">Sea</option>
 
                                         
                                     </select>
@@ -267,7 +270,7 @@
 
                                         <div class="form-group col-6">
                                             <label class="fieldlabels">UN Number *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Customer Type"></i>
-                                            <input type="number" class="form-control" id="unnumber" name="unnumber" placeholder="UN Number*">
+                                            <input type="number" class="form-control" id="unnumber" name="unnumber" placeholder="UN Number*" min="0" oninput="this.value = Math.abs(this.value)">
                                         </div>
 
 
@@ -301,7 +304,7 @@
 
                                         <div class="form-group col-12 pincode">
                                             <label class="fieldlabels">Remarks *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Enter Your Remarks"></i>
-                                            <input type="number" class="form-control" id="remarks" name="remarks" placeholder="remarks">
+                                            <input type="number" class="form-control" id="remarks" name="remarks" placeholder="remarks" min="0" oninput="this.value = Math.abs(this.value)">
                                         </div>
 
 
@@ -455,26 +458,27 @@
                                                 </div>
 
                                 <input type="button" name="back" class="previous action-button-previous" value="Back" />
-                                <input type="submit" name="submit" class="next action-button" value="Submit" />
+
+                                <input type="submit" name="submit" class="next action-button" value="Submit" /> 
 
                             </fieldset>
 
 
                             <fieldset>
                                 <div class="form-card">
-                                    <div class="row">
-                                        <div class="col-12 form-group text-center">
-                                            <h2 class="fs-title">Finish:</h2>
-                                        </div>
-
-                                    </div> <br><br>
-                                    <h2 class="purple-text text-center"><strong>Form Submitted!</strong></h2> <br>
-                                    <div class="row justify-content-center">
-                                        <div class="col-12 text-center  check"> <i class="fas fa-check-double"></i> </div>
-                                    </div> <br><br>
-
+                                  <div class="row">
+                                    <div class="col-12 text-center">
+                                      <h2 class="fs-title">Finish:</h2>
+                                    </div>
+                                    
+                                  </div> <br><br>
+                                  <h2 class="purple-text text-center"><strong>Form Submitted!</strong></h2> <br>
+                                  <div class="row justify-content-center">
+                                    <div class="col-12 text-center  check"> <i class="fas fa-check-double"></i> </div>
+                                  </div> <br><br>
+                                  
                                 </div>
-                            </fieldset>
+                              </fieldset>
                         </form>
 
 

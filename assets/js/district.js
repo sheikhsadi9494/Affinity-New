@@ -151888,7 +151888,7 @@ var stateObject = {
 window.onload = function() {
   var countySel = document.getElementById("country"),
       stateSel = document.getElementById("State"),
-      districtSel = document.getElementById("District");
+      districtSel = document.getElementById("City");
   for (var country in stateObject) {
       countySel.options[countySel.options.length] = new Option(country, country);
   }
