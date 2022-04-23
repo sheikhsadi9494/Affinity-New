@@ -102,11 +102,11 @@
                             
                             <div class="col-sm">
                                 <label for="fname" class="form-label">Date of Discharge:</label> <i class="fa fa-info-circle" data-toggle="tooltip" title="Container Discharged off the ship"></i>
-                                <input type="date" class="form-control" id="fname" placeholder="05/02/2022">
+                                <input type="date" class="form-control" id="discharge" placeholder="05/02/2022">
                             </div>
                             <div class="col-sm">
                                 <label for="lname" class="form-label">Gate out Full:</label> <i class="fa fa-info-circle" data-toggle="tooltip" title="Consignee move container from Port"></i>
-                                <input type="date" class="form-control" id="lname" placeholder="06/03/2022">
+                                <input type="date" class="form-control" id="cons" placeholder="06/03/2022">
                             </div>
                             <div class="col-sm">
                                 <label for="lname" class="form-label">Gate in Empty:</label> <i class="fa fa-info-circle" data-toggle="tooltip" title="Return Empty container to Nominated depot"></i>
@@ -146,27 +146,64 @@
                             <hr>
 
 
-                            <div class="col-md-6">
-                                <label for="lname" class="form-label">Free time:</label>
-                                <input type="number" class="form-control" id="lname" placeholder="3">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="lname" class="form-label">Currency:</label>
-                                <input type="text" class="form-control" id="lname" placeholder="20$">
-                            </div>
-                            
-                            <div class="col col-lg-2">
-                                <label for="fname" class="form-label">From:</label>
-                                <input type="number" class="form-control" id="fname" placeholder="0">
-                            </div>
-                            <div class="col col-lg-2">
-                                <label for="lname" class="form-label">To:</label>
-                                <input type="text" class="form-control" id="lname" placeholder="Next">
-                            </div>
-                            <div class="col col-lg-2">
-                                <label for="lname" class="form-label">Rate:</label>
-                                <input type="number" class="form-control" id="lname" placeholder="100$">
-                            </div>
+
+
+
+                                        <div class="col-md-6">
+                                            <label for="lname" class="form-label">Free time:</label>
+                                            <input type="number" class="form-control" id="num" placeholder="3" min="0" oninput="this.value = Math.abs(this.value)">
+                                        </div>
+                                        <div class="col col-lg-2">
+                                            <label for="lname" class="form-label">Rate:</label>
+                                            <input type="text" class="form-control" id="rate" placeholder="20$">
+                                        </div>
+                                        <div class="col col-lg-2">
+                                            <label for="lname" class="form-label">Currency:</label>
+                                            <select class="form-select" aria-label="select example">
+                                                <option selected>USD</option>
+                                                <option value="INR">INR</option>
+                                              </select>
+                                        </div>
+
+                                        <div class="input_fields_wrap">
+
+
+
+                                            <div class="row g-3">
+                                        
+                                            <div class="col col-lg-2">
+                                                <label for="fname" class="form-label">From:</label>
+                                                <input type="number" class="form-control" id="from" placeholder="0" min="0" oninput="this.value = Math.abs(this.value)">
+                                            </div>
+                                            <div class="col col-lg-2">
+                                                <label for="lname" class="form-label">To:</label>
+                                                <input type="number" class="form-control" id="to" placeholder="Next" min="0" oninput="this.value = Math.abs(this.value)">
+                                            </div>
+                                            <div class="col col-lg-2">
+                                                <label for="lname" class="form-label">Rate:</label>
+                                                <input type="number" class="form-control" id="rate1" placeholder="100$" min="0" oninput="this.value = Math.abs(this.value)">
+                                            </div>
+
+                                            <div class="col col-lg-2">
+                                                
+                                                <label for="lname" class="form-label"></label><br>
+                                               <a href="#" class="add_field_button"><img src="./assets/img/add.png" alt="add" width="35" height="35"></a>
+                                            
+                                            </div>
+
+                                            </div>
+
+                                        </div>  
+
+                                        <div>
+                                            <p id="resu">
+
+                                                Result:
+                                                
+                                            </p>
+                                        </div>
+
+                                      
 
 
                             <h4>Detention <i class="fa fa-info-circle" data-toggle="tooltip" title="Detention is a charge levied by the shipping line to the importer in cases where they have taken the full container for unpacking (let’s say within the free days) but have not returned the empty container to the nominated empty depot before the expiry of the allowed line free days."></i></h4>
@@ -178,6 +215,7 @@
                             <div class="col-md-6">
                                 <label for="lname" class="form-label">Currency:</label>
                                 <input type="text" class="form-control" id="lname" placeholder="20$">
+                                
                             </div>
                             
                             <div class="col col-lg-2">
@@ -195,7 +233,7 @@
 
                             <div>
 
-                                <button class="btn send-btn">Calculate</button>
+                                <button class="send-btn" id="sub">Calculate</button>
 
                             </div>
                         </form>
@@ -214,9 +252,46 @@
   <div id="footer"></div>
 
   <script>
+    //   const d = new Date("2022-04-14T09:22:13.493+00:00");
+    //   d.toLocaleString();
+    //   document.getElementById("demo").innerHTML = d;
+
+      // calculate
+
+      document.getElementById("sub").addEventListener("click", () => {
+          //console.log("pressed")
+        dis = document.getElementById("discharge");
+        consi = document.getElementById("cons");
+        free = document.getElementById("num");
+        rates = document.getElementById("rate");
+
+        var date1 = new Date(dis.value);
+        var date2 = new Date(consi.value);
+
+        // To calculate the time difference of two dates
+        var Time = date2.getTime() - date1.getTime();
+
+        // To calculate the no. of days between two dates
+        var Dewell = Time / (1000 * 3600 * 24) + 1;
+        console.log("DWELL TIME: "+ Dewell + " days")
+        var overstay = Dewell - free.value
+        console.log("OVERSTAY: "+ overstay + " days")
+        var charge = overstay * rates.value
+        console.log("DEMURAGE CHARGE: "+ charge)
+
+         document.getElementById("resu").innerHTML = "<b>Rate:</b> " + charge + "$";
+        
+        // 
+         
+      });
+    </script>
+
+  <script>
     $(function () {
 $('[data-toggle="tooltip"]').tooltip()
 })
+
+$('form').submit(false);
   
 </script>
 
@@ -230,5 +305,35 @@ $('[data-toggle="tooltip"]').tooltip()
 
 
 </body>
+
+
+<script>
+	$(document).ready(function() {
+    var max_fields      = 10; //maximum input boxes allowed
+    var wrapper         = $(".input_fields_wrap"); //Fields wrapper
+    var add_button      = $(".add_field_button"); //Add button ID
+   
+    var x = 1; //initlal text box count
+	
+	
+   $(add_button).click(function(e){ //on add input button click
+        e.preventDefault();
+        if(x < max_fields){ //max input box allowed
+	
+		     //text box increment
+            $(wrapper).append('<div class="row g-3"><div class="col col-lg-2"><label for="fname" class="form-label">From:</label><input type="number" class="form-control" id="from" placeholder="0" min="0" oninput="this.value = Math.abs(this.value)"> </div> <div class="col col-lg-2"> <label for="lname" class="form-label">To:</label><input type="number" class="form-control" id="to" placeholder="Next" min="0" oninput="this.value = Math.abs(this.value)"> </div><div class="col col-lg-2"><label for="lname" class="form-label">Rate:</label><input type="number" class="form-control" id="rate1" placeholder="100$" min="0" oninput="this.value = Math.abs(this.value)"> </div> <a href="#" class="remove_field col col-lg-2"><label for="lname" class="form-label"></label><br><img src="./assets/img/trash.png" width="30" height="30" alt="Remove"></a></div>'); //add input box
+            x++; 
+	  }
+    });
+   
+    $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+       
+		e.preventDefault(); 
+		$(this).parent('div').remove(); 
+		x--;
+    })
+});
+	
+	</script>
 
 </html>
