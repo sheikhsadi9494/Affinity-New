@@ -379,6 +379,8 @@
                                                             <label class="fieldlabels">Container Size*</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Put your containers size"></i>
                                                             <select class="form-control" id="container_size" name="Container Size">
                                                                 <option disabled value="" selected="selected">Container Size*</option>
+                                                                <option value="20FT">20FT</option>
+                                                                <option value="40FT">40FT</option>
 
                                             </select>
     
@@ -390,9 +392,7 @@
     
                                                         <div class="form-group col-6">
                                                             <label class="fieldlabels">Quantity *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Put the Quantity of containers"></i>
-                                                            <select class="form-control" id="quantities_2" name="Quantity">
-
-                                                                <option disabled value="" selected="selected">Quantity *</option>
+                                                            <input type="number" class="form-control" id="Quantity" name="Quantity" placeholder="Quantity*" min="0" oninput="this.value = Math.abs(this.value)">
 
                                                 
                                             </select>
