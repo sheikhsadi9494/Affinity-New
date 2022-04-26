@@ -159,6 +159,7 @@ input {
 }
 
 
+
 .navbar-light .navbar-nav .nav-link.active {
     text-align: center;
 }
@@ -175,9 +176,14 @@ input {
     text-decoration: none;
     background-color: #0A78879C;
     color: #ffffff;
+
     /* border-bottom: 2px solid rgb(0, 0, 0); */
     border-radius: 8px 8px 8px 8px;
 }
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
 
 .nav-item .nav-link {
     font-weight: 500;
@@ -189,15 +195,17 @@ input {
 }
 
 .navbar-brand img {
-    height: 60px;
-    margin-top: 60px;
+    height: 205px;
+    margin-top: 56px;
     
 }
+
+
 
 .dropdown-menu.dropdown-menu-light.dropdown-mobile {
     right: auto;
     /* left: -200px; */
-    margin-top: 20px;
+    /* margin-top: 20px; */
     border-color: rgba(85, 85, 85, 0);
     border: solid #1e21255e 0.5px;
     /* box-shadow: 0px 2px 5px 2px #888; */
@@ -206,13 +214,13 @@ input {
 .dropdown-item {
     display: flex;
     width: auto;
-    padding: 0 5px 0 5px;
-    font-size: 13px;
+    /* padding: 0 5px 0 5px; */
+    font-weight: 500;
 }
 
 .dropdown-item:hover {
-    color: #1e2125;
-    background-color: #e9ecef00;
+    color: #ffffff;
+    background-color: #0a78874d;
 }
 
 .dropdown-item img {
@@ -226,7 +234,7 @@ input {
 .companies-dropdown,
 .institutes-dropdown {
     display: flex;
-    padding-top: 10px;
+   
 }
 
 .products-dropdown ul,
