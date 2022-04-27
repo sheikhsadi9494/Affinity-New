@@ -779,7 +779,8 @@ a {
 }
 p {
  letter-spacing:0.3px;
- line-height:1.8
+ line-height:1.8;
+ 
 }
 .section {
  padding-top:100px;

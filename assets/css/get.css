@@ -19,6 +19,7 @@
 .tools p {
 	font-size: 18px;
 	color: #888888;
+	text-align: justify;
 }
 
 .tools .smallcard {
