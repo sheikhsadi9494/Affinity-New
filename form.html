@@ -83,7 +83,7 @@
                 <div class="col-11 col-sm-9 col-md-7 col-lg-12 col-xl-8 text-center p-0 mt-3 mb-2">
                     <div class="px-0 pt-4 pb-0 mt-3 mb-3">
 
-                        <form id="msform" name="google-sheet" method="" autocomplete="on" >
+                        <form id="msform" name="getquote" method="post" autocomplete="on" >
                             <!-- progressbar -->
                             <ul id="progressbar">
                                 <li class="active" id="account"><strong>1.Conact Information</strong></li>
@@ -223,7 +223,7 @@
                                 </div>
     
 
-                                <input type="submit" name="next" class="next action-button" value="Next" />
+                                <input type="button" name="next" class="next action-button" value="Next" />
                             </fieldset>
 
                             <fieldset>
@@ -239,7 +239,7 @@
 
                                             <label class="fieldlabels">Commodity Nature*</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Select Your Country"></i>
                                             <select class="form-control" id="CommodityNature" name="CommodityNature">
-                                                <option disabled  value="" selected="selected">Please select Any One*</option>
+                                                <option disabled selected="selected">Please select Any One*</option>
 
                                                 <option value="General Cargo">General cargo</option>
                                                 <option value="Hazardous Cargo">Hazardous cargo</option>
@@ -296,7 +296,7 @@
 
                                         <div class="form-group col-12">
                                             <label class="fieldlabels">Estimated Date of shipment *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Enter Street Name"></i>
-                                            <input type="date" class="form-control" id="Estimated_Date_Of_Hip" name="Estimated_Date_Of_Hip" placeholder="Estimated Date of hipment*">
+                                            <input type="date" class="form-control" id="Estimated_Date_Of_Ship" name="Estimated_Date_Of_Ship" placeholder="Estimated Date of hipment*">
                                         </div>
 
 
@@ -336,8 +336,8 @@
     
                                             <div class="form-group col-12">
                                                 <label class="fieldlabels">Shipping Mode</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Select Your Country"></i>
-                                                <select class="form-control" id="shippingmode_1" name="shippingmode">
-                                                            <option disabled selected value="SelectState">Air/Sea *</option>
+                                                <select class="form-control" id="shippingmode" name="shippingmode">
+                                                            <option disabled selected value="">Air/Sea *</option>
                                                             <option value="Air">Air</option>
                                                             <option value="Sea">Sea</option>
                                                         </select>
@@ -350,7 +350,7 @@
     
                                             <div class="form-group col-12">
                                                 <label class="fieldlabels">Shipping Type </label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Select Your Country"></i>
-                                                <select class="form-control" id="shippingtype" name="shipping type">
+                                                <select class="form-control" id="shippingtype" name="shippingtype">
                                                     <option disabled value="" selected="selected">FCL/LCL*</option>
                                                     <option value="FCL">FCL</option>
                                                     <option value="LCL">LCL</option>
@@ -361,7 +361,7 @@
                                             
                                             <div class="form-group col-6">
                                                             <label class="fieldlabels">Container Type*</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Put the containers type"></i>
-                                                            <select class="form-control" id="container_type" name="container type">
+                                                            <select class="form-control" id="container_type" name="container_type">
                                             <option disabled selected value="">Container Type* ↓</option>
                                             <option value="General purpose container">General purpose container</option>
                                             <option value="Open top container">Open top container</option>
@@ -385,7 +385,7 @@
     
                                                         <div class="form-group col-6">
                                                             <label class="fieldlabels">Container Size*</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Put your containers size"></i>
-                                                            <select class="form-control" id="container_size" name="Container Size">
+                                                            <select class="form-control" id="container_size" name="container_Size">
                                                                 <option disabled value="" selected="selected">Container Size*</option>
                                                                 <option value="20FT">20FT</option>
                                                                 <option value="40FT">40FT</option>
@@ -414,7 +414,9 @@
     
                                                         <div class="form-group col-6">
                                                             <label class="fieldlabels">Country Of Orgin *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Country/Orgin"></i>
-                                                            <select class="form-control" id="country_of_origin" name="country of origin">
+                                                            <select class="form-control" id="country_of_origin" name="country_of_origin">
+                                                                <option disabled value="" selected="selected">Select The Country</option>
+
                                                                 <option value="Afganistan">Afghanistan</option>
                                                                 <option value="Albania">Albania</option>
                                                                 <option value="Algeria">Algeria</option>
@@ -670,21 +672,23 @@
     
                                                         <div class="form-group col-6">
                                                             <label class="fieldlabels">Place of Receipt *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Place Of Receipt"></i>
-                                                            <input type="text" class="form-control" id="place_of_receipt" name="place of Receipt" placeholder=" Place Of Receipt">
+                                                            <input type="text" class="form-control" id="place_of_receipt" name="place_of_receipt" placeholder=" Place Of Receipt">
                                                         </div>
                                                         
     
                                                         
                                                         <div class="form-group col-6">
                                                             <label class="fieldlabels">Port of Loading*</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Port of loading"></i>
-                                                            <input type="text" class="form-control" id="port_of_loading" name="port of loading" placeholder="Port of Loading*">
+                                                            <input type="text" class="form-control" id="port_of_loading" name="port_of_loading" placeholder="Port of Loading*">
                                                         </div>
                                                     
     
     
                                                         <div class="form-group col-6">
                                                             <label class="fieldlabels">Country of Destination *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="country of dstination"></i>
-                                                            <select class="form-control" id="country_of_destination" name="Country of Destination">
+                                                            <select class="form-control" id="country_of_destination" name="country_of_destination">
+                                                                <option disabled value="" selected="selected">Select The Country</option>
+
                                                                 <option value="Afganistan">Afghanistan</option>
                                                                 <option value="Albania">Albania</option>
                                                                 <option value="Algeria">Algeria</option>
@@ -940,13 +944,14 @@
     
                                                         <div class="form-group col-6">
                                                             <label class="fieldlabels">Port Of Discharge *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Port Of Discharge"></i>
-                                                            <input type="text" class="form-control" id="port_of_discharge" name="port of discharge" placeholder="Port Of Discharge*">
+                                                            <input type="text" class="form-control" id="port_of_discharge" name="port_of_discharge" placeholder="Port Of Discharge*">
                                                         </div>
     
     
                                                         <div class="form-group col-6">
                                                             <label class="fieldlabels">Place of Delivery *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Place Of Delivery"></i>
-                                                            <select class="form-control" id="place_of_delivery" name="place of delivery">
+                                                            <select class="form-control" id="place_of_delivery" name="place_of_delivery">
+                                                                <option disabled value="" selected="selected">Select The Country</option>
                                                                 <option value="Afganistan">Afghanistan</option>
                                                                 <option value="Albania">Albania</option>
                                                                 <option value="Algeria">Algeria</option>
@@ -1200,7 +1205,7 @@
     
                                                         <div class=" form-group col-6">
                                                             <label class="fieldlabels">Freight Terms*</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Freight Terms"></i>
-                                                            <select class="form-control" id="freignt" name="state">
+                                                            <select class="form-control" id="freignt" name="freight">
                                                 <option disabled selected="selected" value="">Freignt Terms (Incoterm)* ↓</option>
                                                 <option value="EXW (Ex-works)" title="This means that the seller makes the goods available at a specified location, usually the seller’s factory. The buyer is responsible for onward transportation of the goods and bears the cost for the same">EXW (Ex-works)</option>
                                                 <option value="DAP (Delivered At Place)" title="The seller is responsible for delivering the goods to a designated place">DAP (Delivered At Place)</option>
@@ -1297,6 +1302,23 @@
     <script src="./assets/js/form.js"></script>
 
     <script src="./assets/js/district.js"></script>
+
+
+    <!-- <script type="text/javascript">
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzGyXlaecIRCCHTqJYHjQlALwpUMzTsXBAR4u-_YlNfqiLX_deMGPZ17RRWrMnoDrDMNw/exec'
+        const form = document.forms['getquote']
+    
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => 
+    
+    document.getElementById("resets").reset(),
+     console.log("Submitted"))
+          .catch(error => console.error('Error!', error.message))
+        })
+    
+      </script> -->
 
 
 

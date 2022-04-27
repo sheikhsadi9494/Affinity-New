@@ -389,13 +389,13 @@ $(document).ready(function () {
         Estimated_Volumes: {
           required: true,
         },
-        Estimated_Date_Of_Hip: {
+        Estimated_Date_Of_Ship: {
           required: true,
         },
         remarks: {
           required: true,
         },
-        shippingmode_1: {
+        shippingmode: {
           required: true,
         },
         shippingtype: {
@@ -476,7 +476,7 @@ $(document).ready(function () {
           required: "<p style='color:red; margin-top: -20px;'>* Required</h1>",
         },
         CommodityNature: {
-          required: "<p style='color:red; margin-top: -20px;'>* Required</h1>",
+          required: "<p style='color:red;'>* Required</h1>",
         },
         commodity: {
           required: "<p style='color:red; margin-top: -20px;'>* Required</h1>",
@@ -493,29 +493,29 @@ $(document).ready(function () {
         Estimated_Volumes: {
           required: "<p style='color:red; margin-top: -20px;'>* Required</h1>",
         },
-        Estimated_Date_Of_Hip: {
+        Estimated_Date_Of_Ship: {
           required: "<p style='color:red; margin-top: -20px;'>* Required</h1>",
         },
         remarks: {
           required: "<p style='color:red; margin-top: -20px;'>* Required</h1>",
         },
-        shippingmode_1: {
-          required: "<p style='color:red; margin-top: -20px;'>* Required</h1>",
+        shippingmode: {
+          required: "<p style='color:red;'>* Required</h1>",
         },
         shippingtype: {
-          required: "<p style='color:red; margin-top: -20px;'>* Required</h1>",
+          required: "<p style='color:red;'>* Required</h1>",
         },
         container_type: {
-          required: "<p style='color:red; margin-top: -20px;'>* Required</h1>",
+          required: "<p style='color:red;'>* Required</h1>",
         },
         container_size: {
-          required: "<p style='color:red; margin-top: -20px;'>* Required</h1>",
+          required: "<p style='color:red;'>* Required</h1>",
         },
         quantities_2: {
           required: "<p style='color:red; margin-top: -20px;'>* Required</h1>",
         },
         country_of_origin: {
-          required: "<p style='color:red; margin-top: -20px;'>* Required</h1>",
+          required: "<p style='color:red;'>* Required</h1>",
         },
         place_of_receipt: {
           required: "<p style='color:red; margin-top: -20px;'>* Required</h1>",
@@ -524,16 +524,16 @@ $(document).ready(function () {
           required: "<p style='color:red; margin-top: -20px;'>* Required</h1>",
         },
         country_of_destination: {
-          required: "<p style='color:red; margin-top: -20px;'>* Required</h1>",
+          required: "<p style='color:red; '>* Required</h1>",
         },
         port_of_discharge: {
           required: "<p style='color:red; margin-top: -20px;'>* Required</h1>",
         },
         place_of_delivery: {
-          required: "<p style='color:red; margin-top: -20px;'>* Required</h1>",
+          required: "<p style='color:red;'>* Required</h1>",
         },
         freignt: {
-          required: "<p style='color:red; margin-top: -20px;'>* Required</h1>",
+          required: "<p style='color:red;'>* Required</h1>",
         },
       },
     });
@@ -566,6 +566,24 @@ $(document).ready(function () {
       );
 
       setProgressBar(++current);
+    }
+
+
+    if(form.valid() === true){
+
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzGyXlaecIRCCHTqJYHjQlALwpUMzTsXBAR4u-_YlNfqiLX_deMGPZ17RRWrMnoDrDMNw/exec'
+        const form = document.forms['getquote']
+    
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => 
+    
+    document.getElementById("resets").reset(),
+     console.log("Submitted"))
+          .catch(error => console.error('Error!', error.message))
+        })
+        
     }
 
 
