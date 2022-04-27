@@ -1,4 +1,6 @@
-
+.overlay {
+    filter: brightness(0.50);
+}
 
 
 .l-side,
