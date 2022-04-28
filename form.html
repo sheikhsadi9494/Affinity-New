@@ -1225,9 +1225,8 @@
 
                                                         <div class="form-group col-6">
 
-                                                            <p id="times" name="time"> </p>
 
-                                                            <!-- <input class="form-control" id="time" name="time" placeholder="Port Of Discharge*"> -->
+                                                            <input class="form-control" id="times" name="time" type="hidden">
                                                         </div>
 
 
@@ -1289,9 +1288,7 @@
 
     <!-- Initialize Swiper -->
     <script>
-
-value = date.localeDateString();
-document.getElementById("times").value = new Date().toLocaleString();
+        document.getElementById("times").value = new Date().toLocaleString();
 
         $(function() {
             $('[data-toggle="tooltip"]').tooltip()
