@@ -47,20 +47,29 @@ body {
 
 .navbar-light .navbar-nav .nav-link.active {
     text-align: center;
+    
 }
 
 .navbar-nav .nav-item .nav-link:focus {
     text-decoration: none;
-    background-color: #0A78879C;
     /* border-bottom: 2px solid rgb(0, 0, 0); */
-    color: #ffffff;
-    border-radius: 8px 8px 8px 8px;
+    color: #000288;
+        border-radius: 8px 8px 8px 8px;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
     text-decoration: none;
-    background-color: #0A78879C;
-    color: #ffffff;
+    /* background-color: #0A78879C; */
+    color: #000288;
+
+    /* border-bottom: 2px solid rgb(0, 0, 0); */
+    border-radius: 8px 8px 8px 8px;
+}
+
+.navbar-nav .nav-item .nav-link:active {
+    text-decoration: none;
+    /* background-color: #0A78879C; */
+    color: #000288;
 
     /* border-bottom: 2px solid rgb(0, 0, 0); */
     border-radius: 8px 8px 8px 8px;
