@@ -1,5 +1,10 @@
+<style>
+    .dropdown-toggle::after {
+        content: none;
+    }
+</style>
 <nav id="navbar_top" class="navbar shadow navbar-expand-lg navbar-light">
-    <div class="container-fluid custom-nav">
+    <div class="container-fluid custom-nav align-items-center">
         <a class="navbar-brand ps-lg-5" href="/index.html">
             <img src="./assets/img/Aifinity Logo 3.svg" alt="logo" /></a>
 
@@ -7,27 +12,39 @@
       <span class="navbar-toggler-icon"></span>
     </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="menu navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+            <ul class="menu navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link active" aria-current="page" href="./index.html" style="text-align: justify;"><b>Home</b> <br> <span><sub>starts here</sub></span> </a>
+                    <a class="nav-link active" aria-current="page" href="./index.html" tabindex="-1" style="text-align: justify;">
+                        <div>
+                            <div><b>Home</b></div><div style="margin-top: -6px;"><i>starts here</i></div>
+                        </div>
+                    </a>
                 </li>
 
                 <li class="nav-item dropdown">
                     <a class="nav-link active" href="./about-us.html" tabindex="-1" aria-disabled="true" style="text-align: justify;">
-            <b>About Us</b> <br> <span><sub>Affinity</sub></span>
-          </a>
+                        <div>
+                            <div><b>Discover</b></div><div style="margin-top: -6px;"><i>Affinity</i></div>
+                        </div>
+                    </a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link active" href="./servicesCards.html" tabindex="-1" aria-disabled="true" style="text-align: justify;">
-             <b>Services</b> <br> <span><sub>Our Services</sub></span>
-          </a>
+                        <div>
+                            <div><b>Engage</b></div><div style="margin-top: -6px;"><i>Our Services</i></div>
+                        </div>
+                    </a>
 
                 </li>
 
                 <!-- For companies -->
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="text-align: justify;"><b>Tools</b> <br> <span><sub>Tools for you</sub></span></a>
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="text-align: justify;">
+                        
+                            <div><b>Resources</b></div><div style="margin-top: -6px;"><i>Tools for you</i></div>
+                        
+                    </a>
                 
                     <ul class="dropdown-menu dropdown-menu-light dropdown-mobile" aria-labelledby="navbarDarkDropdownMenuLink">
                         <div class="institutes-dropdown">
@@ -71,19 +88,31 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active" href="./careers.html" tabindex="-1" aria-disabled="true" style="text-align: justify;"> <b>Careers </b> <br> <span><sub>At Affinity</sub></span></a>
+                    <a class="nav-link active" href="./careers.html" tabindex="-1" aria-disabled="true" style="text-align: justify;">
+                        <div>
+                            <div><b>Careers</b></div><div style="margin-top: -5px;"><i>At Affinity</i></div>
+                        </div>
+                    </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active" href="https://blog.affinitytrans.com/" tabindex="-1" aria-disabled="true" style="text-align: justify;"><b>Blog</b> <br> <span><sub>Enlightening</sub></span></a>
+                    <a class="nav-link active" href="https://blog.affinitytrans.com/" tabindex="-1" aria-disabled="true" style="text-align: justify;">
+                        <div>
+                            <div><b>Blog</b></div><div style="margin-top: -5px;"><i>Enlightening</i></div>
+                        </div>
+                    </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active" href="./contact-us.html" tabindex="-1" aria-disabled="true" style="text-align: justify;"><b>Contact Us</b> <br> <span><sub>Get in touch</sub></span></a>
+                    <a class="nav-link active" href="./contact-us.html" tabindex="-1" aria-disabled="true" style="text-align: justify;">
+                        <div>
+                            <div><b>Contact</b></div><div style="margin-top: -5px;"><i>Get in touch</i></div>
+                        </div>
+                    </a>
                 </li>
 
       </ul>
-      <div class="login-signup d-flex gap-1 pe-5 mx-auto" >
+      <div class="login-signup d-flex gap-1 pe-5" >
 
         <!-- profile button -->
     
