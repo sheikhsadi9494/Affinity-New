@@ -596,7 +596,7 @@ button:not(:disabled) {
 }
 .nav-pills .nav-link {
  color:#2f3c4e !important;
- border:1px solid #e9ecef
+ /* border:1px solid #e9ecef */
 }
 .nav-pills .nav-link .active {
  background-color:#f89e3600;
