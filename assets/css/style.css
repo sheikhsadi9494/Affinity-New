@@ -88,22 +88,22 @@ body {
     margin-right: 15px;
 }
 
-.navbar-brand img {
-    height: 75px;
-    width: 345px;
+.navLogo {
+    width: 350px;
+    padding-top: 15px;
 }
 
-@media screen and (min-width: 200px) {
+@media screen and (min-width: 200px) and (max-width: 600px) {
     .navbar-brand img {
-        height: 35px;
-        width: 155px;
+        width: 180px;
     } 
 }
-@media screen and (min-width: 600px) {
-    .navbar-brand img {
-        height: 75px;
-        width: 345px;
-    } 
+
+@media screen and (min-width: 1000px) {
+    .navLogo {
+        width: 350px;
+        padding-top: 15px;
+    }
 }
 
 
