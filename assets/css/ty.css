@@ -989,8 +989,8 @@ p {
 }
 @media (max-height: 480px) {
  .navbar-nav {
-  max-height:200px;
-  overflow-y:auto
+  max-height:300px;
+  /* overflow-y:auto */
  }
 }
 @media (min-width: 200px) and (max-width: 768px) {
