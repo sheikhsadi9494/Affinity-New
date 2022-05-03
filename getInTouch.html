@@ -52,7 +52,7 @@
             </div>
             <div class="col-md-7 pb-4 formWidth" style="border-radius: 20px; border: 7px solid rgb(127, 187, 244);">
                 <div>
-                    <form action="">
+                    <form id="affinity" name="affinity" method="post" >
                         <h4 class="py-3">Personal Information</h4>
                         <div class="row gy-4">
                             <div class="col-md-6 col-sm-12 col-xs-12">
@@ -65,7 +65,7 @@
                               <input type="email" class="form-control fw-bold rounded-0 rounded-0" placeholder="Business Mail Id" aria-label="Business Mail Id">
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
-                              <input type="number" class="form-control fw-bold rounded-0 rounded-0" placeholder="Mobile Number" aria-label="MObile Number">
+                              <input type="tel" class="form-control fw-bold rounded-0 rounded-0" placeholder="Mobile Number" aria-label="MObile Number">
                             </div>
                           </div>
                         <h4 class="py-3">Personal Information</h4>
@@ -77,25 +77,24 @@
                               <input type="url" class="form-control rounded-0" placeholder="Web Site URL" aria-label="Web Site url">
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
-                                <select class="form-select rounded-0" id="enquiry" name="enquiry">
-                                    <option hidden disabled selected value="Expertise">Country</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                  </select>
+                              <select class="form-control" id="country" name="country" required>
+                                <option hidden disabled selected value="Expertise">Select Country *</option>
+                        </select>
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
-                              <input type="text" class="form-control rounded-0" placeholder="State" aria-label="State">
+                              <select class="form-control" id="State" name="State" required>
+                                <option hidden disabled selected value="Expertise">Please select Country first *</option>
+
+                        
+                              </select>
+                  
                             </div>
+
                             <div class="col-md-6 col-sm-12 col-xs-12">
-                                <select class="form-select rounded-0" id="enquiry" name="enquiry">
-                                    <option hidden disabled selected value="Expertise">City</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                  </select>
+                              <select class="form-control" id="City" name="City">
+                                <option hidden disabled selected value="Expertise">Please select State first *</option>
+                               
+                              </select>
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
                               <input type="text" class="form-control rounded-0" placeholder="Area" aria-label="Area">
@@ -123,13 +122,13 @@
                           <h4 class="pb-3">Inquiry</h4>
                           <div class="row gy-4">
                             <div class="col-md-6 col-sm-12 col-xs-12">
-                                <select class="form-select" id="enquiry" name="enquiry">
-                                    <option hidden disabled selected value="Expertise">Topic</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                  </select>
+                              <select class="form-control" id="enquiry" name="enquiry">
+                                  <option hidden disabled selected value="Expertise">Select Type of Enpuery</option>
+                                  <option value="General Enquiry">General Enquiry</option>
+                                  <option value="Sales">Sales</option>
+                                  <option value="Tracking">Tracking</option>
+                                  <option value="Android Developement">Business Co-operation</option>
+                                </select>
                             </div>
                             <div class="col-12">
                                 <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" placeholder="Message" rows="3"></textarea>
@@ -142,5 +141,9 @@
             </div>
         </div>
     </section>
+
+    <script src="./assets/js/form.js"></script>
+    <script src="./assets/js/district.js"></script>
+
 </body>
 </html>
