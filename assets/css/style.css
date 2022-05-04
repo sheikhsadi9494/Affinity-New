@@ -237,9 +237,11 @@ body {
 
   }
 
-
+  .wrap{
+      overflow: hidden;
+      max-height: 500px;
+  }
    */
-   
 
 
    .swiper {
@@ -249,11 +251,12 @@ body {
   }
 
   .swiper-slide {
-    font-size: 200px;
+    font-size: 100px;
     color: #fff;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 40px 60px;
+
     /* justify-content: flex-end; */
   }
 
