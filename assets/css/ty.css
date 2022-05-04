@@ -821,8 +821,8 @@ a {
  text-decoration:none !important
 }
 p {
- letter-spacing:0.3px;
- line-height:1.8;
+  letter-spacing: -0.7px;
+   line-height:1.8;
  
 }
 .section {
