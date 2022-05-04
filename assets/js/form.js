@@ -268,6 +268,33 @@ $(document).ready(function () {
             required: true,
         
         },
+        country: {
+          required: true,
+        },
+        state: {
+          required: true,
+        },
+        city: {
+          required: false,
+        },
+        zipCode: {
+          required: true,
+        },
+        company_name: {
+          required: true,
+        },
+        website_url: {
+          required: true,
+        },
+        _Area:{
+          required:true,
+        },
+        _Street:{
+          required:true,
+        },
+        _Zipcode:{
+          required:true,
+        },
       },
       messages: {
         email: {
@@ -288,7 +315,32 @@ $(document).ready(function () {
         message: {
           required: "<p style='color:red;'>* Required</h1>",
         },
-      },
+        country: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },
+        state: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },
+        city: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },
+        zipCode: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },
+        company_name: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },
+        website_url: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },_Area:{
+          required:"<p style='color:red; '>* Required</h1>",
+        },_Street:{
+          required:"<p style='color:red; '>* Required</h1>",
+        },
+        _Zipcode:{
+          required:"<p style='color:red; '>* Required</h1>",
+        },
+      }
     });
 
 
