@@ -61,7 +61,7 @@
 }
 
 
-.card8 {
+/* .card8 {
     padding: 10px 15px;
     display: flex;
     flex-direction: column;
@@ -70,7 +70,7 @@
     height: 100%;
     border-radius: 10px;
     margin-bottom: 20px;
-}
+} */
 .card8 .card-body {
 background-color: #ffffff;
 border: #808080;
@@ -83,6 +83,28 @@ border-width: 1px;
     margin-top: 5px;
     color: #ffffff;
 }
+
+@media screen and (min-width: 200px) {
+    .card8 p {
+        height: 120px;
+    }    
+    .card8 h2 {
+        margin-top: 30px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .card8 p {
+        height: 150px;
+    }   
+    .card8 h2 {
+        margin-top: 30px;
+        height: 30px;
+    }  
+}
+
+
 
 
 
@@ -103,11 +125,9 @@ border-width: 1px;
     .card8 .card-body .cntn{
 
         margin-top: -88px;
-        
         width: 144px;
         background: #757575;
-        padding: 40px 30px;
-        border-radius: 75px;
+        padding: 40px;
       
     }
 
@@ -122,11 +142,11 @@ border-width: 1px;
 
 
 
-.card8 hr {
+/* .card8 hr {
     height: 3px;
     width: 30%;
     color: #808080;
-}
+} */
 
 
 
