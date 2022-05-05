@@ -407,8 +407,8 @@ i {
 }
 
 .skygoal-logo img {
-    height: 40px;
-    width: auto;
+    height: 183px;
+    width: 203px;
 }
 
 .footer-goal {
@@ -420,6 +420,9 @@ i {
 
 .footer-goal p {
     padding: 10px;
+    font-size: 18px;
+text-align: justify;
+margin-top: -66px;
 }
 
 .footer-goal-q {
