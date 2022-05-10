@@ -126,13 +126,13 @@ border-width: 1px;
         margin-top: -68px;
         width: 90px;
         background: #757575;
-        padding: 16px;
+        padding: 23px;
       
     }
 
     .card8 .card-body .cntn img {
 
-        height: 60px;
+        height: 42px;
         
         filter: invert(27%) saturate(2878%) sepia(100%) hue-rotate(346deg) brightness(537%) contrast(97%);
         
