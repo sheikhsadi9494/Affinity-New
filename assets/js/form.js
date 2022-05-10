@@ -268,6 +268,33 @@ $(document).ready(function () {
             required: true,
         
         },
+        country: {
+          required: true,
+        },
+        state: {
+          required: true,
+        },
+        city: {
+          required: false,
+        },
+        zipCode: {
+          required: true,
+        },
+        company_name: {
+          required: true,
+        },
+        website_url: {
+          required: true,
+        },
+        _Area:{
+          required:true,
+        },
+        _Street:{
+          required:true,
+        },
+        _Zipcode:{
+          required:true,
+        },
       },
       messages: {
         email: {
@@ -288,7 +315,170 @@ $(document).ready(function () {
         message: {
           required: "<p style='color:red;'>* Required</h1>",
         },
+        country: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },
+        state: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },
+        city: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },
+        zipCode: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },
+        company_name: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },
+        website_url: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },_Area:{
+          required:"<p style='color:red; '>* Required</h1>",
+        },_Street:{
+          required:"<p style='color:red; '>* Required</h1>",
+        },
+        _Zipcode:{
+          required:"<p style='color:red; '>* Required</h1>",
+        },
+      }
+    });
+
+
+    if(form.valid() === true){
+
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxBOtVFr-NZ1umoFl3ce3RyqlrnCy69Gh1P41MGe41Dvy2zmeMO07zhwbm3yEOIUe-I0w/exec'
+    const form = document.forms['affinity']
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+            .then(response => location.reload())
+            .catch(error => console.error('Error!', error.message))
+    })
+
+
+    }
+  });
+
+
+
+
+  $(".btn").click(function () {
+    console.log("Contact us form is working");
+    var form = $("#affinity");
+
+    form.validate({
+      errorElement: "span",
+      errorClass: "help-block",
+      highlight: function (element, _errorClass, _validClass) {
+        $(element).closest(".form-group").addClass("has-error");
       },
+      unhighlight: function (element, _errorClass, _validClass) {
+        $(element).closest(".form-group").removeClass("has-error");
+      },
+      
+      rules: {
+        email: {
+          email: true,
+          required: true,        
+          domainNotBanned: true,
+        },
+        First_Name: {
+            required: true,        
+        
+        },
+        Last_Name: {
+            required: true,       
+        
+        },
+        phone: {
+            required: true,
+        
+        },
+        enquiry: {
+            required: true,
+        
+        },
+        message: {
+            required: true,
+        
+        },
+        country: {
+          required: true,
+        },
+        state: {
+          required: true,
+        },
+        city: {
+          required: false,
+        },
+        zipCode: {
+          required: true,
+        },
+        company_name: {
+          required: true,
+        },
+        website_url: {
+          required: true,
+        },
+        _Area:{
+          required:true,
+        },
+        _Street:{
+          required:true,
+        },
+        _Zipcode:{
+          required:true,
+        },
+      },
+      messages: {
+        email: {
+          required: "<p style='color:red;'>* Required</h1>",
+        },
+        Last_Name: {
+          required: "<p style='color:red;'>* Required</h1>",
+        },
+        First_Name: {
+          required: "<p style='color:red;'>* Required</h1>",
+        },
+        phone: {
+            required: "<p style='color:red;'>* Required</h1>",
+        },
+        enquiry: {
+          required: "<p style='color:red;'>* Required</h1>",
+        },
+        message: {
+          required: "<p style='color:red;'>* Required</h1>",
+        },
+        country: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },
+        state: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },
+        city: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },
+        zipCode: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },
+        company_name: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },
+        website_url: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },_Area:{
+          required:"<p style='color:red; '>* Required</h1>",
+        },_Street:{
+          required:"<p style='color:red; '>* Required</h1>",
+        },
+        _Zipcode:{
+          required:"<p style='color:red; '>* Required</h1>",
+        },
+      }
     });
 
 
