@@ -86,7 +86,7 @@ border-width: 1px;
 
 @media screen and (min-width: 200px) {
     .card8 p {
-        height: 120px;
+        height: 180px;
     }    
     .card8 h2 {
         margin-top: 30px;
