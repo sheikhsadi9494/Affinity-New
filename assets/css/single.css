@@ -95,11 +95,14 @@ border-width: 1px;
 }
 
 @media screen and (min-width: 600px) {
-    .card8 p {
+    /* .card8 p {
         height: 180px;
-    }   
+    }    */
+    /* .card8 {
+        height: 230px;
+    } */
     .card8 h2 {
-        margin-top: 30px;
+        margin-top: 5px;
         height: 30px;
     }  
 }
