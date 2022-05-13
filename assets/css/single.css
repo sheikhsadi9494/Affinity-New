@@ -65,8 +65,8 @@
 
  @media screen and (min-width: 200px) {
     .card8 p {
-        height: 150px;
-    }    
+        height: 180px;
+    }   
     /* .card8 h2 {
         margin-top: 30px;
         height: 40px;
@@ -86,6 +86,16 @@
     }    */
 } 
 
+@media screen and (min-width: 200px) {
+    .cardGap {
+        margin: 100px 25px 100px;
+    }
+}
+@media screen and (min-width: 600px) {
+    .cardGap {
+        margin: 100px 100px 100px;
+    }
+}
 
 
 
