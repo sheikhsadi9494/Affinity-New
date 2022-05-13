@@ -212,7 +212,7 @@ $(document).ready(function () {
 
   $.validator.addMethod(
     "domainNotBanned",
-    function (value, elem, param) {
+    function (value, _elem, _param) {
       var domain = value.split("@")[1];
       return bannedDomains.indexOf(domain) < 0;
     },
@@ -235,10 +235,10 @@ $(document).ready(function () {
     form.validate({
       errorElement: "span",
       errorClass: "help-block",
-      highlight: function (element, errorClass, validClass) {
+      highlight: function (element, _errorClass, _validClass) {
         $(element).closest(".form-group").addClass("has-error");
       },
-      unhighlight: function (element, errorClass, validClass) {
+      unhighlight: function (element, _errorClass, _validClass) {
         $(element).closest(".form-group").removeClass("has-error");
       },
       
@@ -268,6 +268,33 @@ $(document).ready(function () {
             required: true,
         
         },
+        country: {
+          required: true,
+        },
+        state: {
+          required: true,
+        },
+        city: {
+          required: false,
+        },
+        zipCode: {
+          required: true,
+        },
+        company_name: {
+          required: true,
+        },
+        website_url: {
+          required: true,
+        },
+        _Area:{
+          required:true,
+        },
+        _Street:{
+          required:true,
+        },
+        _Zipcode:{
+          required:true,
+        },
       },
       messages: {
         email: {
@@ -288,40 +315,206 @@ $(document).ready(function () {
         message: {
           required: "<p style='color:red;'>* Required</h1>",
         },
-      },
+        country: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },
+        state: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },
+        city: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },
+        zipCode: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },
+        company_name: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },
+        website_url: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },_Area:{
+          required:"<p style='color:red; '>* Required</h1>",
+        },_Street:{
+          required:"<p style='color:red; '>* Required</h1>",
+        },
+        _Zipcode:{
+          required:"<p style='color:red; '>* Required</h1>",
+        },
+      }
     });
 
-    if (form.valid() === true) {
-      console.log("Form is valid");
 
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbxBOtVFr-NZ1umoFl3ce3RyqlrnCy69Gh1P41MGe41Dvy2zmeMO07zhwbm3yEOIUe-I0w/exec";
-      const form = document.forms["affinity"];
+    if(form.valid() === true){
 
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxBOtVFr-NZ1umoFl3ce3RyqlrnCy69Gh1P41MGe41Dvy2zmeMO07zhwbm3yEOIUe-I0w/exec'
+    const form = document.forms['affinity']
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
         fetch(scriptURL, {
-          method: "POST",
-          body: new FormData(form),
-        })
-          .then((response) => location.reload())
-          .catch((error) => console.error("Error!", error.message));
-      });
+                method: 'POST',
+                body: new FormData(form)
+            })
+            .then(response => location.reload())
+            .catch(error => console.error('Error!', error.message))
+    })
+
+
     }
   });
 
-  $(".next").click(function () {
-    console.log("test");
 
-    var form = $("#msform");
+
+
+  $(".btn").click(function () {
+    console.log("Contact us form is working");
+    var form = $("#affinity");
 
     form.validate({
       errorElement: "span",
       errorClass: "help-block",
-      highlight: function (element, errorClass, validClass) {
+      highlight: function (element, _errorClass, _validClass) {
         $(element).closest(".form-group").addClass("has-error");
       },
-      unhighlight: function (element, errorClass, validClass) {
+      unhighlight: function (element, _errorClass, _validClass) {
+        $(element).closest(".form-group").removeClass("has-error");
+      },
+      
+      rules: {
+        email: {
+          email: true,
+          required: true,        
+          domainNotBanned: true,
+        },
+        First_Name: {
+            required: true,        
+        
+        },
+        Last_Name: {
+            required: true,       
+        
+        },
+        phone: {
+            required: true,
+        
+        },
+        enquiry: {
+            required: true,
+        
+        },
+        message: {
+            required: true,
+        
+        },
+        country: {
+          required: true,
+        },
+        state: {
+          required: true,
+        },
+        city: {
+          required: false,
+        },
+        zipCode: {
+          required: true,
+        },
+        company_name: {
+          required: true,
+        },
+        website_url: {
+          required: true,
+        },
+        _Area:{
+          required:true,
+        },
+        _Street:{
+          required:true,
+        },
+        _Zipcode:{
+          required:true,
+        },
+      },
+      messages: {
+        email: {
+          required: "<p style='color:red;'>* Required</h1>",
+        },
+        Last_Name: {
+          required: "<p style='color:red;'>* Required</h1>",
+        },
+        First_Name: {
+          required: "<p style='color:red;'>* Required</h1>",
+        },
+        phone: {
+            required: "<p style='color:red;'>* Required</h1>",
+        },
+        enquiry: {
+          required: "<p style='color:red;'>* Required</h1>",
+        },
+        message: {
+          required: "<p style='color:red;'>* Required</h1>",
+        },
+        country: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },
+        state: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },
+        city: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },
+        zipCode: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },
+        company_name: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },
+        website_url: {
+          required: "<p style='color:red; '>* Required</h1>",
+        },_Area:{
+          required:"<p style='color:red; '>* Required</h1>",
+        },_Street:{
+          required:"<p style='color:red; '>* Required</h1>",
+        },
+        _Zipcode:{
+          required:"<p style='color:red; '>* Required</h1>",
+        },
+      }
+    });
+
+
+    if(form.valid() === true){
+
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxBOtVFr-NZ1umoFl3ce3RyqlrnCy69Gh1P41MGe41Dvy2zmeMO07zhwbm3yEOIUe-I0w/exec'
+    const form = document.forms['affinity']
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+            .then(response => location.reload())
+            .catch(error => console.error('Error!', error.message))
+    })
+
+
+    }
+  });
+
+
+
+  $(".next").click(function () {
+    console.log("test");
+
+    var form2 = $("#msform");
+
+    form2.validate({
+      errorElement: "span",
+      errorClass: "help-block",
+      highlight: function (element, _errorClass, _validClass) {
+        $(element).closest(".form-group").addClass("has-error");
+      },
+      unhighlight: function (element, _errorClass, _validClass) {
         $(element).closest(".form-group").removeClass("has-error");
       },
       rules: {
@@ -541,7 +734,7 @@ $(document).ready(function () {
     current_fs = $(this).parent();
     next_fs = $(this).parent().next();
 
-    if (form.valid() === true) {
+    if (form2.valid() === true) {
       //Add Class Active
       $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
 
@@ -566,24 +759,6 @@ $(document).ready(function () {
       );
 
       setProgressBar(++current);
-    }
-
-
-    if(form.valid() === true){
-
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbzGyXlaecIRCCHTqJYHjQlALwpUMzTsXBAR4u-_YlNfqiLX_deMGPZ17RRWrMnoDrDMNw/exec'
-        const form = document.forms['getquote']
-    
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => 
-    
-    document.getElementById("resets").reset(),
-     console.log("Submitted"))
-          .catch(error => console.error('Error!', error.message))
-        })
-        
     }
 
 

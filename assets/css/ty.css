@@ -15,7 +15,7 @@ h1 {
  font-size:42px
 }
 h2 {
- font-size:36px
+ font-size:18px
 }
 h3 {
  font-size:30px
@@ -596,13 +596,56 @@ button:not(:disabled) {
 }
 .nav-pills .nav-link {
  color:#2f3c4e !important;
- border:1px solid #e9ecef
+ /* border:1px solid #e9ecef */
 }
-.nav-pills .nav-link.active {
- background-color:#f89d36;
+.nav-pills .nav-link .active {
+ background-color:#f89e3600;
  color:#fff !important;
  box-shadow:0 0 3px rgba(47,60,78,0.15)
 }
+
+.nav-pills .nav-link.active{
+    color: #fff;
+    background-color: #fff;
+  }
+
+.nav-pills .nav-link:hover img {
+    /* background-color:#f89d36; */
+    background-color:#f89e3600;
+
+
+
+    filter: brightness(0) saturate(100%) invert(32%) sepia(89%) saturate(5539%) hue-rotate(350deg) brightness(112%) contrast(110%);
+
+    
+   }
+
+   .nav-pills .nav-link:focus img {
+    background-color:#f89e3600;
+
+    /* background-color:#f89d36; */
+
+
+    filter: brightness(0) saturate(100%) invert(32%) sepia(89%) saturate(5539%) hue-rotate(350deg) brightness(112%) contrast(110%);
+
+    
+   }
+
+   .nav-pills .nav-link :target img {
+    background-color:#f89e3600;
+
+    /* background-color:#f89d36; */
+
+
+    filter: brightness(0) saturate(100%) invert(32%) sepia(89%) saturate(5539%) hue-rotate(350deg) brightness(112%) contrast(110%);
+
+    
+   }
+
+
+
+
+
 .nav-pills a .screenshot .title {
  font-size:18px
 }
@@ -778,8 +821,8 @@ a {
  text-decoration:none !important
 }
 p {
- letter-spacing:0.3px;
- line-height:1.8;
+  /* letter-spacing: -0.7px; */
+   line-height:1.8;
  
 }
 .section {
@@ -989,8 +1032,8 @@ p {
 }
 @media (max-height: 480px) {
  .navbar-nav {
-  max-height:200px;
-  overflow-y:auto
+  max-height:300px;
+  /* overflow-y:auto */
  }
 }
 @media (min-width: 200px) and (max-width: 768px) {

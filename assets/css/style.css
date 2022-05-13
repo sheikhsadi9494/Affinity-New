@@ -47,20 +47,29 @@ body {
 
 .navbar-light .navbar-nav .nav-link.active {
     text-align: center;
+    
 }
 
 .navbar-nav .nav-item .nav-link:focus {
     text-decoration: none;
-    background-color: #0A78879C;
     /* border-bottom: 2px solid rgb(0, 0, 0); */
-    color: #ffffff;
-    border-radius: 8px 8px 8px 8px;
+    color: #000288;
+        border-radius: 8px 8px 8px 8px;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
     text-decoration: none;
-    background-color: #0A78879C;
-    color: #ffffff;
+    /* background-color: #0A78879C; */
+    color: #000288;
+
+    /* border-bottom: 2px solid rgb(0, 0, 0); */
+    border-radius: 8px 8px 8px 8px;
+}
+
+.navbar-nav .nav-item .nav-link:active {
+    text-decoration: none;
+    /* background-color: #0A78879C; */
+    color: #000288;
 
     /* border-bottom: 2px solid rgb(0, 0, 0); */
     border-radius: 8px 8px 8px 8px;
@@ -79,9 +88,22 @@ body {
     margin-right: 15px;
 }
 
-.navbar-brand img {
-    height: 205px;
-    
+.navLogo {
+    width: 350px;
+    padding-top: 15px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 600px) {
+    .navbar-brand img {
+        width: 180px;
+    } 
+}
+
+@media screen and (min-width: 1000px) {
+    .navLogo {
+        width: 350px;
+        padding-top: 15px;
+    }
 }
 
 
@@ -139,8 +161,8 @@ body {
     background: #155183;
     color: white;
     width: auto;
-    height: 50px;
-    padding-top: 11px;
+    height: 42px;
+    /* padding-top: 11px; */
 }
 
 .qute:focus,
@@ -180,7 +202,7 @@ body {
 
 /* Main */
 
-.swiper {
+/* .swiper {
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -191,7 +213,6 @@ body {
     font-size: 18px;
     background: #fff;
 
-    /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -220,7 +241,50 @@ body {
       overflow: hidden;
       max-height: 500px;
   }
-  
+   */
+
+
+   .swiper {
+    width: 100%;
+    height: 100%;
+    background: #000;
+  }
+
+  .swiper-slide {
+    font-size: 100px;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 60px;
+
+    /* justify-content: flex-end; */
+  }
+
+  .parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .swiper-slide .title {
+    font-size: 41px;
+    font-weight: 300;
+  }
+
+  .swiper-slide .subtitle {
+    font-size: 21px;
+  }
+
+  /* .swiper-slide .text {
+    font-size: 14px;
+    max-width: 400px;
+    line-height: 1.3;
+  } */
 
   
 
@@ -343,8 +407,8 @@ i {
 }
 
 .skygoal-logo img {
-    height: 40px;
-    width: auto;
+    height: 183px;
+    width: 203px;
 }
 
 .footer-goal {
@@ -356,6 +420,9 @@ i {
 
 .footer-goal p {
     padding: 10px;
+    font-size: 18px;
+text-align: justify;
+margin-top: -66px;
 }
 
 .footer-goal-q {
@@ -482,7 +549,7 @@ i {
 @media (min-width: 992px) and (max-width: 1200px) {
     /* heigth of navbar */
     #navbar_top {
-        height: 80px;
+        height: 100px;
     }
     .navbar-nav {
         position: relative;
@@ -508,21 +575,21 @@ i {
     .hero .left-side .intro-text {
         font-size: 3.1rem;
     }
-    .navbar-nav {
+    /* .navbar-nav {
         position: relative;
         left: 10%;
-    }
+    } */
 }
 
 @media (min-width: 1441px) and (max-width: 2561px) {
     /* heigth of navbar */
     #navbar_top {
-        height: 80px;
+        height: 100px;
     }
-    .navbar-nav {
+    /* .navbar-nav {
         position: relative;
         left: 10%;
-    }
+    } */
     .hero .left-side .intro-text {
         font-size: 3.2rem;
     }

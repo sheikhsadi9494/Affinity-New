@@ -1,33 +1,53 @@
-<nav id="navbar_top" class="navbar shadow navbar-expand-lg navbar-light">
-    <div class="container custom-nav">
+<style>
+    .dropdown-toggle::after {
+        content: none;
+    }
+</style>
+<nav id="navbar_top" class="navbar py-lg-5 shadow navbar-expand-lg navbar-light">
+    <div class="container-fluid custom-nav align-items-center">
         <a class="navbar-brand" href="/index.html">
-            <img src="./assets/img/Affinity-Logo.svg" alt="logo" /></a>
+            <img class="img-fluid navLogo" src="./assets/img/Aifinity Logo 3.png" alt="logo" /></a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="menu navbar-nav me-auto mr-2 mb-2 mb-lg-0">
+            <ul class="menu navbar-nav me-auto mb-2 mx-auto mb-lg-0">
                 <li class="nav-item active">
-                    <a class="nav-link active" aria-current="page" href="./index.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+                    <a class="nav-link active" aria-current="page" href="./index.html" tabindex="-1" style="text-align: justify;">
+                        <div style="display: flex; flex-direction: column;">
+                            <div><b>Home</b></div><div style="margin-top: -6px; color: rgb(238, 143, 0);"><i>All<span style="visibility: hidden;">_</span>starts<span style="visibility: hidden;">_</span>here</i></div>
+                        </div>
+                    </a>
                 </li>
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link active" href="./about-us.html" tabindex="-1" aria-disabled="true">
-            About Us
-          </a>
+                    <a class="nav-link active" href="./about-us.html" tabindex="-1" aria-disabled="true" style="text-align: justify;">
+                        <div style="display: flex; flex-direction: column;">
+                            <div><b>Discover</b></div><div style="margin-top: -6px;  color: rgb(238, 143, 0);"><i>Affinity</i></div>
+                        </div>
+                    </a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link active" href="./servicesCards.html" tabindex="-1" aria-disabled="true">
-             Services
-          </a>
+                    <a class="nav-link active" href="./servicesCards.html" tabindex="-1" aria-disabled="true" style="text-align: justify;">
+                        <div style="display: flex; flex-direction: column;">
+                            <div><b>Engage</b></div><div style="margin-top: -6px;  color: rgb(238, 143, 0);"><i>Our<span style="visibility: hidden;">_</span>Services</i></div>
+                        </div>
+                    </a>
 
                 </li>
 
                 <!-- For companies -->
 
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Tools</a>
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"  style="text-align: justify;">
+                        
+                        <div style="display: flex; flex-direction: column;">
+                            <div><b>Resources</b></div>
+                            <div style="margin-top: -6px;  color: rgb(238, 143, 0);"><i>Tools<span style="visibility: hidden;">_</span>for<span style="visibility: hidden;">_</span>you</i></div>
+                        </div>
+                        
+                    </a>
                 
                     <ul class="dropdown-menu dropdown-menu-light dropdown-mobile" aria-labelledby="navbarDarkDropdownMenuLink">
                         <div class="institutes-dropdown">
@@ -71,15 +91,27 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active" href="./careers.html" tabindex="-1" aria-disabled="true">Careers</a>
+                    <a class="nav-link active" href="./careersNew.html" tabindex="-1" aria-disabled="true" style="text-align: justify;">
+                        <div style="display: flex; flex-direction: column;">
+                            <div><b>Careers</b></div><div style="margin-top: -5px;  color: rgb(238, 143, 0);"><i>At<span style="visibility: hidden;">_</span>Affinity</i></div>
+                        </div>
+                    </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active" href="https://blog.affinitytrans.com/" tabindex="-1" aria-disabled="true">Blog</a>
+                    <a class="nav-link active" href="https://blog.affinitytrans.com/" target="_blank" tabindex="-1" aria-disabled="true" style="text-align: justify;">
+                        <div style="display: flex; flex-direction: column;">
+                            <div><b>Blog</b></div><div style="margin-top: -5px;  color: rgb(238, 143, 0);"><i>Enlightening</i></div>
+                        </div>
+                    </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link active" href="./contact-us.html" tabindex="-1" aria-disabled="true">Contact Us</a>
+                    <a class="nav-link active" href="./contact-us.html" tabindex="-1" aria-disabled="true" style="text-align: justify;">
+                        <div style="display: flex; flex-direction: column;">
+                            <div><b>Contact</b></div><div style="margin-top: -5px;  color: rgb(238, 143, 0);"><i>Get<span style="visibility: hidden;">_</span>in<span style="visibility: hidden;">_</span>touch</i></div>
+                        </div>
+                    </a>
                 </li>
 
       </ul>
@@ -89,7 +121,7 @@
     
                     <br>
 
-                    <center><a class="nav-link btn btn-large qute" style="text-align: center;" href="/form.html">Get Instant Quote</a> </center>
+                    <center><a class="nav-link btn btn-large qute" style="text-align: center;" href="/form.html">Get<span style="visibility: hidden;">_</span>Instant<span style="visibility: hidden;">_</span>Quote</a> </center>
 
         </div>
     </div>
