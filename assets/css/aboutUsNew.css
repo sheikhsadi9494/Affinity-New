@@ -1,0 +1,11 @@
+.bannerImg {
+ background: url('../img/Rectangle\ 2042.png');
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 600px;
+}
+
+.imgText {
+    position: relative;
+    top: -60px;
+}
