@@ -34,22 +34,26 @@
             
         });
     </script>
+
+
 </head>
 <body>
     <div id="menu"></div>
-    <section style="font-family: poppins" class="" id="section1">
-        <div class="row">
-            <div class="col-lg-8 col-md-8 col-sm-8 p-5" id="col1">
-                <h1><b>UNIT CONVERTOR</b></h1>
-                <p>Select the system you want to Convert <span id="text1"><b> From </b></span> to <span id="text1"><b>To</b></span></p>
-
-                <div class="form-check px-5">
+    <div class="mt-3 pb-3">
+        <h1 class="text-center fw-bold"><b>UNIT CONVERTOR</b></h1>
+        <p class="text-center">Select the system you want to Convert <span id="text1"><b> From </b></span> to <span id="text1"><b>To</b></span></p>
+    </div>
+   
+    <section style="font-family: poppins" class="container" id="section1">
+        <div class="row shadow-lg align-items-center pt-5 pb-4 px-3 mx-auto" style="border-radius: 20px;margin-bottom: 80px; width: 99%;">
+            <div class="col-lg-8 col-md-8 col-sm-12" id="col1">
+                <div class="form-check">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
                     <label class="form-check-label" for="flexRadioDefault1">
                         Metric System to Imerial System
                     </label>
                </div>
-                <div class="form-check px-5 pt-3">
+                <div class="form-checkpt-3">
                     <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                     <label class="form-check-label" for="flexRadioDefault2">
                         Imperial System to Metric System
@@ -124,14 +128,14 @@
                  
                  <div class="row d-flex justify-content-between" >
                     <div class="col-lg-4 col-md-4 col-sm-6  px -5" id="last">
-                        <div class="form-check box">
+                        <div class="form-check box pb-3">
                             <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault1" checked>
                             <label class="form-check-label" for="flexRadioDefault2">
                                 Close on Replace
                             </label>
                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6" id="last">
+                    <div class="col-lg-4 col-md-4 col-sm-6 pb-3" id="last">
                         <div class="d-inline box"><button type="button" class="btn replace px-5">Replace</button></div>
                     </div>
                     <div class="col-lg-4 col-md-4 col-sm-6" id="last">
@@ -142,11 +146,10 @@
                 
                
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4" id="col2">
-                <img class="img-fluid .d-sm-none .d-md-block" src="./assets/img/UNIT CONVERTOR.png">
-                <div class="mx-auto" id="output">
-                    <h1 class="py-5 mx-auto text-center text1 "><b>OUTCOME</b></h1>
-                    <h1 class="py-5 mx-auto text-center text2"><b>28,000</b></h1>
+            <div class="col-lg-4 col-md-4 mt-5 text-center">
+                <div class="bg-primary mx-5 py-4" style="border-radius: 20px;">
+                    <h2 style="color: white;" class="fs-3 fw-bolder pb-lg-3">OUTCOME</h2>
+                    <h2 style="color: white;" class="fs-4">28,000</h2>
                 </div>
             </div>
             </div>
