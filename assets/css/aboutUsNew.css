@@ -9,3 +9,17 @@
     position: relative;
     top: -60px;
 }
+.bannerImgCareer {
+ background:  url('../img/image\ 17.png');
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 600px;
+}
+
+
+
+
+.imgText {
+    position: relative;
+    top: -60px;
+}
