@@ -54,14 +54,14 @@
     background-color: #FFC727;
 }
 
-#inputGroupSelect01 {
+/* #inputGroupSelect01 {
     width: 15rem;
     height: 2.5rem;
-}
+} */
 
-.input-group {
+/* .input-group {
     border-radius: 10px;
-}
+} */
 
 #tool .col {
     margin: auto;
@@ -94,25 +94,25 @@
     padding-left: 0rem;
 }
 
-input {
+/* input {
     width: 15rem;
     height: 2.5rem;
-}
+} */
 .option {
     font-size: small;
     text-align: center;
 }
 
-#inputGroupSelect02 {
+/* #inputGroupSelect02 {
     width: 5rem;
     height: 2.5rem;
     padding-left: 0%;
-}
+} */
 
-#inputGroupSelect03, #inputGroupSelect04 {
+/* #inputGroupSelect03, #inputGroupSelect04 {
     width: 7rem;
     height: 2.5rem;
-}
+} */
 
 #tab2 #ptitle {
     border-bottom:  2px solid #FFFFFF;

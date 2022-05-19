@@ -736,16 +736,16 @@ button:not(:disabled) {
  border-color:#f89d36 !important;
  color:#fff
 }
-.custom-control-input:checked ~ .custom-control-label:before {
+/* .custom-control-input:checked ~ .custom-control-label:before {
  color:#fff;
  border-color:#f89d36;
  background-color:#f89d36
-}
-.custom-control-input:focus ~ .custom-control-label::before,
+} */
+/* .custom-control-input:focus ~ .custom-control-label::before,
 .form-control:focus {
  box-shadow:none;
  border-color:#f89d36
-}
+} */
 .custom-control-label {
  cursor:pointer
 }
@@ -1618,7 +1618,7 @@ p {
 .blog-post .content a:hover {
  color:#f89d36 !important
 }
-.form-control {
+/* .form-control {
  box-shadow:none;
  border:1px solid #dee2e6;
  height:40px;
@@ -1626,17 +1626,17 @@ p {
  border-radius:3px;
  transition:all 0.5s ease;
  padding:6px 12px !important
-}
-.form-control:focus,
+} */
+/* .form-control:focus,
 .form-control.active {
  border-color:#f89d36
-}
+} */
 textarea {
  height:120px !important
 }
-textarea.form-control {
+/* textarea.form-control {
  line-height:25px
-}
+} */
 .map {
  line-height:0
 }
@@ -1680,19 +1680,19 @@ textarea.form-control {
 #success_page p {
  margin-bottom:0 !important
 }
-.subscribe .form-control {
+/* .subscribe .form-control {
  background-color:transparent;
  height:40px;
  color:#fafafb;
  font-size:14px
-}
-.subscribe .form-control::placeholder {
+} */
+/* .subscribe .form-control::placeholder {
  color:#fafafb
-}
-.subscribe .form-control:focus {
+} */
+/* .subscribe .form-control:focus {
  box-shadow:none;
  border-color:#f89d36
-}
+} */
 .footer {
  position:relative
 }

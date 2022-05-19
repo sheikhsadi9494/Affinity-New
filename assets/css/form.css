@@ -58,7 +58,7 @@
     display: none;
   }
   
-  .form #msform input,
+  /* .form #msform input,
   .form #msform textarea {
     padding: 8px 15px 8px 15px;
     border: 1px solid #ccc;
@@ -72,15 +72,15 @@
     background-color: #fff;
     font-size: 16px;
     letter-spacing: 1px
-  }
+  } */
   
   .form #msform input:focus,
   .form #msform textarea:focus {
-    -moz-box-shadow: none !important;
+    /* -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
     border: 1px solid #3D80D9;
-    outline-width: 0
+    outline-width: 0 */
   }
   
   .form #msform .action-button {
@@ -208,11 +208,11 @@
     text-align: right
   }
   
-  .fieldlabels {
+  /* .fieldlabels {
     color: #000;
     text-align: left;
     font-weight: bold;
-  }
+  } */
   
   #progressbar {
     margin-bottom: 30px;
