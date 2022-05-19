@@ -4,13 +4,19 @@
  background-size: cover;
  height: 600px;
 }
+.bannerImgServices {
+ background: url('../img/image\ 19.png');
+ background-repeat: no-repeat;
+ background-size: cover;
+ height: 600px;
+}
 
 .imgText {
     position: relative;
     top: -60px;
 }
 .bannerImgCareer {
- background:  url('../img/image\ 17.png');
+ background:  url('../img/image\ 17\ \(1\).png');
  background-repeat: no-repeat;
  background-size: cover;
  height: 600px;
