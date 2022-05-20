@@ -27,6 +27,9 @@
     <link rel="stylesheet" href="/assets/css/index.css"/>
     <link rel="stylesheet" href="/assets/css/single.css"/>
     <link rel="stylesheet" href="/assets/css/ty.css"/>
+    <link rel="stylesheet" href="/assets/css/style.css"/>
+    <link rel="stylesheet" href="./assets/css/aboutUsNew.css">
+
 
     <!-- font Awesome -->
     <script src="https://kit.fontawesome.com/efd71d3ed7.js" crossorigin="anonymous"></script>
@@ -44,23 +47,49 @@
         }
 
         ul {
-  list-style: none;
-}
+            list-style: none;
+        }
 
-ul li:before {
-  content: '✓';
-}
+        .container ul li:before {
+            content: '✓';
+        }
     </style>
+
+    <!-- header footer jqurey -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+   $(function() {
+       $("#menu").load("header.html");
+       $("#footer").load("footer.html");    
+   });
+</script>
 
 
 </head>
 
 <body>
+    <div id="menu"></div>
+
+    <main style="font-family: poppins;">
+      <!-- banner  -->
+      <section style="overflow-x: hidden;">
+          <div style="color: white;" class="row justify-content-center ocean-freight align-items-center">
+              <div class="col-md-7 col-sm-12 text-center px-3">
+                  <h1 class="fw-bold pb-4">
+                    Ocean Freight Services
+                  </h1>
+                  <h3 class="py-lg-2">
+                    Offering sea freight-forwarding services (LCL & FCL) from & to
+                    Through key gateway ports Mumbai, Chennai, Kolkata - India
+                  </h3>
+              </div>
+          </div>
+      </section>
 
 
         <section>
               
-            <h1 class="fw-bold" style="color: #155183; text-align: center;">Ocean Freight Services</h1>
+            <!-- <h1 class="fw-bold" style="color: #155183; text-align: center;">Ocean Freight Services</h1>
 
 
                     <hr style="color: #155183; height: 2px;">
@@ -72,9 +101,9 @@ ul li:before {
                     </p> </center>
                     </div>
 
-                    <hr style="color: #155183; height: 2px;">
+                    <hr style="color: #155183; height: 2px;"> -->
                      
-                    <div class="container">
+                    <div class="container pt-5">
                         <p style="font-size: 18px; color: black; text-align: justify;">
                             As a licensed Non-Vessel Operating Common Carrier (NVOCC) for both Full Container Load (FCL) and Less Than Container Load (LCL) shipments, our ocean freight forwarding experience allow us to create the best shipping options for our clients, ensuring their cargo is managed cost-efficiently.<br>
                             Affinity Trans Logistics through its extensive network of agents across the world provide reliable and efficient NVOCC (non-vessel-operating common carrier) services for customers who look to export / import products from / to Indian ports.<br>
@@ -131,6 +160,10 @@ ul li:before {
                     </div>
                 
         </section>
+         <!-- footer -->
+
+    <div id="footer"></div>
+    </main>
        
 
 
@@ -144,8 +177,6 @@ ul li:before {
        $(function() {
             $('[data-toggle="tooltip"]').tooltip()
         })
-
-      
     </script>
 
     <!-- Initialize Swiper -->
