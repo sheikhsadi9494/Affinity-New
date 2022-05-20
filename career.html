@@ -217,20 +217,30 @@
                                   </select>
                             </div>
                             <div class="col-md-4 col-sm-12 ">
-                                <label for="country" class="form-label">Country/Region:</label>
-
-                                <select class="form-control" id="country" name="country" required>
-                                    <option hidden disabled selected>Select Country *</option>
-                                    </select>
+                                <div class="form-group">
+                                    <label class="fieldlabels mt-2">Country:</label>
+                                    <select class="form-control" id="country" name="country">
+                                        <option disabled value="" selected="selected">Select Country *</option>
+                                </select>
+                                </div>
                             </div>
 
                             <div class="col-md-4 col-sm-12 ">
-                                <label for="salutation" class="form-label">State:</label>
-                                <input type="text" class="form-control" aria-label="">
+                                <div class="form-group">
+                                    <label class="fieldlabels mt-2">State:</label>
+                                    <select class="form-control" id="State" name="State">
+                                        <option disabled value="" selected="selected">Please select Country first *</option>
+                            </select>
+                                </div>
                             </div>
                             <div class="col-md-4 col-sm-12 ">
-                                <label for="salutation" class="form-label">City:</label>
-                                <input type="text" class="form-control" aria-label="">
+                                <div class="form-group">
+                                    <label class="fieldlabels mt-2">City:</label>
+                                    <select class="form-control" id="City" name="City">
+                                        <option disabled value="" selected="selected">Please select State first *</option>
+                                       
+                                      </select>
+                                </div>
                             </div>
                             <div class="col-md-4 col-sm-12 ">
                                 <div class="">
@@ -238,6 +248,7 @@
                                     <input type="input" class="form-control" id="Area">
                                   </div>
                             </div>
+
                             <div class="col-md-4 col-sm-12 ">
                                 <div class="">
                                     <label for="zip" class="form-label">Zip Code:</label>
@@ -247,15 +258,12 @@
 
 
                             
-            
-                            <div class="row">
-                                <div class="col-md-4 col-sm-12 pt-3">
+                                <div class="col-md-4 col-sm-12">
                                     <div class="mb-3">
                                         <label for="formFile" class="form-label">Upload Resume</label>
                                         <input class="form-control" type="file" id="formFile">
                                     </div>
                                 </div>
-                            </div>
                             
             
             
