@@ -86,7 +86,7 @@
         <div class="container-fluid">
             <div class="row justify-content-center" style="flex-direction: row;">
                 <div class="col-11 col-sm-9 col-md-7 col-lg-12 col-xl-8 text-center p-0 mt-3 mb-2">
-                    <div class="px-0 pt-4 pb-0 mt-3 mb-3">
+                    <div class="px-0  pb-0 mt-3 mb-3">
 
                         <form id="msform" name="getquote" method="post" autocomplete="on" >
                             <!-- progressbar -->
@@ -100,15 +100,15 @@
                                 <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
                             </div> <br>
                             <!-- fieldsets -->
-                            <fieldset>
-
+                             <fieldset class="shadow-lg mt-3" style="border-radius: 20px;">
+                                    
                                 <div class="form-card">
-
+                                    <h4 class="fw-bold mb-3">Conact Information</h4>
 
                                     <div class="row">
 
 
-                                        <div class="form-group col-md-4">
+                                        <div class="form-group col-md-4 col-sm-12">
                                             <label class="fieldlabels">Given Name</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Enter Your FirstName"></i>
                                             <input type="text" class="form-control" name="firstname" placeholder="First Name">
                                         </div>
@@ -116,7 +116,7 @@
 
 
 
-                                        <div class="form-group col-md-4">
+                                        <div class="form-group col-md-4 col-sm-12">
                                             <label class="fieldlabels">Surname</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Enter Your LastName"></i>
                                             <input type="text" class="form-control" id="lastName" name="lastName" placeholder="lastName">
                                         </div>
@@ -124,7 +124,7 @@
 
 
 
-                                        <div class="form-group col-12">
+                                        <div class="form-group col-md-4 col-sm-12">
                                             <label class="fieldlabels">E-mail Id</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Enter Your Email Ex.abc@gmail.com"></i>
                                             <input type="email" class="form-control" id="emailid" name="emailid" placeholder="abc@gmail.com">
                                         </div>
@@ -134,7 +134,7 @@
 
 
 
-                                        <div class="form-group col-12">
+                                        <div class="form-group col-md-4 col-sm-12">
                                             <label class="fieldlabels">Company Name</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Enter Company Name"></i>
                                             <input type="text" class="form-control" id="companyname" name="companyname" placeholder="Company Name">
                                         </div>
@@ -143,7 +143,7 @@
 
 
 
-                                        <div class="form-group col-12">
+                                        <div class="form-group col-md-4 col-sm-12">
                                             <label class="fieldlabels">Street</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Enter Street Name"></i>
                                             <input type="text" class="form-control" id="address" name="address" placeholder="Street Name">
                                         </div>
@@ -153,7 +153,7 @@
 
 
 
-                                        <div class="form-group col-6">
+                                        <div class="form-group col-md-4 col-sm-12">
                                             <label class="fieldlabels">Whatsapp *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Enter Your Whatsapp number"></i>
                                             <input type="tel" class="form-control" id="Whatsapp" name="Whatsapp" placeholder="+888-39849389">
                                         </div>
@@ -161,7 +161,7 @@
 
 
 
-                                        <div class="form-group col-6">
+                                        <div class="form-group col-md-4 col-sm-12">
                                             <label class="fieldlabels">Customer Type *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="What describes your Business"></i>
                                             <select class="form-select" id="salutation" name="salution" aria-label="Default select example">
                                                 <option hidden disabled selected>Select</option>
@@ -174,7 +174,7 @@
 
 
 
-                                        <div class="form-group col-12">
+                                        <div class="form-group col-md-4 col-sm-12">
                                             <label class="fieldlabels">Country *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Select Your Country"></i>
                                             <select class="form-control" id="country" name="country">
                                                 <option disabled value="" selected="selected">Select Country *</option>
@@ -186,7 +186,7 @@
 
 
 
-                                        <div class="form-group col-12">
+                                        <div class="form-group col-md-4 col-sm-12">
                                             <label class="fieldlabels">State *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Select Your state"></i>
                                             <select class="form-control" id="State" name="State">
                                                 <option disabled value="" selected="selected">Please select Country first *</option>
@@ -201,7 +201,7 @@
 
 
 
-                                        <div class="form-group col-12">
+                                        <div class="form-group col-md-4 col-sm-12">
                                             <label class="fieldlabels">City *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Select Your City"></i>
                                             <select class="form-control" id="City" name="City">
                                                 <option disabled value="" selected="selected">Please select State first *</option>
@@ -213,7 +213,7 @@
 
 
 
-                                        <div class="form-group col-12 pincode">
+                                        <div class="form-group col-md-4 col-sm-12 pincode">
                                             <label class="fieldlabels">ZIP Code *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Enter Your Zipcode"></i>
                                             <input type="number" class="form-control" id="Zipcode" name="Zipcode" placeholder="Zipcode"  min="0" oninput="this.value = Math.abs(this.value)">
                                         </div>
@@ -227,17 +227,18 @@
     
 
                                 <input type="button" name="next" class="next action-button border border-0" value="Next" />
-                            </fieldset>
 
-                            <fieldset>
+                            </fieldset> 
+
+                             <fieldset  class="shadow-lg mt-3"  style="border-radius: 20px;">
 
                                 <div class="form-card">
-
+                                    <h4 class="fw-bold mb-3">Cargo Information</h4>
 
                                     <div class="row">
 
 
-                                        <div class="form-group col-6">
+                                        <div class="form-group col-md-4 col-sm-12">
 
 
                                             <label class="fieldlabels">Commodity Nature*</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Select Your Country"></i>
@@ -255,7 +256,7 @@
 
 
 
-                                        <div class="form-group col-6">
+                                        <div class="form-group col-md-4 col-sm-12">
                                             <label class="fieldlabels">Commodity *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Customer Type"></i>
                                             <input type="text" class="form-control" id="commodity" name="commodity" placeholder="Commodity*">
                                         </div>
@@ -263,7 +264,7 @@
 
 
 
-                                        <div class="form-group col-6">
+                                        <div class="form-group col-md-4 col-sm-12">
                                             <label class="fieldlabels">HSN Code *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Enter Your Whatsapp number"></i>
                                             <input type="text" class="form-control" id="hsncode" name="hsncode" placeholder="188-abc-3432">
                                         </div>
@@ -271,7 +272,7 @@
 
 
 
-                                        <div class="form-group col-6">
+                                        <div class="form-group col-md-4 col-sm-12">
                                             <label class="fieldlabels">UN Number *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Customer Type"></i>
                                             <input type="number" class="form-control" id="unnumber" name="unnumber" placeholder="UN Number*" min="0" oninput="this.value = Math.abs(this.value)">
                                         </div>
@@ -279,7 +280,7 @@
 
 
 
-                                        <div class="form-group col-12">
+                                        <div class="form-group col-md-4 col-sm-12">
                                             <label class="fieldlabels">Estimated Total Weight(in Kilos) *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Enter Company Name"></i>
                                             <input type="text" class="form-control" id="Estimated_Total_Weight" name="Estimated_Total_Weight" placeholder="Estimated Total Weight(in Kilos) *">
                                         </div>
@@ -288,7 +289,7 @@
 
 
 
-                                        <div class="form-group col-12">
+                                        <div class="form-group col-md-4 col-sm-12">
                                             <label class="fieldlabels">Estimated Volumes (Cbm) *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Enter Company Name"></i>
                                             <input type="text" class="form-control" id="Estimated_Volumes" name="Estimated_Volumes" placeholder="Estimated Volumes (Cbm)*">
                                         </div>
@@ -297,7 +298,7 @@
 
 
 
-                                        <div class="form-group col-12">
+                                        <div class="form-group col-md-4 col-sm-12">
                                             <label class="fieldlabels">Estimated Date of shipment *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Enter Street Name"></i>
                                             <input type="date" class="form-control" id="Estimated_Date_Of_Ship" name="Estimated_Date_Of_Ship" placeholder="Estimated Date of hipment*">
                                         </div>
@@ -305,7 +306,7 @@
 
 
 
-                                        <div class="form-group col-12 pincode">
+                                        <div class="form-group col-md-4 col-sm-12 pincode">
                                             <label class="fieldlabels">Remarks *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Enter Your Remarks"></i>
                                             <input type="text" class="form-control" id="remarks" name="remarks" placeholder="remarks">
                                         </div>
@@ -324,20 +325,20 @@
                                 <input type="button" name="next" class="next action-button border border-0" value="Next" />
 
 
-                            </fieldset>
+                            </fieldset> 
 
 
 
-                            <fieldset>
+                             <fieldset  class="shadow-lg mt-3" style="border-radius: 20px;">
 
 
                                     <div class="form-card">
-
+                                        <h4 class="fw-bold mb-3">Transport Information</h4>
 
 
                                         <div class="row">
     
-                                            <div class="form-group col-12">
+                                            <div class="form-group col-md-4 col-sm-12">
                                                 <label class="fieldlabels">Shipping Mode</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Select Your Country"></i>
                                                 <select class="form-control" id="shippingmode" name="shippingmode">
                                                             <option disabled selected value="">Air/Sea *</option>
@@ -347,7 +348,7 @@
     
                                             </div>
                                             
-                                            <div class="form-group col-12">
+                                            <div class="form-group col-md-4 col-sm-12">
                                                 <label class="fieldlabels">Shipping Type </label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Select Your Country"></i>
                                                 <select class="form-control" id="shippingtype" name="shippingtype">
                                                     <option disabled value="" selected="selected">FCL/LCL*</option>
@@ -358,7 +359,7 @@
                                             </select>
                                             </div>
                                             
-                                            <div class="form-group col-6">
+                                            <div class="form-group col-md-4 col-sm-12">
                                                             <label class="fieldlabels">Container Type*</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Put the containers type"></i>
                                                             <select class="form-control" id="container_type" name="container_type">
                                             <option disabled selected value="">Container Type* ↓</option>
@@ -382,7 +383,7 @@
     
                                                     
     
-                                                        <div class="form-group col-6">
+                                                        <div class="form-group col-md-4 col-sm-12">
                                                             <label class="fieldlabels">Container Size*</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Put your containers size"></i>
                                                             <select class="form-control" id="container_size" name="container_Size">
                                                                 <option disabled value="" selected="selected">Container Size*</option>
@@ -399,7 +400,7 @@
     
                                                     
     
-                                                        <div class="form-group col-6">
+                                                        <div class="form-group col-md-4 col-sm-12">
                                                             <label class="fieldlabels">Quantity *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Put the Quantity of containers"></i>
                                                             <input type="number" class="form-control" id="Quantity" name="Quantity" placeholder="Quantity*" min="0" oninput="this.value = Math.abs(this.value)">
 
@@ -411,7 +412,7 @@
     
                                                         
     
-                                                        <div class="form-group col-6">
+                                                        <div class="form-group col-md-4 col-sm-12">
                                                             <label class="fieldlabels">Country Of Orgin *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Country/Orgin"></i>
                                                             <select class="form-control" id="country_of_origin" name="country_of_origin">
                                                                 <option disabled value="" selected="selected">Select The Country</option>
@@ -669,21 +670,21 @@
     
                                                         
     
-                                                        <div class="form-group col-6">
+                                                        <div class="form-group col-md-4 col-sm-12">
                                                             <label class="fieldlabels">Place of Receipt *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Place Of Receipt"></i>
                                                             <input type="text" class="form-control" id="place_of_receipt" name="place_of_receipt" placeholder=" Place Of Receipt">
                                                         </div>
                                                         
     
                                                         
-                                                        <div class="form-group col-6">
+                                                        <div class="form-group col-md-4 col-sm-12">
                                                             <label class="fieldlabels">Port of Loading*</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Port of loading"></i>
                                                             <input type="text" class="form-control" id="port_of_loading" name="port_of_loading" placeholder="Port of Loading*">
                                                         </div>
                                                     
     
     
-                                                        <div class="form-group col-6">
+                                                        <div class="form-group col-md-4 col-sm-12">
                                                             <label class="fieldlabels">Country of Destination *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="country of dstination"></i>
                                                             <select class="form-control" id="country_of_destination" name="country_of_destination">
                                                                 <option disabled value="" selected="selected">Select The Country</option>
@@ -941,13 +942,13 @@
     
                                                         
     
-                                                        <div class="form-group col-6">
+                                                        <div class="form-group col-md-4 col-sm-12">
                                                             <label class="fieldlabels">Port Of Discharge *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Port Of Discharge"></i>
                                                             <input type="text" class="form-control" id="port_of_discharge" name="port_of_discharge" placeholder="Port Of Discharge*">
                                                         </div>
     
     
-                                                        <div class="form-group col-6">
+                                                        <div class="form-group col-md-4 col-sm-12">
                                                             <label class="fieldlabels">Place of Delivery *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Place Of Delivery"></i>
                                                             <select class="form-control" id="place_of_delivery" name="place_of_delivery">
                                                                 <option disabled value="" selected="selected">Select The Country</option>
@@ -1202,7 +1203,7 @@
                                                     </div>
     
     
-                                                        <div class=" form-group col-6">
+                                                        <div class=" form-group col-md-4 col-sm-12">
                                                             <label class="fieldlabels">Freight Terms*</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Freight Terms"></i>
                                                             <select class="form-control" id="freignt" name="freight">
                                                 <option disabled selected="selected" value="">Freignt Terms (Incoterm)* ↓</option>
@@ -1226,7 +1227,7 @@
                                                         </div>
 
 
-                                                        <div class="form-group col-6">
+                                                        <div class="form-groupcol-md-4 col-sm-12">
 
 
                                                             <input class="form-control" id="times" name="time" type="hidden">
@@ -1248,13 +1249,11 @@
 
                                 <input type="submit" name="submit" class="next action-button border border-0" value="Submit" /> 
 
-                                <!-- <button class="send-btn" type="submit" name="submit">Send</button> -->
+
+                            </fieldset> 
 
 
-                            </fieldset>
-
-
-                            <fieldset>
+                            <fieldset  class="shadow-lg mt-3" style="border-radius: 20px;">
                                 <div class="form-card">
                                   <div class="row">
                                     <div class="col-12 text-center">
