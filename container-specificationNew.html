@@ -56,7 +56,7 @@
                 <table class="table table-bordered" style="border: 3px solid #155183; height: 500px;">
                     <thead>
                       <tr>
-                        <th style="border: 3px solid #155183;" scope="col" class="col-2 text-center fs-5 text-danger">Container Types</th>
+                        <th style="border: 3px solid #155183;" scope="col" class="col-3 text-center fs-5 text-danger">Container Types</th>
                         <th style="border: 3px solid #155183;" scope="col" class="col-2 text-center fs-5 text-danger">Container Sizes</th>
                         <th style="border: 3px solid #155183;" scope="col" class="col-7 text-center fs-5 text-danger">Container Specifications</th>
                       </tr>
@@ -84,200 +84,708 @@
                         <td style="border: 3px solid #155183;" rowspan="3">
                           <div class="tab-content" id="v-pills-tabContent">
                             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" tabindex="0">
-                              <h5 class="fw-bold">20 Ft</h5>
-                              <h5 class="fw-bold">40 Ft</h5>
-                              <h5 class="fw-bold">40HC Ft</h5>
-                              <h5 class="fw-bold">45 Ft</h5>
+
+
+                              <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <button class="nav-link btn btn-light fs-6 fw-semibold active" id="v-pills-20ft-tab" data-bs-toggle="pill" data-bs-target="#v-pills-20ft" type="button" role="tab" aria-controls="v-pills-20ft" aria-selected="true">20 Ft</button>
+                                <button class="nav-link btn btn-light fs-6 fw-semibold" id="v-pills-40ft-tab" data-bs-toggle="pill" data-bs-target="#v-pills-40ft" type="button" role="tab" aria-controls="v-pills-40ft" aria-selected="false">40 Ft</button>
+                                <button class="nav-link btn btn-light fs-6 fw-semibold" id="v-pills-40hcft-tab" data-bs-toggle="pill" data-bs-target="#v-pills-40hcft" type="button" role="tab" aria-controls="v-pills-40hcft" aria-selected="false">40HC Ft</button>
+                                <button class="nav-link btn btn-light fs-6 fw-semibold" id="v-pills-45ft-tab" data-bs-toggle="pill" data-bs-target="#v-pills-45ft" type="button" role="tab" aria-controls="v-pills-45ft" aria-selected="false">45 Ft</button>
+                              </div>
+
+
                             </div>
                             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabindex="0">
-                              <h5 class="fw-bold">20 Ft</h5>
-                              <h5 class="fw-bold">40 Ft</h5>
+                              <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <button class="nav-link btn btn-light fs-6 fw-semibold active" id="v-pills-20ft-tab" data-bs-toggle="pill" data-bs-target="#v-pills-20ft" type="button" role="tab" aria-controls="v-pills-20ft" aria-selected="true">20 Ft</button>
+                                <button class="nav-link btn btn-light fs-6 fw-semibold" id="v-pills-40ft-tab" data-bs-toggle="pill" data-bs-target="#v-pills-40ft" type="button" role="tab" aria-controls="v-pills-40ft" aria-selected="false">40 Ft</button>
+                              </div>
                             </div>
                             <div class="tab-pane fade" id="v-pills-disabled" role="tabpanel" aria-labelledby="v-pills-disabled-tab" tabindex="0">
-                              <h5 class="fw-bold">20 Ft</h5>
-                              <h5 class="fw-bold">40 Ft</h5>
+                              <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <button class="nav-link btn btn-light fs-6 fw-semibold active" id="v-pills-20ft-tab" data-bs-toggle="pill" data-bs-target="#v-pills-20ft" type="button" role="tab" aria-controls="v-pills-20ft" aria-selected="true">20 Ft</button>
+                                <button class="nav-link btn btn-light fs-6 fw-semibold" id="v-pills-40ft-tab" data-bs-toggle="pill" data-bs-target="#v-pills-40ft" type="button" role="tab" aria-controls="v-pills-40ft" aria-selected="false">40 Ft</button>
+                              </div>
                             </div>
                             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab" tabindex="0">
-                              <h5 class="fw-bold">20 Ft</h5>
-                              <h5 class="fw-bold">40 Ft</h5>
+                              <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <button class="nav-link btn btn-light fs-6 fw-semibold active" id="v-pills-20ft-tab" data-bs-toggle="pill" data-bs-target="#v-pills-20ft" type="button" role="tab" aria-controls="v-pills-20ft" aria-selected="true">20 Ft</button>
+                                <button class="nav-link btn btn-light fs-6 fw-semibold" id="v-pills-40ft-tab" data-bs-toggle="pill" data-bs-target="#v-pills-40ft" type="button" role="tab" aria-controls="v-pills-40ft" aria-selected="false">40 Ft</button>
+                              </div>
                             </div>
                             <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab" tabindex="0">
-                              <h5 class="fw-bold">20 Ft</h5>
-                              <h5 class="fw-bold">40 Ft</h5>
+                             <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <button class="nav-link btn btn-light fs-6 fw-semibold active" id="v-pills-20ft-tab" data-bs-toggle="pill" data-bs-target="#v-pills-20ft" type="button" role="tab" aria-controls="v-pills-20ft" aria-selected="true">20Ft</button>
+                                <button class="nav-link btn btn-light fs-6 fw-semibold" id="v-pills-40ft-tab" data-bs-toggle="pill" data-bs-target="#v-pills-40ft" type="button" role="tab" aria-controls="v-pills-40ft" aria-selected="false">40Ft</button>
+                              </div>
                             </div>
                           </div>
                         </td>
-                        <td style="border: 3px solid #155183;" rowspan="3">
-                         <div>
-                             <div>
-                                 <div class="row">
-                                     <div class="col-lg-12 col-md-12 px-5">
-                                        <div class="border border-2 mb-5">
-                                            <nav class="">
-                                                <div class="nav nav-tabs justify-content-center border border-0" id="nav-tab" role="tablist">
-                                                  <button style="color: black;" class="px-4 fw-semibold nav-link border border-0 rounded-0 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">EXTERNAL</button>
-                                                  <button style="color: black;" class="px-4 fw-semibold nav-link border border-0 rounded-0" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">INTERNAL</button>
-                                                  <button style="color: black;" class="px-4 fw-semibold nav-link border border-0 rounded-0" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">VOLUME</button>
-                                                  <button style="color:  black;"class="px-4 fw-semibold nav-link border border-0 rounded-0" id="nav-page-tab" data-bs-toggle="tab" data-bs-target="#nav-page" type="button" role="tab" aria-controls="nav-page" aria-selected="false">WEIGHT</button>
-                                                </div>
-                                              </nav>
-                                              <div style="background-color: rgb(243, 237, 237);" class="tab-content" id="nav-tabContent">
-                                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-                                                    <div class="px-3 py-3">
-                                                        <table class="table border border-2 border-opacity-50">
-                                                            <thead>
-                                                              <tr style="background-color: #155183; color: white">
-                                                                <th class="fw-semibold" scope="col">External Dimension</th>
-                                                                <th class="fw-semibold" scope="col">mm</th>
-                                                                <th class="fw-semibold" scope="col">cm</th>
-                                                                <th class="fw-semibold" scope="col">mt</th>
-                                                                <th class="fw-semibold" scope="col">ft</th>
-                                                              </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                              <tr>
-                                                                <td class="fw-semibold">Length</td>
-                                                                <td >6058</td>
-                                                                <td >20'0"</td>
-                                                                <td>-</td>
-                                                                <td>-</td>
-                                                              </tr>
-                                                              <tr>
-                                                                <td class="fw-semibold">Width</td>
-                                                                <td>2438</td>
-                                                                <td>8'0"</td>
-                                                                <td>-</td>
-                                                                <td>-</td>
-                                                              </tr>
-                                                              <tr>
-                                                                <td class="fw-semibold">Heigth</td>
-                                                                <td>2591</td>
-                                                                <td>8'6"</td>
-                                                                <td>-</td>
-                                                                <td>-</td>
-                                                              </tr>
-                                                            </tbody>
-                                                          </table>
-                                                    </div>
-                                                    </div>
-                                                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
-                                                    <div class="px-3 py-3">
-                                                        <table class="table border border-2 border-opacity-50">
-                                                            <thead>
-                                                              <tr style="background-color: #155183; color: white">
-                                                                <th class="fw-semibold" scope="col">Internal Dimension</th>
-                                                                <th class="fw-semibold" scope="col">mm</th>
-                                                                <th class="fw-semibold" scope="col">cm</th>
-                                                                <th class="fw-semibold" scope="col">mt</th>
-                                                                <th class="fw-semibold" scope="col">ft</th>
-                                                              </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                              <tr>
-                                                                <td class="fw-semibold">Length</td>
-                                                                <td >5898</td>
-                                                                <td >19'3"</td>
-                                                                <td>-</td>
-                                                                <td>-</td>
-                                                              </tr>
-                                                              <tr>
-                                                                <td class="fw-semibold">Width</td>
-                                                                <td>2352</td>
-                                                                <td>7'8"</td>
-                                                                <td>-</td>
-                                                                <td>-</td>
-                                                              </tr>
-                                                              <tr>
-                                                                <td class="fw-semibold">Heigth</td>
-                                                                <td>2393</td>
-                                                                <td>7'8"</td>
-                                                                <td>-</td>
-                                                                <td>-</td>
-                                                              </tr>
-                                                            </tbody>
-                                                          </table>
-                                                    </div>
-                                                </div>
-                                                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
-                                                   <div class="px-3 py-3">
-                                                    <table class="table border border-2 border-opacity-50">
-                                                        <thead>
-                                                          <tr style="background-color: #155183; color: white">
-                                                            <th class="fw-semibold" scope="col">Volume Capacity</th>
-                                                            <th class="fw-semibold" scope="col">cbm</th>
-                                                            <th class="fw-semibold" scope="col">cft</th>
-                                                          </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                          <tr>
-                                                            <td class="fw-semibold">Volume</td>
-                                                            <td >33</td>
-                                                            <td >1173</td>
-                                                          </tr>
-    
-                                                        </tbody>
-                                                      </table>
-                                                   </div>
-                                                </div>
-                                                <div class="tab-pane fade" id="nav-page" role="tabpanel" aria-labelledby="nav-page-tab" tabindex="0">
-                                                    <div class="px-3 py-3">
-                                                        <table class="table border border-2 border-opacity-50">
-                                                            <thead>
-                                                              <tr style="background-color: #155183; color: white">
-                                                                <th class="fw-semibold" scope="col">Weight Capacity</th>
-                                                                <th class="fw-semibold" scope="col">Kgs</th>
-                                                                <th class="fw-semibold" scope="col">Lbs</th>
-                                                              </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                              <tr>
-                                                                <td class="fw-semibold">Max, Gross Weight</td>
-                                                                <td >30480</td>
-                                                                <td >67200</td>
-                                                              </tr>
-                                                              <tr>
-                                                                <td class="fw-semibold">Tare Weight(include machinery)</td>
-                                                                <td>2185</td>
-                                                                <td>4820</td>
-                                                              </tr>
-                                                              <tr>
-                                                                <td class="fw-semibold">Max, Pay Load</td>
-                                                                <td>28295</td>
-                                                                <td>62380</td>
-                                                              </tr>
-                                                            </tbody>
-                                                          </table>
-                                                    </div>
-                                                </div>
-                                                </div>
-                                              </div>
-                                     </div>
-                                     <!-- <div class="col-lg-5 col-sm-12">
-                                        <h4 class="mb-3 text-danger fw-bold">USE TABS HERE AS SHOWN ON THE SIDE</h4>
-                                        <p class="fs-6 mb-3 fw-semibold">
-                                            Add other units that are red below line for External & Internal Dimensions.
-                                        </p>
-                                        <p class="fs-6 mb-3 fw-semibold">
-                                            on mouse hover display
-                                        </p>
-                                        <p class="fs-6 mb-3 fw-semibold">
-                                            <span class=" pe-2">mm</span> <span class="text-danger pe-2">cm</span> <span class="text-danger pe-2">mt</span> <span class=" pe-2">ft</span>
-                                        </p>
-                                        <p class="text-danger fw-semibold">
-                                            Millimeters <br>
-                                            Centimeters <br>
-                                            Meters <br>
-                                            Feet
-                                        </p>
-                                     </div> -->
-                                 </div>
-                             </div>
-                         </div>
-                                
-                                  
-                            
+                        <td style="border: 3px solid #155183;">
 
+                          <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-20ft" role="tabpanel" aria-labelledby="v-pills-20ft-tab" tabindex="0">
+                              <div class="row">
+                                <h5 class="fw-bold ps-5">20 Ft :</h5>
+                                <div class="col-lg-12 col-md-12 px-5">
+                                   <div class="border border-2 mb-5">
+                                       <nav class="">
+                                           <div class="nav nav-tabs justify-content-center border border-0" id="nav-tab" role="tablist">
+                                             <button style="color: black;" class="px-4 fw-semibold nav-link border border-0 rounded-0 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">EXTERNAL</button>
+                                             <button style="color: black;" class="px-4 fw-semibold nav-link border border-0 rounded-0" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">INTERNAL</button>
+                                             <button style="color: black;" class="px-4 fw-semibold nav-link border border-0 rounded-0" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">VOLUME</button>
+                                             <button style="color:  black;"class="px-4 fw-semibold nav-link border border-0 rounded-0" id="nav-page-tab" data-bs-toggle="tab" data-bs-target="#nav-page" type="button" role="tab" aria-controls="nav-page" aria-selected="false">WEIGHT</button>
+                                           </div>
+                                         </nav>
+                                         <div style="background-color: rgb(243, 237, 237);" class="tab-content" id="nav-tabContent">
+                                           <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                                               <div class="px-3 py-3">
+                                                   <table class="table border border-2 border-opacity-50">
+                                                       <thead>
+                                                         <tr style="background-color: #155183; color: white">
+                                                           <th class="fw-semibold" scope="col">External Dimension</th>
+                                                           <th class="fw-semibold" scope="col">mm</th>
+                                                           <th class="fw-semibold" scope="col">cm</th>
+                                                           <th class="fw-semibold" scope="col">mt</th>
+                                                           <th class="fw-semibold" scope="col">ft</th>
+                                                         </tr>
+                                                       </thead>
+                                                       <tbody>
+                                                         <tr>
+                                                           <td class="fw-semibold">Length</td>
+                                                           <td >6058</td>
+                                                           <td >20'0"</td>
+                                                           <td>-</td>
+                                                           <td>20</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td class="fw-semibold">Width</td>
+                                                           <td>2438</td>
+                                                           <td>8'0"</td>
+                                                           <td>-</td>
+                                                           <td>40</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td class="fw-semibold">Heigth</td>
+                                                           <td>2591</td>
+                                                           <td>8'6"</td>
+                                                           <td>-</td>
+                                                           <td>45</td>
+                                                         </tr>
+                                                       </tbody>
+                                                     </table>
+                                               </div>
+                                               </div>
+                                           <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                                               <div class="px-3 py-3">
+                                                   <table class="table border border-2 border-opacity-50">
+                                                       <thead>
+                                                         <tr style="background-color: #155183; color: white">
+                                                           <th class="fw-semibold" scope="col">Internal Dimension</th>
+                                                           <th class="fw-semibold" scope="col">mm</th>
+                                                           <th class="fw-semibold" scope="col">cm</th>
+                                                           <th class="fw-semibold" scope="col">mt</th>
+                                                           <th class="fw-semibold" scope="col">ft</th>
+                                                         </tr>
+                                                       </thead>
+                                                       <tbody>
+                                                         <tr>
+                                                           <td class="fw-semibold">Length</td>
+                                                           <td >5898</td>
+                                                           <td >19'3"</td>
+                                                           <td>-</td>
+                                                           <td>20</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td class="fw-semibold">Width</td>
+                                                           <td>2352</td>
+                                                           <td>7'8"</td>
+                                                           <td>-</td>
+                                                           <td>40</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td class="fw-semibold">Heigth</td>
+                                                           <td>2393</td>
+                                                           <td>7'8"</td>
+                                                           <td>-</td>
+                                                           <td>45</td>
+                                                         </tr>
+                                                       </tbody>
+                                                     </table>
+                                               </div>
+                                           </div>
+                                           <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                                              <div class="px-3 py-3">
+                                               <table class="table border border-2 border-opacity-50">
+                                                   <thead>
+                                                     <tr style="background-color: #155183; color: white">
+                                                       <th class="fw-semibold" scope="col">Volume Capacity</th>
+                                                       <th class="fw-semibold" scope="col">cbm</th>
+                                                       <th class="fw-semibold" scope="col">cft</th>
+                                                     </tr>
+                                                   </thead>
+                                                   <tbody>
+                                                     <tr>
+                                                       <td class="fw-semibold">Volume</td>
+                                                       <td >33</td>
+                                                       <td >1173</td>
+                                                     </tr>
+
+                                                   </tbody>
+                                                 </table>
+                                              </div>
+                                           </div>
+                                           <div class="tab-pane fade" id="nav-page" role="tabpanel" aria-labelledby="nav-page-tab" tabindex="0">
+                                               <div class="px-3 py-3">
+                                                   <table class="table border border-2 border-opacity-50">
+                                                       <thead>
+                                                         <tr style="background-color: #155183; color: white">
+                                                           <th class="fw-semibold" scope="col">Weight Capacity</th>
+                                                           <th class="fw-semibold" scope="col">Kgs</th>
+                                                           <th class="fw-semibold" scope="col">Lbs</th>
+                                                         </tr>
+                                                       </thead>
+                                                       <tbody>
+                                                         <tr>
+                                                           <td class="fw-semibold">Max, Gross Weight</td>
+                                                           <td >30480</td>
+                                                           <td >67200</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td class="fw-semibold">Tare Weight(include machinery)</td>
+                                                           <td>2185</td>
+                                                           <td>4820</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td class="fw-semibold">Max, Pay Load</td>
+                                                           <td>28295</td>
+                                                           <td>62380</td>
+                                                         </tr>
+                                                       </tbody>
+                                                     </table>
+                                               </div>
+                                           </div>
+                                           </div>
+                                         </div>
+                                </div>
+                                <!-- <div class="col-lg-5 col-sm-12">
+                                   <h4 class="mb-3 text-danger fw-bold">USE TABS HERE AS SHOWN ON THE SIDE</h4>
+                                   <p class="fs-6 mb-3 fw-semibold">
+                                       Add other units that are red below line for External & Internal Dimensions.
+                                   </p>
+                                   <p class="fs-6 mb-3 fw-semibold">
+                                       on mouse hover display
+                                   </p>
+                                   <p class="fs-6 mb-3 fw-semibold">
+                                       <span class=" pe-2">mm</span> <span class="text-danger pe-2">cm</span> <span class="text-danger pe-2">mt</span> <span class=" pe-2">ft</span>
+                                   </p>
+                                   <p class="text-danger fw-semibold">
+                                       Millimeters <br>
+                                       Centimeters <br>
+                                       Meters <br>
+                                       Feet
+                                   </p>
+                                </div> -->
                             </div>
+                        </div>
+                            
+                            <div class="tab-pane fade" id="v-pills-40ft" role="tabpanel" aria-labelledby="v-pills-40ft-tab" tabindex="0">
+                              <div class="row">
+                                <h5 class="fw-bold ps-5">40 Ft :</h5>
+                                <div class="col-lg-12 col-md-12 px-5">
+                                   <div class="border border-2 mb-5">
+                                       <nav class="">
+                                           <div class="nav nav-tabs justify-content-center border border-0" id="nav-tab" role="tablist">
+                                             <button style="color: black;" class="px-4 fw-semibold nav-link border border-0 rounded-0 active" id="nav-first-tab" data-bs-toggle="tab" data-bs-target="#nav-first" type="button" role="tab" aria-controls="nav-first" aria-selected="true">EXTERNAL</button>
+                                             <button style="color: black;" class="px-4 fw-semibold nav-link border border-0 rounded-0" id="nav-second-tab" data-bs-toggle="tab" data-bs-target="#nav-second" type="button" role="tab" aria-controls="nav-second" aria-selected="false">INTERNAL</button>
+                                             <button style="color: black;" class="px-4 fw-semibold nav-link border border-0 rounded-0" id="nav-third-tab" data-bs-toggle="tab" data-bs-target="#nav-third" type="button" role="tab" aria-controls="nav-third" aria-selected="false">VOLUME</button>
+                                             <button style="color:  black;"class="px-4 fw-semibold nav-link border border-0 rounded-0" id="nav-last-tab" data-bs-toggle="tab" data-bs-target="#nav-last" type="button" role="tab" aria-controls="nav-last" aria-selected="false">WEIGHT</button>
+                                           </div>
+                                         </nav>
+                                         <div style="background-color: rgb(243, 237, 237);" class="tab-content" id="nav-tabContent">
+                                           <div class="tab-pane fade show active" id="nav-first" role="tabpanel" aria-labelledby="nav-first-tab" tabindex="0">
+                                               <div class="px-3 py-3">
+                                                   <table class="table border border-2 border-opacity-50">
+                                                       <thead>
+                                                         <tr style="background-color: #155183; color: white">
+                                                           <th class="fw-semibold" scope="col">External Dimension</th>
+                                                           <th class="fw-semibold" scope="col">mm</th>
+                                                           <th class="fw-semibold" scope="col">cm</th>
+                                                           <th class="fw-semibold" scope="col">mt</th>
+                                                           <th class="fw-semibold" scope="col">ft</th>
+                                                         </tr>
+                                                       </thead>
+                                                       <tbody>
+                                                         <tr>
+                                                           <td class="fw-semibold">Length</td>
+                                                           <td >6058</td>
+                                                           <td >20'0"</td>
+                                                           <td>-</td>
+                                                           <td>20</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td class="fw-semibold">Width</td>
+                                                           <td>2438</td>
+                                                           <td>8'0"</td>
+                                                           <td>-</td>
+                                                           <td>40</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td class="fw-semibold">Heigth</td>
+                                                           <td>2591</td>
+                                                           <td>8'6"</td>
+                                                           <td>-</td>
+                                                           <td>45</td>
+                                                         </tr>
+                                                       </tbody>
+                                                     </table>
+                                               </div>
+                                               </div>
+                                           <div class="tab-pane fade" id="nav-second" role="tabpanel" aria-labelledby="nav-second-tab" tabindex="0">
+                                               <div class="px-3 py-3">
+                                                   <table class="table border border-2 border-opacity-50">
+                                                       <thead>
+                                                         <tr style="background-color: #155183; color: white">
+                                                           <th class="fw-semibold" scope="col">Internal Dimension</th>
+                                                           <th class="fw-semibold" scope="col">mm</th>
+                                                           <th class="fw-semibold" scope="col">cm</th>
+                                                           <th class="fw-semibold" scope="col">mt</th>
+                                                           <th class="fw-semibold" scope="col">ft</th>
+                                                         </tr>
+                                                       </thead>
+                                                       <tbody>
+                                                         <tr>
+                                                           <td class="fw-semibold">Length</td>
+                                                           <td >5898</td>
+                                                           <td >19'3"</td>
+                                                           <td>-</td>
+                                                           <td>20</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td class="fw-semibold">Width</td>
+                                                           <td>2352</td>
+                                                           <td>7'8"</td>
+                                                           <td>-</td>
+                                                           <td>40</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td class="fw-semibold">Heigth</td>
+                                                           <td>2393</td>
+                                                           <td>7'8"</td>
+                                                           <td>-</td>
+                                                           <td>45</td>
+                                                         </tr>
+                                                       </tbody>
+                                                     </table>
+                                               </div>
+                                           </div>
+                                           <div class="tab-pane fade" id="nav-third" role="tabpanel" aria-labelledby="nav-third-tab" tabindex="0">
+                                              <div class="px-3 py-3">
+                                               <table class="table border border-2 border-opacity-50">
+                                                   <thead>
+                                                     <tr style="background-color: #155183; color: white">
+                                                       <th class="fw-semibold" scope="col">Volume Capacity</th>
+                                                       <th class="fw-semibold" scope="col">cbm</th>
+                                                       <th class="fw-semibold" scope="col">cft</th>
+                                                     </tr>
+                                                   </thead>
+                                                   <tbody>
+                                                     <tr>
+                                                       <td class="fw-semibold">Volume</td>
+                                                       <td >33</td>
+                                                       <td >1173</td>
+                                                     </tr>
+
+                                                   </tbody>
+                                                 </table>
+                                              </div>
+                                           </div>
+                                           <div class="tab-pane fade" id="nav-last" role="tabpanel" aria-labelledby="nav-last-tab" tabindex="0">
+                                               <div class="px-3 py-3">
+                                                   <table class="table border border-2 border-opacity-50">
+                                                       <thead>
+                                                         <tr style="background-color: #155183; color: white">
+                                                           <th class="fw-semibold" scope="col">Weight Capacity</th>
+                                                           <th class="fw-semibold" scope="col">Kgs</th>
+                                                           <th class="fw-semibold" scope="col">Lbs</th>
+                                                         </tr>
+                                                       </thead>
+                                                       <tbody>
+                                                         <tr>
+                                                           <td class="fw-semibold">Max, Gross Weight</td>
+                                                           <td >30480</td>
+                                                           <td >67200</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td class="fw-semibold">Tare Weight(include machinery)</td>
+                                                           <td>2185</td>
+                                                           <td>4820</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td class="fw-semibold">Max, Pay Load</td>
+                                                           <td>28295</td>
+                                                           <td>62380</td>
+                                                         </tr>
+                                                       </tbody>
+                                                     </table>
+                                               </div>
+                                           </div>
+                                           </div>
+                                         </div>
+                                </div>
+                                <!-- <div class="col-lg-5 col-sm-12">
+                                   <h4 class="mb-3 text-danger fw-bold">USE TABS HERE AS SHOWN ON THE SIDE</h4>
+                                   <p class="fs-6 mb-3 fw-semibold">
+                                       Add other units that are red below line for External & Internal Dimensions.
+                                   </p>
+                                   <p class="fs-6 mb-3 fw-semibold">
+                                       on mouse hover display
+                                   </p>
+                                   <p class="fs-6 mb-3 fw-semibold">
+                                       <span class=" pe-2">mm</span> <span class="text-danger pe-2">cm</span> <span class="text-danger pe-2">mt</span> <span class=" pe-2">ft</span>
+                                   </p>
+                                   <p class="text-danger fw-semibold">
+                                       Millimeters <br>
+                                       Centimeters <br>
+                                       Meters <br>
+                                       Feet
+                                   </p>
+                                </div> -->
+                            </div>
+                        </div>
+                            
+                            <div class="tab-pane fade" id="v-pills-40hcft" role="tabpanel" aria-labelledby="v-pills-40hcft-tab" tabindex="0">
+                              <div class="row">
+                                <h5 class="fw-bold ps-5">40HC Ft :</h5>
+                                <div class="col-lg-12 col-md-12 px-5">
+                                   <div class="border border-2 mb-5">
+                                       <nav class="">
+                                           <div class="nav nav-tabs justify-content-center border border-0" id="nav-tab" role="tablist">
+                                             <button style="color: black;" class="px-4 fw-semibold nav-link border border-0 rounded-0 active" id="nav-homes-tab" data-bs-toggle="tab" data-bs-target="#nav-homes" type="button" role="tab" aria-controls="nav-homes" aria-selected="true">EXTERNAL</button>
+                                             <button style="color: black;" class="px-4 fw-semibold nav-link border border-0 rounded-0" id="nav-profiles-tab" data-bs-toggle="tab" data-bs-target="#nav-profiles" type="button" role="tab" aria-controls="nav-profiles" aria-selected="false">INTERNAL</button>
+                                             <button style="color: black;" class="px-4 fw-semibold nav-link border border-0 rounded-0" id="nav-contacts-tab" data-bs-toggle="tab" data-bs-target="#nav-contacts" type="button" role="tab" aria-controls="nav-contacts" aria-selected="false">VOLUME</button>
+                                             <button style="color:  black;"class="px-4 fw-semibold nav-link border border-0 rounded-0" id="nav-pages-tab" data-bs-toggle="tab" data-bs-target="#nav-pages" type="button" role="tab" aria-controls="nav-pages" aria-selected="false">WEIGHT</button>
+                                           </div>
+                                         </nav>
+                                         <div style="background-color: rgb(243, 237, 237);" class="tab-content" id="nav-tabContent">
+                                           <div class="tab-pane fade show active" id="nav-homes" role="tabpanel" aria-labelledby="nav-homes-tab" tabindex="0">
+                                               <div class="px-3 py-3">
+                                                   <table class="table border border-2 border-opacity-50">
+                                                       <thead>
+                                                         <tr style="background-color: #155183; color: white">
+                                                           <th class="fw-semibold" scope="col">External Dimension</th>
+                                                           <th class="fw-semibold" scope="col">mm</th>
+                                                           <th class="fw-semibold" scope="col">cm</th>
+                                                           <th class="fw-semibold" scope="col">mt</th>
+                                                           <th class="fw-semibold" scope="col">ft</th>
+                                                         </tr>
+                                                       </thead>
+                                                       <tbody>
+                                                         <tr>
+                                                           <td class="fw-semibold">Length</td>
+                                                           <td >6058</td>
+                                                           <td >20'0"</td>
+                                                           <td>-</td>
+                                                           <td>20</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td class="fw-semibold">Width</td>
+                                                           <td>2438</td>
+                                                           <td>8'0"</td>
+                                                           <td>-</td>
+                                                           <td>40</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td class="fw-semibold">Heigth</td>
+                                                           <td>2591</td>
+                                                           <td>8'6"</td>
+                                                           <td>-</td>
+                                                           <td>45</td>
+                                                         </tr>
+                                                       </tbody>
+                                                     </table>
+                                               </div>
+                                               </div>
+                                           <div class="tab-pane fade" id="nav-profiles" role="tabpanel" aria-labelledby="nav-profiles-tab" tabindex="0">
+                                               <div class="px-3 py-3">
+                                                   <table class="table border border-2 border-opacity-50">
+                                                       <thead>
+                                                         <tr style="background-color: #155183; color: white">
+                                                           <th class="fw-semibold" scope="col">Internal Dimension</th>
+                                                           <th class="fw-semibold" scope="col">mm</th>
+                                                           <th class="fw-semibold" scope="col">cm</th>
+                                                           <th class="fw-semibold" scope="col">mt</th>
+                                                           <th class="fw-semibold" scope="col">ft</th>
+                                                         </tr>
+                                                       </thead>
+                                                       <tbody>
+                                                         <tr>
+                                                           <td class="fw-semibold">Length</td>
+                                                           <td >5898</td>
+                                                           <td >19'3"</td>
+                                                           <td>-</td>
+                                                           <td>20</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td class="fw-semibold">Width</td>
+                                                           <td>2352</td>
+                                                           <td>7'8"</td>
+                                                           <td>-</td>
+                                                           <td>40</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td class="fw-semibold">Heigth</td>
+                                                           <td>2393</td>
+                                                           <td>7'8"</td>
+                                                           <td>-</td>
+                                                           <td>45</td>
+                                                         </tr>
+                                                       </tbody>
+                                                     </table>
+                                               </div>
+                                           </div>
+                                           <div class="tab-pane fade" id="nav-contacts" role="tabpanel" aria-labelledby="nav-contacts-tab" tabindex="0">
+                                              <div class="px-3 py-3">
+                                               <table class="table border border-2 border-opacity-50">
+                                                   <thead>
+                                                     <tr style="background-color: #155183; color: white">
+                                                       <th class="fw-semibold" scope="col">Volume Capacity</th>
+                                                       <th class="fw-semibold" scope="col">cbm</th>
+                                                       <th class="fw-semibold" scope="col">cft</th>
+                                                     </tr>
+                                                   </thead>
+                                                   <tbody>
+                                                     <tr>
+                                                       <td class="fw-semibold">Volume</td>
+                                                       <td >33</td>
+                                                       <td >1173</td>
+                                                     </tr>
+
+                                                   </tbody>
+                                                 </table>
+                                              </div>
+                                           </div>
+                                           <div class="tab-pane fade" id="nav-pages" role="tabpanel" aria-labelledby="nav-pages-tab" tabindex="0">
+                                               <div class="px-3 py-3">
+                                                   <table class="table border border-2 border-opacity-50">
+                                                       <thead>
+                                                         <tr style="background-color: #155183; color: white">
+                                                           <th class="fw-semibold" scope="col">Weight Capacity</th>
+                                                           <th class="fw-semibold" scope="col">Kgs</th>
+                                                           <th class="fw-semibold" scope="col">Lbs</th>
+                                                         </tr>
+                                                       </thead>
+                                                       <tbody>
+                                                         <tr>
+                                                           <td class="fw-semibold">Max, Gross Weight</td>
+                                                           <td >30480</td>
+                                                           <td >67200</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td class="fw-semibold">Tare Weight(include machinery)</td>
+                                                           <td>2185</td>
+                                                           <td>4820</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td class="fw-semibold">Max, Pay Load</td>
+                                                           <td>28295</td>
+                                                           <td>62380</td>
+                                                         </tr>
+                                                       </tbody>
+                                                     </table>
+                                               </div>
+                                           </div>
+                                           </div>
+                                         </div>
+                                </div>
+                                <!-- <div class="col-lg-5 col-sm-12">
+                                   <h4 class="mb-3 text-danger fw-bold">USE TABS HERE AS SHOWN ON THE SIDE</h4>
+                                   <p class="fs-6 mb-3 fw-semibold">
+                                       Add other units that are red below line for External & Internal Dimensions.
+                                   </p>
+                                   <p class="fs-6 mb-3 fw-semibold">
+                                       on mouse hover display
+                                   </p>
+                                   <p class="fs-6 mb-3 fw-semibold">
+                                       <span class=" pe-2">mm</span> <span class="text-danger pe-2">cm</span> <span class="text-danger pe-2">mt</span> <span class=" pe-2">ft</span>
+                                   </p>
+                                   <p class="text-danger fw-semibold">
+                                       Millimeters <br>
+                                       Centimeters <br>
+                                       Meters <br>
+                                       Feet
+                                   </p>
+                                </div> -->
+                            </div>
+                        </div>
+                            
+                            <div class="tab-pane fade" id="v-pills-45ft" role="tabpanel" aria-labelledby="v-pills-45ft-tab" tabindex="0">
+                              <div class="row">
+                                <h5 class="fw-bold ps-5">45 Ft :</h5>
+                                <div class="col-lg-12 col-md-12 px-5">
+                                   <div class="border border-2 mb-5">
+                                       <nav class="">
+                                           <div class="nav nav-tabs justify-content-center border border-0" id="nav-tab" role="tablist">
+                                             <button style="color: black;" class="px-4 fw-semibold nav-link border border-0 rounded-0 active" id="nav-homeq-tab" data-bs-toggle="tab" data-bs-target="#nav-homeq" type="button" role="tab" aria-controls="nav-homeq" aria-selected="true">EXTERNAL</button>
+                                             <button style="color: black;" class="px-4 fw-semibold nav-link border border-0 rounded-0" id="nav-profileq-tab" data-bs-toggle="tab" data-bs-target="#nav-profileq" type="button" role="tab" aria-controls="nav-profileq" aria-selected="false">INTERNAL</button>
+                                             <button style="color: black;" class="px-4 fw-semibold nav-link border border-0 rounded-0" id="nav-contactq-tab" data-bs-toggle="tab" data-bs-target="#nav-contactq" type="button" role="tab" aria-controls="nav-contactq" aria-selected="false">VOLUME</button>
+                                             <button style="color:  black;"class="px-4 fw-semibold nav-link border border-0 rounded-0" id="nav-pageq-tab" data-bs-toggle="tab" data-bs-target="#nav-pageq" type="button" role="tab" aria-controls="nav-pageq" aria-selected="false">WEIGHT</button>
+                                           </div>
+                                         </nav>
+                                         <div style="background-color: rgb(243, 237, 237);" class="tab-content" id="nav-tabContent">
+                                           <div class="tab-pane fade show active" id="nav-homeq" role="tabpanel" aria-labelledby="nav-homeq-tab" tabindex="0">
+                                               <div class="px-3 py-3">
+                                                   <table class="table border border-2 border-opacity-50">
+                                                       <thead>
+                                                         <tr style="background-color: #155183; color: white">
+                                                           <th class="fw-semibold" scope="col">External Dimension</th>
+                                                           <th class="fw-semibold" scope="col">mm</th>
+                                                           <th class="fw-semibold" scope="col">cm</th>
+                                                           <th class="fw-semibold" scope="col">mt</th>
+                                                           <th class="fw-semibold" scope="col">ft</th>
+                                                         </tr>
+                                                       </thead>
+                                                       <tbody>
+                                                         <tr>
+                                                           <td class="fw-semibold">Length</td>
+                                                           <td >6058</td>
+                                                           <td >20'0"</td>
+                                                           <td>-</td>
+                                                           <td>20</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td class="fw-semibold">Width</td>
+                                                           <td>2438</td>
+                                                           <td>8'0"</td>
+                                                           <td>-</td>
+                                                           <td>40</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td class="fw-semibold">Heigth</td>
+                                                           <td>2591</td>
+                                                           <td>8'6"</td>
+                                                           <td>-</td>
+                                                           <td>45</td>
+                                                         </tr>
+                                                       </tbody>
+                                                     </table>
+                                               </div>
+                                               </div>
+                                           <div class="tab-pane fade" id="nav-profileq" role="tabpanel" aria-labelledby="nav-profileq-tab" tabindex="0">
+                                               <div class="px-3 py-3">
+                                                   <table class="table border border-2 border-opacity-50">
+                                                       <thead>
+                                                         <tr style="background-color: #155183; color: white">
+                                                           <th class="fw-semibold" scope="col">Internal Dimension</th>
+                                                           <th class="fw-semibold" scope="col">mm</th>
+                                                           <th class="fw-semibold" scope="col">cm</th>
+                                                           <th class="fw-semibold" scope="col">mt</th>
+                                                           <th class="fw-semibold" scope="col">ft</th>
+                                                         </tr>
+                                                       </thead>
+                                                       <tbody>
+                                                         <tr>
+                                                           <td class="fw-semibold">Length</td>
+                                                           <td >5898</td>
+                                                           <td >19'3"</td>
+                                                           <td>-</td>
+                                                           <td>20</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td class="fw-semibold">Width</td>
+                                                           <td>2352</td>
+                                                           <td>7'8"</td>
+                                                           <td>-</td>
+                                                           <td>40</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td class="fw-semibold">Heigth</td>
+                                                           <td>2393</td>
+                                                           <td>7'8"</td>
+                                                           <td>-</td>
+                                                           <td>45</td>
+                                                         </tr>
+                                                       </tbody>
+                                                     </table>
+                                               </div>
+                                           </div>
+                                           <div class="tab-pane fade" id="nav-contactq" role="tabpanel" aria-labelledby="nav-contactq-tab" tabindex="0">
+                                              <div class="px-3 py-3">
+                                               <table class="table border border-2 border-opacity-50">
+                                                   <thead>
+                                                     <tr style="background-color: #155183; color: white">
+                                                       <th class="fw-semibold" scope="col">Volume Capacity</th>
+                                                       <th class="fw-semibold" scope="col">cbm</th>
+                                                       <th class="fw-semibold" scope="col">cft</th>
+                                                     </tr>
+                                                   </thead>
+                                                   <tbody>
+                                                     <tr>
+                                                       <td class="fw-semibold">Volume</td>
+                                                       <td >33</td>
+                                                       <td >1173</td>
+                                                     </tr>
+
+                                                   </tbody>
+                                                 </table>
+                                              </div>
+                                           </div>
+                                           <div class="tab-pane fade" id="nav-pageq" role="tabpanel" aria-labelledby="nav-pageq-tab" tabindex="0">
+                                               <div class="px-3 py-3">
+                                                   <table class="table border border-2 border-opacity-50">
+                                                       <thead>
+                                                         <tr style="background-color: #155183; color: white">
+                                                           <th class="fw-semibold" scope="col">Weight Capacity</th>
+                                                           <th class="fw-semibold" scope="col">Kgs</th>
+                                                           <th class="fw-semibold" scope="col">Lbs</th>
+                                                         </tr>
+                                                       </thead>
+                                                       <tbody>
+                                                         <tr>
+                                                           <td class="fw-semibold">Max, Gross Weight</td>
+                                                           <td >30480</td>
+                                                           <td >67200</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td class="fw-semibold">Tare Weight(include machinery)</td>
+                                                           <td>2185</td>
+                                                           <td>4820</td>
+                                                         </tr>
+                                                         <tr>
+                                                           <td class="fw-semibold">Max, Pay Load</td>
+                                                           <td>28295</td>
+                                                           <td>62380</td>
+                                                         </tr>
+                                                       </tbody>
+                                                     </table>
+                                               </div>
+                                           </div>
+                                           </div>
+                                         </div>
+                                </div>
+                                <!-- <div class="col-lg-5 col-sm-12">
+                                   <h4 class="mb-3 text-danger fw-bold">USE TABS HERE AS SHOWN ON THE SIDE</h4>
+                                   <p class="fs-6 mb-3 fw-semibold">
+                                       Add other units that are red below line for External & Internal Dimensions.
+                                   </p>
+                                   <p class="fs-6 mb-3 fw-semibold">
+                                       on mouse hover display
+                                   </p>
+                                   <p class="fs-6 mb-3 fw-semibold">
+                                       <span class=" pe-2">mm</span> <span class="text-danger pe-2">cm</span> <span class="text-danger pe-2">mt</span> <span class=" pe-2">ft</span>
+                                   </p>
+                                   <p class="text-danger fw-semibold">
+                                       Millimeters <br>
+                                       Centimeters <br>
+                                       Meters <br>
+                                       Feet
+                                   </p>
+                                </div> -->
+                            </div>
+                        </div>
+                            </div>
+                          </div>
+                          
                         </td>
                       </tr>
                       <!-- <tr>
@@ -297,23 +805,172 @@
 </body>
 </html>
 
-        <!-- <section class="my-5">
-            <div class="row justify-content-center">
-                <div class="col-md-2" style="border: 4px solid #155183;">
-                    <div class="fs-4 text-center">
-                        Container Types
-                    </div>
-                </div>
-                <div class="col-md-2" style="border: 4px solid #155183;">
-                    <div class="fs-4 text-center">
-                        Container Size
-                    </div>
-                </div>
-                <div class="col-md-7" style="border: 4px solid #155183;">
-                    <div class="fs-4 text-center">
-                        Container Specification
-                    </div>
+<!-- <div>
+  <div>
+      <div class="row">
+          <div class="col-lg-12 col-md-12 px-5">
+             <div class="border border-2 mb-5">
+                 <nav class="">
+                     <div class="nav nav-tabs justify-content-center border border-0" id="nav-tab" role="tablist">
+                       <button style="color: black;" class="px-4 fw-semibold nav-link border border-0 rounded-0 active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">EXTERNAL</button>
+                       <button style="color: black;" class="px-4 fw-semibold nav-link border border-0 rounded-0" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">INTERNAL</button>
+                       <button style="color: black;" class="px-4 fw-semibold nav-link border border-0 rounded-0" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">VOLUME</button>
+                       <button style="color:  black;"class="px-4 fw-semibold nav-link border border-0 rounded-0" id="nav-page-tab" data-bs-toggle="tab" data-bs-target="#nav-page" type="button" role="tab" aria-controls="nav-page" aria-selected="false">WEIGHT</button>
+                     </div>
+                   </nav>
+                   <div style="background-color: rgb(243, 237, 237);" class="tab-content" id="nav-tabContent">
+                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                         <div class="px-3 py-3">
+                             <table class="table border border-2 border-opacity-50">
+                                 <thead>
+                                   <tr style="background-color: #155183; color: white">
+                                     <th class="fw-semibold" scope="col">External Dimension</th>
+                                     <th class="fw-semibold" scope="col">mm</th>
+                                     <th class="fw-semibold" scope="col">cm</th>
+                                     <th class="fw-semibold" scope="col">mt</th>
+                                     <th class="fw-semibold" scope="col">ft</th>
+                                   </tr>
+                                 </thead>
+                                 <tbody>
+                                   <tr>
+                                     <td class="fw-semibold">Length</td>
+                                     <td >6058</td>
+                                     <td >20'0"</td>
+                                     <td>-</td>
+                                     <td>20</td>
+                                   </tr>
+                                   <tr>
+                                     <td class="fw-semibold">Width</td>
+                                     <td>2438</td>
+                                     <td>8'0"</td>
+                                     <td>-</td>
+                                     <td>40</td>
+                                   </tr>
+                                   <tr>
+                                     <td class="fw-semibold">Heigth</td>
+                                     <td>2591</td>
+                                     <td>8'6"</td>
+                                     <td>-</td>
+                                     <td>45</td>
+                                   </tr>
+                                 </tbody>
+                               </table>
+                         </div>
+                         </div>
+                     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                         <div class="px-3 py-3">
+                             <table class="table border border-2 border-opacity-50">
+                                 <thead>
+                                   <tr style="background-color: #155183; color: white">
+                                     <th class="fw-semibold" scope="col">Internal Dimension</th>
+                                     <th class="fw-semibold" scope="col">mm</th>
+                                     <th class="fw-semibold" scope="col">cm</th>
+                                     <th class="fw-semibold" scope="col">mt</th>
+                                     <th class="fw-semibold" scope="col">ft</th>
+                                   </tr>
+                                 </thead>
+                                 <tbody>
+                                   <tr>
+                                     <td class="fw-semibold">Length</td>
+                                     <td >5898</td>
+                                     <td >19'3"</td>
+                                     <td>-</td>
+                                     <td>20</td>
+                                   </tr>
+                                   <tr>
+                                     <td class="fw-semibold">Width</td>
+                                     <td>2352</td>
+                                     <td>7'8"</td>
+                                     <td>-</td>
+                                     <td>40</td>
+                                   </tr>
+                                   <tr>
+                                     <td class="fw-semibold">Heigth</td>
+                                     <td>2393</td>
+                                     <td>7'8"</td>
+                                     <td>-</td>
+                                     <td>45</td>
+                                   </tr>
+                                 </tbody>
+                               </table>
+                         </div>
+                     </div>
+                     <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                        <div class="px-3 py-3">
+                         <table class="table border border-2 border-opacity-50">
+                             <thead>
+                               <tr style="background-color: #155183; color: white">
+                                 <th class="fw-semibold" scope="col">Volume Capacity</th>
+                                 <th class="fw-semibold" scope="col">cbm</th>
+                                 <th class="fw-semibold" scope="col">cft</th>
+                               </tr>
+                             </thead>
+                             <tbody>
+                               <tr>
+                                 <td class="fw-semibold">Volume</td>
+                                 <td >33</td>
+                                 <td >1173</td>
+                               </tr>
 
-                </div>
-            </div>
-        </section> -->
+                             </tbody>
+                           </table>
+                        </div>
+                     </div>
+                     <div class="tab-pane fade" id="nav-page" role="tabpanel" aria-labelledby="nav-page-tab" tabindex="0">
+                         <div class="px-3 py-3">
+                             <table class="table border border-2 border-opacity-50">
+                                 <thead>
+                                   <tr style="background-color: #155183; color: white">
+                                     <th class="fw-semibold" scope="col">Weight Capacity</th>
+                                     <th class="fw-semibold" scope="col">Kgs</th>
+                                     <th class="fw-semibold" scope="col">Lbs</th>
+                                   </tr>
+                                 </thead>
+                                 <tbody>
+                                   <tr>
+                                     <td class="fw-semibold">Max, Gross Weight</td>
+                                     <td >30480</td>
+                                     <td >67200</td>
+                                   </tr>
+                                   <tr>
+                                     <td class="fw-semibold">Tare Weight(include machinery)</td>
+                                     <td>2185</td>
+                                     <td>4820</td>
+                                   </tr>
+                                   <tr>
+                                     <td class="fw-semibold">Max, Pay Load</td>
+                                     <td>28295</td>
+                                     <td>62380</td>
+                                   </tr>
+                                 </tbody>
+                               </table>
+                         </div>
+                     </div>
+                     </div>
+                   </div>
+          </div>
+         
+      </div>
+  </div>
+</div>
+</div> -->
+
+
+  <!-- <div class="col-lg-5 col-sm-12">
+             <h4 class="mb-3 text-danger fw-bold">USE TABS HERE AS SHOWN ON THE SIDE</h4>
+             <p class="fs-6 mb-3 fw-semibold">
+                 Add other units that are red below line for External & Internal Dimensions.
+             </p>
+             <p class="fs-6 mb-3 fw-semibold">
+                 on mouse hover display
+             </p>
+             <p class="fs-6 mb-3 fw-semibold">
+                 <span class=" pe-2">mm</span> <span class="text-danger pe-2">cm</span> <span class="text-danger pe-2">mt</span> <span class=" pe-2">ft</span>
+             </p>
+             <p class="text-danger fw-semibold">
+                 Millimeters <br>
+                 Centimeters <br>
+                 Meters <br>
+                 Feet
+             </p>
+          </div> -->
