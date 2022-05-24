@@ -21,3 +21,8 @@ td {
         max-width: 20rem;
     }
 }
+
+img {
+    width: 100px;
+    height: 100px;
+}
