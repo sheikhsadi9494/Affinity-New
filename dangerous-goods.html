@@ -10,6 +10,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- bootstrap js  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- css  -->
     <link rel="stylesheet" href="./assets/css/aboutUsNew.css">
 
@@ -31,6 +36,13 @@
             
         });
     </script>
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+        $(function () {
+    $('[data-toggle="popover"]').popover()
+})
+    </script>
 
         <!-- Google fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,6 +56,22 @@
 
     <!-- banner  -->
     <section style="overflow-x: hidden;">
+        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+            Popover on top
+          </button>
+          <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover">
+            Popover on right
+          </button>
+          <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
+            Popover on bottom
+          </button>
+          <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Left popover">
+            Popover on left
+          </button>
+          
+          <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Disabled popover">
+              <button class="btn btn-primary" type="button" disabled>Disabled button</button>
+            </span>
         <div class="p-5">
             <h3><b>CLASSIFICATION OF DANGEROUS GOODS</b></h3>
             <p>The International Maritime Dangerous Goods (IMDG) Code was developed as a uniform international
@@ -95,37 +123,37 @@
                 <tr>
                   <td>Explosives</td>
                   <td>Class 1</td>
-                  <td>1.1: Explosives with a mass explosion hazard</td>
+                  <td title="" data-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="Consists of explosives that have a mass explosion hazard. A mass explosion is one which affects almost the entire load instantaneously.">1.1: Explosives with a mass explosion hazard</td>
                   <td></td>
                 </tr>
                 <tr>
                   <td></td>
                   <td></td>
-                  <td>1.2: Explosives with a severe projection hazard</td>
+                  <td title="" data-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="Consists of explosives that have a projection hazard but not a mass explosion hazard.">1.2: Explosives with a severe projection hazard</td>
                   <td></td>
                 </tr>
                 <tr>
                     <td></td>
                     <td></td>
-                    <td>1.3: Explosives with a fire</td>
+                    <td title="" data-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="Consists of explosives that have a fire hazard and either a minor blast hazard or a minor projection hazard or both but not a mass explosion hazard.">1.3: Explosives with a fire</td>
                     <td></td>
                 </tr>
                 <tr>
                   <td></td>
                   <td></td>
-                  <td>1.4: Minor fire or projection hazard</td>
+                  <td title="" data-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="Consists of explosives that present a minor explosion hazard. The explosive effects are largely confined to the package and no projection of fragments of appreciable size or range is to be expected. An external fire must not cause virtually instantaneous explosion of almost the entire contents of the package.">1.4: Minor fire or projection hazard</td>
                   <td></td>
                 </tr>
                 <tr>
                   <td></td>
                   <td></td>
-                  <td>1.5: An insensitive substance with a mass explosion hazard</td>
+                  <td title="" data-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="Consists of very insensitive explosives with a mass explosion hazard (explosion similar to 1.1). This division is comprised of substances which have a mass explosion hazard but are so insensitive that there is very little probability of initiation or of transition from burning to detonation under normal conditions of transport.">1.5: An insensitive substance with a mass explosion hazard</td>
                   <td></td>
                 </tr>
                 <tr>
                   <td></td>
                   <td></td>
-                  <td>1.6: Extremely insensitive articles</td>
+                  <td title="" data-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="Consists of extremely insensitive articles which do not have a mass explosive hazard. This division is comprised of articles which contain only extremely insensitive detonating substances and which demonstrate a negligible probability of accidental initiation or propagation.">1.6: Extremely insensitive articles</td>
                   <td></td>
                 </tr>
 
@@ -133,20 +161,20 @@
                 <tr>
                     <td>Gases</td>
                     <td>Class 2</td>
-                    <td>2.1 Flammable Gases</td>
+                    <td title="" data-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="Gases which ignite on contact with an ignition source, such as acetylene and hydrogen. Flammable gas means any material which is ignitable at 101.3 kPa (14.7 psi) when in a mixture of 13 percent or less by volume with air, or has a flammable range at 101.3 kPa (14.7 psi) with air of at least 12 percent regardless of the lower limit.">2.1 Flammable Gases</td>
                     <td></td>
                 </tr>
 
                 <tr>
                   <td></td>
                   <td></td>
-                  <td>2.2 Non-Flammable,non-toxic gases</td>
+                  <td title="" data-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="Gases which are neither flammable nor poisonous. Includes the cryogenic gases/liquids (temperatures of below -100°C) used for cryopreservation and rocket fuels. This division includes compressed gas, liquefied gas, pressurized cryogenic gas, compressed gas in solution, asphyxiant gas and oxidizing gas. A non-flammable, nonpoisonous compressed gas means any material which exerts in the packaging an absolute pressure of 280 kPa (40.6 psia) or greater at 20°C (68°F), and does not meet the definition of Division 2.1 or 2.3.">2.2 Non-Flammable,non-toxic gases</td>
                   <td></td>
                 </tr>
                 <tr>
                   <td></td>
                   <td></td>
-                  <td>2.3 Toxic (Poisonous) Gases</td>
+                  <td title="" data-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="Gases liable to cause death or serious injury to human health if inhaled. Gas poisonous by inhalation means a material which is a gas at 20°C or less and a pressure of 101.3 kPa (a material which has a boiling point of 20°C or less at 101.3kPa (14.7 psi)) which is known to be so toxic to humans as to pose a hazard to health during transportation, or in the absence of adequate data on human toxicity, is presumed to be toxic to humans because when tested on laboratory animals it has an LC50 value of not more than 5000 ml/m3.">2.3 Toxic (Poisonous) Gases</td>
                   <td></td>
                 </tr>
 
@@ -161,49 +189,51 @@
                 <tr>
                     <td>Flammable Solids or Substances</td>
                     <td>Class 4</td>
-                    <td>4.1: Flammable solids</td>
+                    <td title="" data-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="For the purpose of this Code, flammable solids means readily combustible solids and solids which may causefire through friction.">4.1: Flammable solids</td>
                     <td></td>
                 </tr>
 
                 <tr>
                     <td></td>
                     <td></td>
-                    <td>4.2: Self-reactive substances</td>
+                    <td title="" data-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="Self-reactive substances are thermally unstable substances liable to undergo a strongly exothermic decomposition even without participation of oxygen (air).">4.2: Self-reactive substances</td>
                     <td></td>
                 </tr>
 
                 <tr>
                     <td></td>
                     <td></td>
-                    <td>4.3: Solid desensitized explosives</td>
+                    <td title="" data-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="Solid desensitized explosives are explosive substances which are wetted with water or alcohols or are diluted with other substances to form a homogeneous solid mixture to suppress their explosive properties.">4.3: Solid desensitized explosives</td>
                     <td></td>
                 </tr>
 
                 <tr>
                     <td></td>
                     <td></td>
-                    <td>4.4: Polymerizing substances and mixtures (stabilized)</td>
+                    <td title="" data-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="Polymerizing substances are substances which, without stabilization, are liable to undergo a strongly exothermic reaction resulting in the formation of larger molecules or resulting in the formation of polymers under conditions normally encountered in transport. Explosives included under class 1 however deactivated or substances specially included under this class by the producer.                    ">4.4: Polymerizing substances and mixtures (stabilized)</td>
                     <td></td>
                 </tr>
                 
                 <tr>
                     <td></td>
                     <td></td>
-                    <td>4.5: Substances liable to spontaneous combustion</td>
+                    <td title="" data-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="">4.5: Substances liable to spontaneous combustion</td>
                     <td></td>
                 </tr>
 
                 <tr>
                     <td></td>
                     <td></td>
-                    <td>4.6: Comprises</td>
+                    <td title="" data-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="1. Pyrophoric substances, which are substances, including mixtures and solutions (liquid or solid), which, even in small quantities, ignite within 5 minutes of coming into contact with air. These substances are the most liable to spontaneous combustion; and    
+
+                    2. Self-heating substances, which are substances, other than pyrophoric substances, which, in contact with air without energy supply, are liable to self-heating. These substances will ignite only when in large amounts (kilograms) and after long periods of time (hours or days).">4.6: Comprises</td>
                     <td></td>
                 </tr>
 
                 <tr>
                     <td></td>
                     <td></td>
-                    <td>4.7: Substances which, in contact with water, emit flammable gases</td>
+                    <td title="" data-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="For the purpose of this Code, the substances in this class are either liquids or solids which, by interaction with water, are liable to become spontaneously flammable or to give off flammable gases in dangerous quantities.">4.7: Substances which, in contact with water, emit flammable gases</td>
                     <td></td>
                 </tr>
 
@@ -211,13 +241,13 @@
                 <tr>
                     <td>Oxidising substances and Organic peroxides</td>
                     <td>Class 5</td>
-                    <td>5.1: Oxidizing substances</td>
+                    <td title="" data-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="Substances which, while in themselves not necessarily combustible, may, generally by yielding oxygen,cause, or contribute to, the combustion of other material. Such substances may be contained in an article.">5.1: Oxidizing substances</td>
                     <td></td>
                 </tr>
                 <tr>
                     <td></td>
                     <td></td>
-                    <td>5.2: Organic peroxides</td>
+                    <td title="" data-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="Organic substances which contain the bivalent –O–O– structure and may be considered derivatives of hydrogen peroxide, where one or both of the hydrogen atoms have been replaced by organic radicals. Organic peroxides are thermally unstable substances which may undergo exothermic self-accelerating decomposition.">5.2: Organic peroxides</td>
                     <td></td>
                 </tr>
 
@@ -226,13 +256,13 @@
                 <tr>
                     <td>Toxic Substances</td>
                     <td>Class 6</td>
-                    <td>6.1 Toxic Substances</td>
+                    <td title="" data-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="Toxic substances which are able to cause death or serious hazard to humans health during transportation.">6.1 Toxic Substances</td>
                     <td></td>
                 </tr>
                 <tr>
                     <td></td>
                     <td></td>
-                    <td>6.2 Infectious Substances</td>
+                    <td title="" data-toggle="popover" data-bs-placement="bottom" data-bs-trigger="hover" data-bs-content="These are substances known or reasonably expected to contain pathogens. Pathogens are defined as microorganisms (including bacteria, viruses, rickettsiae, parasites, fungi) and other agents such as prions, which can cause disease in humans or animals.">6.2 Infectious Substances</td>
                     <td></td>
                 </tr>
 
@@ -271,6 +301,9 @@
               </table>
         </div>
 
+        
+        
+
     </section>
 
     <script src="./assets/js/index.js"></script>
@@ -279,6 +312,12 @@
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // $popover-max-width(276px);
+        $(document).ready(function(){
+          $('[data-toggle="popover"]').popover();   
+        });
+    </script>
 
 </body>
 </html>
