@@ -13,7 +13,7 @@ td {
 }
 
 .popover {
-    max-width: 35rem;
+    max-width: 30rem;
 }
 
 @media (max-width:800px) {
