@@ -9,7 +9,7 @@ th {
 td {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-left: 0.5rem;
+    /* padding-left: 0.5rem; */
 }
 
 .popover {
@@ -25,4 +25,9 @@ td {
 table img {
     width: 75px;
     height: 75px;
+}
+
+#i-card {
+    width: 20px;
+    height: 20px;
 }
