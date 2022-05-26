@@ -1,0 +1,13 @@
+.tab_button {
+    border: none;
+    color: black;
+}
+.tab_button:hover {
+    outline: none;
+}
+.tabs_content {
+    display: none;
+}
+.tab_content_active {
+    display: block;
+}
