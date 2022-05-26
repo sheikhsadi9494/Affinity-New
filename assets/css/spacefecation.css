@@ -8,6 +8,9 @@
 .tabs_content {
     display: none;
 }
+.tab_button_active {
+    border: 5px solid red;
+}
 .tab_content_active {
     display: block;
 }
