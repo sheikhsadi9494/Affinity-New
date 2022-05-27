@@ -26,3 +26,9 @@
 .tab_content_active {
     display: block;
 }
+
+@media screen and (min-width: 700px) {
+    .table_button {
+        width: 25%;
+    }
+}
