@@ -3,7 +3,7 @@
     background-color: white;
     border-radius: 5px;
     margin: 0px 0px 0px 0px;
-    padding: 8px 0px 8px 0px;
+    padding: 8px 0px 8px 12px;
    
 }
 .tab_button:hover {
@@ -11,7 +11,7 @@
     background-color: #dedee4;
     border-radius: 5px;
     margin: 0px 0px 0px 0px;
-    padding: 8px 0px 8px 0px;
+    padding: 8px 0px 8px 12px;
 }
 .tabs_content {
     display: none;
@@ -21,7 +21,7 @@
     background-color: #dedee4;
     border-radius: 5px;
     margin: 0px 0px 0px 0px;
-    padding: 8px 0px 8px 0px;
+    padding: 8px 0px 8px 12px;
 }
 .tab_content_active {
     display: block;
