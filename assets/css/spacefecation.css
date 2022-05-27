@@ -1,15 +1,27 @@
 .tab_button {
     border: none;
-    color: black;
+    background-color: white;
+    border-radius: 5px;
+    margin: 0px 0px 0px 0px;
+    padding: 8px 0px 8px 0px;
+   
 }
 .tab_button:hover {
-    outline: none;
+    border: none;
+    background-color: #dedee4;
+    border-radius: 5px;
+    margin: 0px 0px 0px 0px;
+    padding: 8px 0px 8px 0px;
 }
 .tabs_content {
     display: none;
 }
 .tab_button_active {
-    border: 5px solid red;
+    border: none;
+    background-color: #dedee4;
+    border-radius: 5px;
+    margin: 0px 0px 0px 0px;
+    padding: 8px 0px 8px 0px;
 }
 .tab_content_active {
     display: block;
