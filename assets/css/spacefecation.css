@@ -3,32 +3,39 @@
     background-color: white;
     border-radius: 5px;
     margin: 0px 0px 0px 0px;
-    padding: 8px 0px 8px 12px;
+    padding: 8px 15px 8px 15px;
+    width: 95px;
    
 }
 .tab_button:hover {
-    border: none;
     background-color: #dedee4;
-    border-radius: 5px;
-    margin: 0px 0px 0px 0px;
-    padding: 8px 0px 8px 12px;
 }
 .tabs_content {
     display: none;
 }
 .tab_button_active {
-    border: none;
     background-color: #dedee4;
-    border-radius: 5px;
-    margin: 0px 0px 0px 0px;
-    padding: 8px 0px 8px 12px;
 }
 .tab_content_active {
     display: block;
 }
 
 @media screen and (min-width: 700px) {
-    .table_button {
+    .sub_table_button {
         width: 25%;
     }
+}
+
+@media screen and (min-width: 600px) {
+    .bs {
+        width: 210px;
+    }
+}
+@media screen and (min-width: 600px) {
+    .bst {
+        width: 230px; 
+    }
+}
+@media screen and (min-width: 600px) {
+
 }
