@@ -602,3 +602,37 @@ margin-top: -66px;
         font-size: 3.2rem;
     }
 }
+
+
+#logo1 #image1 {
+    width: 5rem;
+    height: 2rem;
+}
+
+#logo1 #image2 {
+    width: 20rem;
+    height: 2rem;
+}
+
+#logo1 #image3 {
+    width: 12rem;
+    height: 4rem;
+}
+
+@media (max-width:990px) {
+    
+    #logo1 #image1 {
+        width: 4rem;
+        height: 2rem;
+    }
+    
+    #logo1 #image2 {
+        width: 15rem;
+        height: 2rem;
+    }
+
+#logo1 #image3 {
+    width: 6rem;
+    height: 2rem;
+}
+}
