@@ -93,9 +93,9 @@ body {
     /* padding-top: 15px; */
 }
 
-/* #logo1 .col-logo {
+#logo1 .col-logo {
     border-right: 2px solid #3DA7E4;
-} */
+}
 
 @media screen and (min-width: 200px) and (max-width: 600px) {
     .navbar-brand img {
