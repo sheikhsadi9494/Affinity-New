@@ -93,7 +93,7 @@ body {
     /* padding-top: 15px; */
 }
 
-#logo1 #col {
+#logo1 .col-logo {
     border-right: 2px solid #3DA7E4;
 }
 
