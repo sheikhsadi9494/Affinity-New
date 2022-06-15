@@ -62,7 +62,7 @@
                       <tr>
                         <th style="border: 3px solid #155183;" scope="col" class="col-3 text-center fs-5 text-danger">Container Types</th>
                         <th style="border: 3px solid #155183;" scope="col" class="col-2 text-center fs-5 text-danger">Container Sizes</th>
-                        <th style="border: 3px solid #155183;" scope="col" class="col-7 text-center fs-5 text-danger">Container Specifications</th>
+                        <th id="cs-text" style="border: 3px solid #155183;" scope="col" class="col-7 text-center fs-5 text-danger">Standard Container</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -2240,33 +2240,9 @@
     <script src="./assets/js/index.js"></script>
     <!------------------------------------------------- tabber script ---------------------------------------------------- -->
     <script>
-      function setUpsTabs () {
-        document.querySelectorAll(".tab_button").forEach(button => {
-          button.addEventListener("click", () => {
-            const sidebar = button.parentElement;
-            const tabsContainer = sidebar.parentElement.parentElement.parentElement.parentElement;
-            const tabsNumber = button.dataset.forTab;
-            const tabsToActivate = tabsContainer.querySelector(`.tabs_content[data-for-tab="${tabsNumber}"]`)
-
-            sidebar.querySelectorAll(".tab_button").forEach(button => {
-              button.classList.remove("tab_button_active");
-            })
-
-            tabsContainer.querySelectorAll(".tabs_content").forEach(tab => {
-              tab.classList.remove("tab_content_active");
-            })
-
-            button.classList.add("tab_button_active");
-            tabsToActivate.classList.add("tab_content_active");
-
-
-          })
-        })
-      }
-      document.addEventListener("DOMContentLoaded", () => {
-        setUpsTabs();
-      })
+     
     </script>
+    <script src="./assets/js/containerSpacefecation.js"></script>
 
 </body>
 </html>
