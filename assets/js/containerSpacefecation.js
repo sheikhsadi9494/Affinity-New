@@ -1,4 +1,4 @@
-// tabbed 
+// tabber 
 function setUpsTabs () {
     document.querySelectorAll(".tab_button").forEach(button => {
       button.addEventListener("click", () => {
@@ -30,35 +30,35 @@ function setUpsTabs () {
 // cross text in table 
 
   document.getElementById('v-pills-home-tab').addEventListener('click', function() {
-    const firstText = 'Standard Container';
+    const firstText = 'Container Specification: Standard Container';
     const firstValue = firstText;
     const currentText = document.getElementById('cs-text');
     currentText.innerText = firstValue;
 })
 
   document.getElementById('v-pills-profile-tab').addEventListener('click', function() {
-    const secondText = 'Refrigerated Container';
+    const secondText = 'Container Specification: Refrigerated Container';
     const secondValue = secondText;
     const currentText = document.getElementById('cs-text');
     currentText.innerText = secondValue;
 })
 
   document.getElementById('v-pills-disabled-tab').addEventListener('click', function() {
-    const thirdText = 'Open Top Container';
+    const thirdText = 'Container Specification: Open Top Container';
     const thirdValue = thirdText;
     const currentText = document.getElementById('cs-text');
     currentText.innerText = thirdValue;
 })
 
   document.getElementById('v-pills-messages-tab').addEventListener('click', function() {
-    const FourthText = 'Flat Rack Container';
+    const FourthText = 'Container Specification: Flat Rack Container';
     const FourthValue = FourthText;
     const currentText = document.getElementById('cs-text');
     currentText.innerText = FourthValue;
   })
 
   document.getElementById('v-pills-settings-tab').addEventListener('click', function() {
-    const fifthText = 'Tank Container';
+    const fifthText = 'Container Specification: Tank Container';
     const fifthValue = fifthText;
     const currentText = document.getElementById('cs-text');
     currentText.innerText = fifthValue;
