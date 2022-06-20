@@ -26,6 +26,23 @@ function setUpsTabs () {
     setUpsTabs();
   })
 
+  // add class in 20 ft 
+  document.getElementById('v-pills-profile-tab').addEventListener('click', function(){
+    const refrigeratedContainerButton = document.getElementById("rc-20ft");
+    refrigeratedContainerButton.classList.add("tab_button_active");
+  })
+  document.getElementById('v-pills-disabled-tab').addEventListener('click', function(){
+    const refrigeratedContainerButton = document.getElementById("otc-20ft");
+    refrigeratedContainerButton.classList.add("tab_button_active");
+  })
+  document.getElementById('v-pills-messages-tab').addEventListener('click', function(){
+    const refrigeratedContainerButton = document.getElementById("frc-20ft");
+    refrigeratedContainerButton.classList.add("tab_button_active");
+  })
+  document.getElementById('v-pills-settings-tab').addEventListener('click', function(){
+    const refrigeratedContainerButton = document.getElementById("tc-20ft");
+    refrigeratedContainerButton.classList.add("tab_button_active");
+  })
   
 
   
