@@ -69,25 +69,25 @@ function setUpsTabs () {
 
 // Standard Container crosstext 
 document.getElementById('st-20ft').addEventListener('click', function() {
-  const containerText = '(Standard Container: 20 Ft)';
+  const containerText = ' 20 Ft';
   const containerValue = containerText;
   const currentText = document.getElementById('sub-text');
   currentText.innerText = containerValue
 })
 document.getElementById('st-40ft').addEventListener('click', function() {
-  const containerText = '(Standard Container: 40 Ft)';
+  const containerText = ' 40 Ft';
   const containerValue = containerText;
   const currentText = document.getElementById('sub-text');
   currentText.innerText = containerValue
 })
 document.getElementById('st-40HCft').addEventListener('click', function() {
-  const containerText = '(Standard Container: 40HC Ft)';
+  const containerText = ' 40HC Ft';
   const containerValue = containerText;
   const currentText = document.getElementById('sub-text');
   currentText.innerText = containerValue
 })
 document.getElementById('st-45ft').addEventListener('click', function() {
-  const containerText = '(Standard Container: 45 Ft)';
+  const containerText = ' 45 Ft';
   const containerValue = containerText;
   const currentText = document.getElementById('sub-text');
   currentText.innerText = containerValue
@@ -96,13 +96,13 @@ document.getElementById('st-45ft').addEventListener('click', function() {
 
 // Refrigerated Container cross text 
 document.getElementById('rc-20ft').addEventListener('click', function() {
-  const containerText = '(Refrigerated Container: 20 Ft)';
+  const containerText = ' 20 Ft';
   const containerValue = containerText;
   const currentText = document.getElementById('sub-text');
   currentText.innerText = containerValue
 })
 document.getElementById('rc-40ft').addEventListener('click', function() {
-  const containerText = '(Refrigerated Container: 40 Ft)';
+  const containerText = ' 40 Ft';
   const containerValue = containerText;
   const currentText = document.getElementById('sub-text');
   currentText.innerText = containerValue
@@ -111,13 +111,13 @@ document.getElementById('rc-40ft').addEventListener('click', function() {
 
 // Open top Container cross text 
 document.getElementById('otc-20ft').addEventListener('click', function() {
-  const containerText = '(Open Top Container: 20 Ft)';
+  const containerText = ' 20 Ft';
   const containerValue = containerText;
   const currentText = document.getElementById('sub-text');
   currentText.innerText = containerValue
 })
 document.getElementById('otc-40ft').addEventListener('click', function() {
-  const containerText = '(Open Top Container: 40 Ft)';
+  const containerText = ' 40 Ft';
   const containerValue = containerText;
   const currentText = document.getElementById('sub-text');
   currentText.innerText = containerValue
@@ -126,13 +126,13 @@ document.getElementById('otc-40ft').addEventListener('click', function() {
 
 // Open top Container cross text 
 document.getElementById('frc-20ft').addEventListener('click', function() {
-  const containerText = '(Flat Rack Container: 20 Ft)';
+  const containerText = ' 20 Ft';
   const containerValue = containerText;
   const currentText = document.getElementById('sub-text');
   currentText.innerText = containerValue
 })
 document.getElementById('frc-40ft').addEventListener('click', function() {
-  const containerText = '(Flat Rack Container: 40 Ft)';
+  const containerText = ' 40 Ft';
   const containerValue = containerText;
   const currentText = document.getElementById('sub-text');
   currentText.innerText = containerValue
@@ -141,13 +141,13 @@ document.getElementById('frc-40ft').addEventListener('click', function() {
 
 // Tank Container cross text 
 document.getElementById('tc-20ft').addEventListener('click', function() {
-  const containerText = '(Tank Container: 20 Ft)';
+  const containerText = ' 20 Ft';
   const containerValue = containerText;
   const currentText = document.getElementById('sub-text');
   currentText.innerText = containerValue
 })
 document.getElementById('tc-40ft').addEventListener('click', function() {
-  const containerText = '(Tank Container: 40 Ft)';
+  const containerText = ' 40 Ft';
   const containerValue = containerText;
   const currentText = document.getElementById('sub-text');
   currentText.innerText = containerValue
