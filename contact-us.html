@@ -108,12 +108,12 @@
                               <input type="url" class="form-control rounded-0" placeholder="Web Site URL" name="website_url" aria-label="Web Site url">
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
-                              <select class="form-control" id="country" name="country" required>
+                              <select class="form-control rounded-0" id="country" name="country" required>
                                 <option hidden disabled selected value="Expertise">Select Country *</option>
                         </select>
                             </div>
                             <div class="col-md-6 col-sm-12 col-xs-12">
-                              <select class="form-control" id="State" name="state" required>
+                              <select class="form-control rounded-0" id="State" name="state" required>
                                 <option hidden disabled selected value="Expertise">Please select Country first *</option>
 
                         
@@ -122,7 +122,7 @@
                             </div>
 
                             <div class="col-md-6 col-sm-12 col-xs-12">
-                              <select class="form-control" id="City" name="city" required>
+                              <select class="form-control rounded-0" id="City" name="city" required>
                                 <option hidden disabled selected value="Expertise">Please select State first *</option>
                                
                               </select>
@@ -137,7 +137,7 @@
                               <input type="text" class="form-control rounded-0" placeholder="ZipCode" aria-label="ZipCode" name="_Zipcode" required>
                             </div>
                           </div>
-                          <div class="d-flex pt-4">
+                          <!-- <div class="d-flex pt-4">
                               <p>Existing Affininty Trans Logistics Customers?</p>
                               <div class="mx-lg-5">
                                 <div class="form-check form-check-inline">
@@ -149,18 +149,28 @@
                                     <label class="form-check-label" for="inlineRadio2">No</label>
                                   </div>
                               </div>
-                          </div>
-                          <h4 class="pb-3 fw-bold">Inquiry</h4>
+                          </div> -->
+                          <h4 class="pb-3 pt-2 fw-bold">Inquiry</h4>
                           <div class="row gy-4">
-                            <div class="col-md-6 col-sm-12 col-xs-12">
+                            <!-- <div class="col-md-6 col-sm-12 col-xs-12">
                               <select class="form-control" id="enquiry" name="enquiry">
-                                  <option hidden disabled selected value="Expertise">Select Type of Enpuery</option>
+                                  <option hidden disabled selected value="Expertise">Select Type of Inquiry</option>
                                   <option value="General Enquiry">General Enquiry</option>
                                   <option value="Sales">Sales</option>
                                   <option value="Tracking">Tracking</option>
                                   <option value="Android Developement">Business Co-operation</option>
                                 </select>
+                            </div> -->
+                            <div class="col-md-6 col-sm-12 col-xs-12" id="enquiry" name="enquiry">
+                              <select class="form-select rounded-0" aria-label="Default select example">
+                                <option hidden disabled selected value="Expertise">Select Type of Inquiry</option>
+                                  <option value="General Enquiry">General Enquiry</option>
+                                  <option value="Sales">Sales</option>
+                                  <option value="Tracking">Tracking</option>
+                                  <option value="Android Developement">Business Co-operation</option>
+                              </select>
                             </div>
+
                             <div class="col-12">
                                 <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" placeholder="Message" name="message" rows="3"></textarea>
                             </div>
