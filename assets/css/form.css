@@ -10,10 +10,10 @@
   }
   
   .form h1 {
-    margin-top: -20px;
+    margin-top: -30px;
     font-family: Poppins;
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 25px;
     
     letter-spacing: 2px;
     color: #1566D1;
@@ -215,7 +215,8 @@
   } */
   
   #progressbar {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    margin-top: -34px;
     overflow: hidden;
     color: #3b3b3b;
     padding: 20px;
@@ -314,7 +315,8 @@
   }
   
   .progress {
-    height: 20px
+    height: 20px;
+    margin-top: -20px;
   }
   
   .progress-bar {
