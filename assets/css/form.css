@@ -383,3 +383,12 @@
       border-bottom: 1px solid #e2e2e2;
     }
   }
+
+  .celsius-text {
+    display: none;
+  }
+  .celsius:hover .celsius-text{
+    display: block;
+  }
+
+  

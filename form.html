@@ -37,6 +37,7 @@
 
     <!-- font Awesome -->
     <script src="https://kit.fontawesome.com/efd71d3ed7.js" crossorigin="anonymous"></script>
+    
 
 
 
@@ -56,6 +57,7 @@
             margin-bottom: -10px;
         }
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
         $(function() {
@@ -63,6 +65,23 @@
             $("#footer").load("footer.html");
 
         });
+    </script>
+    <script>
+        var selectEl = document.getElementById('CommodityNature');
+        var listener = function(e){
+        if(selectEl.value == "General Cargo"){
+            $('#dangerous').hide();
+            $('#perishable').hide();
+        }else if(selectEl.value == "Dangerous Cargo"){
+            $('#dangerous').show();
+            $('#perishable').hide();
+        }else if(selectEl.value == "Perishable Cargo"){
+            $('#dangerous').hide();
+            $('#perishable').show();
+        }
+        }
+        selectEl.addEventListener('change',listener);
+
     </script>
 
 </head>
@@ -238,52 +257,53 @@
                                     <h4 style="margin-top: -20px;" class="fw-bold mb-3">Cargo Information</h4>
 
                                     <div class="row">
-
-
                                         <div class="form-group col-md-4 col-sm-12">
-
-
                                             <label class="fieldlabels">Commodity Nature*</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Select Your Country"></i>
                                             <select class="form-control" id="CommodityNature" name="CommodityNature">
-                                                <option disabled selected="selected">Please select Any One*</option>
-
-                                                <option value="General Cargo">General cargo</option>
-                                                <option value="Hazardous Cargo">Hazardous cargo</option>
-
-                                        
-                                    </select>
-
+                                                <option disabled selected="selected">Select the Commodity Nature*</option>
+                                                <option value="General Cargo">General Cargo</option>
+                                                <option value="Dangerous Cargo">Dangerous Cargo</option>
+                                                <option value="Perishable Cargo">Perishable Cargo</option>
+                                            </select>
                                         </div>
 
-
-
-
                                         <div class="form-group col-md-4 col-sm-12">
-                                            <label class="fieldlabels">Commodity *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Customer Type"></i>
+                                            <label class="fieldlabels">Commodity *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="The product or material that you are intending to Export or Import."></i>
                                             <input type="text" class="form-control" id="commodity" name="commodity" placeholder="Commodity*">
                                         </div>
 
-
-
-
                                         <div class="form-group col-md-4 col-sm-12">
-                                            <label class="fieldlabels">HSN Code *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Enter Your Whatsapp number"></i>
+                                            <label class="fieldlabels">HSN Code *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="The code of your commodity that is classified under Harmonized System of
+                                            Nomenclature code (HSN Code)."></i>
                                             <input type="text" class="form-control" id="hsncode" name="hsncode" placeholder="188-abc-3432">
                                         </div>
 
 
 
 
-                                        <div class="form-group col-md-4 col-sm-12">
-                                            <label class="fieldlabels">UN Number *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Customer Type"></i>
+                                        <!-- <div class="form-group col-md-4 col-sm-12">
+                                            <label class="fieldlabels">UN Number *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Mention the four-digit number UN number (United Nations number) that
+                                            identifies hazardous materials, and articles in the framework of international transport."></i>
                                             <input type="number" class="form-control" id="unnumber" name="unnumber" placeholder="UN Number*" min="0" oninput="this.value = Math.abs(this.value)">
+                                        </div> -->
+                                        <div class="form-group col-md-4 col-sm-12">
+                                            <label class="fieldlabels">Commodity State *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Mention the four-digit number UN number (United Nations number) that
+                                            identifies hazardous materials, and articles in the framework of international transport."></i>
+                                            <select class="form-control" id="CommodityNature" name="CommodityNature">
+                                                <option disabled selected="selected">Select the Commodity State*</option>
+
+                                                <option value="General Cargo">solid</option>
+                                                <option value="Dangerous Cargo">liquid</option>
+                                            </select>
                                         </div>
 
 
 
 
+
                                         <div class="form-group col-md-4 col-sm-12">
-                                            <label class="fieldlabels">Estimated Total Weight(in Kilos) *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Enter Company Name"></i>
+                                            <label class="fieldlabels">Estimated Total Weight(in Kilos) *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Total Gross Weight of the commodity that you are intending
+                                            to Export or Import."></i>
                                             <input type="text" class="form-control" id="Estimated_Total_Weight" name="Estimated_Total_Weight" placeholder="Estimated Total Weight(in Kilos) *">
                                         </div>
 
@@ -292,7 +312,8 @@
 
 
                                         <div class="form-group col-md-4 col-sm-12">
-                                            <label class="fieldlabels">Estimated Volumes (Cbm) *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Enter Company Name"></i>
+                                            <label class="fieldlabels">Estimated Volumes (Cbm) *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Dimensional Volume of the commodity that you are intending to
+                                            Export or Import."></i>
                                             <input type="text" class="form-control" id="Estimated_Volumes" name="Estimated_Volumes" placeholder="Estimated Volumes (Cbm)*">
                                         </div>
 
@@ -301,21 +322,239 @@
 
 
                                         <div class="form-group col-md-4 col-sm-12">
-                                            <label class="fieldlabels">Estimated Date of shipment *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Enter Street Name"></i>
+                                            <label class="fieldlabels">Estimated Date of shipment *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="-The estimated date on which your company will hand off
+                                            the shipment to us."></i>
                                             <input type="date" class="form-control" id="Estimated_Date_Of_Ship" name="Estimated_Date_Of_Ship" placeholder="Estimated Date of hipment*">
                                         </div>
+                                        
 
-
-
-
-                                        <div class="form-group col-md-4 col-sm-12 pincode">
-                                            <label class="fieldlabels">Remarks *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Enter Your Remarks"></i>
-                                            <input type="text" class="form-control" id="remarks" name="remarks" placeholder="remarks">
+                                        <div class="row">
+                                            <form id="dangerous">
+                                                <div class="form-group col-md-4 col-sm-12">
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <label class="fieldlabels">IMO Class</label>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <label class="fieldlabels">Class</label>
+                                                            <select class="form-control" id="CommodityNature" name="CommodityNature">
+                                                                <option disabled selected="selected">8</option>
+                
+                                                                <option value="General Cargo">solid</option>
+                                                                <option value="Dangerous Cargo">liquid</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <label class="fieldlabels">Sub-Class</label>
+                                                            <select class="form-control" id="CommodityNature" name="CommodityNature">
+                                                                <option disabled selected="selected">3</option>
+                
+                                                                <option value="General Cargo">solid</option>
+                                                                <option value="Dangerous Cargo">liquid</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-4 col-sm-12">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <label class="fieldlabels">IMO-UN NO</label>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <input type="text" size="10">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-4 col-sm-12">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <label class="fieldlabels">IMO-UN NO</label>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <select class="form-control" id="CommodityNature" name="CommodityNature">
+                                                                <option disabled selected="selected">2</option>
+                
+                                                                <option value="General Cargo">1</option>
+                                                                <option value="Dangerous Cargo">3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-6 col-sm-12">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <label class="fieldlabels">commidity State</label>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <select class="form-control" id="CommodityNature" name="CommodityNature">
+                                                                <option disabled selected="selected">liquid</option>
+                
+                                                                <option value="General Cargo">solid</option>
+                                                                <option value="Dangerous Cargo">liquid</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-6 col-sm-12">
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <label class="fieldlabels">flash point </label>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <input class="d-inline" type="text" size="10"><p class="d-inline celsius"> C</p>
+                                                            <p class="celsius-text">Celsius</p>
+                                                            
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <input class="d-inline" type="text" size="10"><p class="d-inline celsius"> F</p>
+                                                            <p class="celsius-text">farenheit</p>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </form>
+    
+    
                                         </div>
+                                        <div class="row">
+                                            <form id="perishable">
+                                                <div class="form-group col-6 d-inline">
+                                                    <h5>Is the shipment temperatue sensitive?</h5>
+                                                </div>
+                                                <div class="form-group col-6 d-inline">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                        <label class="form-check-label" for="flexRadioDefault1">
+                                                          Yes
+                                                        </label>
+                                                      </div>
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                                        <label class="form-check-label" for="flexRadioDefault2">
+                                                          No
+                                                        </label>
+                                                      </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-md-3 col-sm-6">
+                                                        <h5>Minimum temperatue</h5>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-3 col-sm-6">
+                                                        
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-3 col-sm-6">
+                                                        <h5>Maximum temperatue</h5>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-3 col-sm-6">
+                                                        
+                                                    </div>
+                                                </div>
 
+                                                <div class="row">
+                                                    <div class="col-lg-3 col-md-3 col-sm-6">
+                                                        <input type="text"  class="d-inline">
+                                                        <p class="d-inline">C</p>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-3 col-sm-6">
+                                                        <input type="text"  class="d-inline">
+                                                        <p class="d-inline">F</p>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-3 col-sm-6">
+                                                        <input type="text"  class="d-inline">
+                                                        <p class="d-inline">C</p>
+                                                    </div>
+                                                    <div class="col-lg-3 col-md-3 col-sm-6">
+                                                        <input type="text"  class="d-inline">
+                                                        <p class="d-inline">F</p>
+                                                    </div>
+                                                </div>
 
+                                            </form>
+                                        </div>
+                                        
 
+                                        <div class="row">
+                                            <div class="form-group col-md-4 col-sm-12 pincode">
+                                                <label class="fieldlabels">Remarks *</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Say about your shipment"></i>
+                                                <input type="text" class="form-control" id="remarks" name="remarks" placeholder="remarks">
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="row">
+                                            <div class=" col-md-4 col-sm-12">
+                                                <div class="row">
+                                                    <div class="form-check col-lg-4 col-md-4 col-sm-4">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                              Fragile
+                                                            </label>
+                                                    </div>   
+                                                    <div class="form-check col-lg-4 col-md-4 col-sm-4">
+                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                                        <label class="form-check-label" for="flexRadioDefault2">
+                                                          Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check col-lg-4 col-md-4 col-sm-4">
+                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                        <label class="form-check-label" for="flexRadioDefault1">
+                                                          No
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class=" col-md-4 col-sm-12">
+                                                <div class="row">
+                                                    <div class="form-check col-lg-4 col-md-4 col-sm-4">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                              Stackable
+                                                            </label>
+                                                    </div>   
+                                                    <div class="form-check col-lg-4 col-md-4 col-sm-4">
+                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                                                        <label class="form-check-label" for="flexRadioDefault2">
+                                                          Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check col-lg-4 col-md-4 col-sm-4">
+                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                                                        <label class="form-check-label" for="flexRadioDefault1">
+                                                          No
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class=" col-md-4 col-sm-12">
+                                                <div class="row">
+                                                    <div class="form-check col-lg-4 col-md-4 col-sm-4">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                              Turnable
+                                                            </label>
+                                                    </div>   
+                                                    <div class="form-check col-lg-4 col-md-4 col-sm-4">
+                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5" checked>
+                                                        <label class="form-check-label" for="flexRadioDefault2">
+                                                          Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check col-lg-4 col-md-4 col-sm-4">
+                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
+                                                        <label class="form-check-label" for="flexRadioDefault1">
+                                                          No
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+                                    
 
 
                                 </div>
