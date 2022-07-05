@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="/assets/css/single.css" />
     <link rel="stylesheet" href="/assets/css/ty.css" />
     <link rel="stylesheet" href="/assets/css/form.css" />
+    
 
 
     <!-- font Awesome -->
@@ -57,7 +58,7 @@
             margin-bottom: -10px;
         }
     </style>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 
     <script>
         $(function() {
@@ -66,6 +67,57 @@
 
         });
     </script>
+
+    <!-- <script>
+        function styleselect() {
+  var value = $('#CommodityNature').val();
+
+  if (value == "General Cargo") {
+    $('#dangerous').hide()
+    $('#perishable').hide()
+  }
+  else if (value == "Dangerous Cargo") {
+    $('#dangerous').show()
+    $('#perishable').hide()
+  }
+  else if (value == "Perishable Cargo") {
+    $('#dangerous').hide()
+    $('#perishable').show()
+  }
+  else {
+    $('#perishable').hide()
+    $('#dangerous').hide()
+  }
+}
+    </script> -->
+
+    <script>
+        $(document).ready(function(){
+            var selectEl = document.getElementById('CommodityNature');
+            $(selectEl).change(function(){
+                $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue ==  "General Cargo"){
+                $('#dangerous').hide()
+                $('#perishable').hide()
+            } else if(optionValue ==  "Dangerous Cargo") {
+                $('#dangerous').show()
+                $('#perishable').hide()
+            } else if(optionValue ==  "Perishable Cargo") {
+                $('#dangerous').hide()
+                $('#perishable').show()
+            } else {
+                $('#dangerous').hide()
+                $('#perishable').hide()
+            }
+        });
+    }).change();
+        
+    
+});
+    </script>
+
+
     <!-- <script>
         var selectEl = document.getElementById('CommodityNature');
         var listener = function(e){
@@ -259,7 +311,7 @@
                                     <div class="row">
                                         <div class="form-group col-md-4 col-sm-12">
                                             <label class="fieldlabels">Commodity Nature*</label> <i class="fa fa-question-circle" data-toggle="tooltip" title="Select Your Country"></i>
-                                            <select class="form-control" id="CommodityNature" name="CommodityNature">
+                                            <select class="form-control" id="CommodityNature" name="CommodityNature" onchange="styleselect()">
                                                 <option disabled selected="selected">Select the Commodity Nature*</option>
                                                 <option value="General Cargo">General Cargo</option>
                                                 <option value="Dangerous Cargo">Dangerous Cargo</option>
@@ -416,7 +468,98 @@
                                             </form>
     
     
+                                        </div> -->
+
+                                        <div class="row" id="dangerous">
+                                            <form >
+                                                <div class="form-group col-md-4 col-sm-12">
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <label class="fieldlabels">IMO Class</label>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <label class="fieldlabels">Class</label>
+                                                            <select class="form-control" id="CommodityNature" name="CommodityNature">
+                                                                <option disabled selected="selected">8</option>
+                
+                                                                <option value="General Cargo">solid</option>
+                                                                <option value="Dangerous Cargo">liquid</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <label class="fieldlabels">Sub-Class</label>
+                                                            <select class="form-control" id="CommodityNature" name="CommodityNature">
+                                                                <option disabled selected="selected">3</option>
+                
+                                                                <option value="General Cargo">solid</option>
+                                                                <option value="Dangerous Cargo">liquid</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-4 col-sm-12">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <label class="fieldlabels">IMO-UN NO</label>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <input type="text" size="10">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-4 col-sm-12">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <label class="fieldlabels">IMO-UN NO</label>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <select class="form-control" id="CommodityNature" name="CommodityNature">
+                                                                <option disabled selected="selected">2</option>
+                
+                                                                <option value="General Cargo">1</option>
+                                                                <option value="Dangerous Cargo">3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-6 col-sm-12">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <label class="fieldlabels">commidity State</label>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <select class="form-control" id="CommodityNature" name="CommodityNature">
+                                                                <option disabled selected="selected">liquid</option>
+                
+                                                                <option value="General Cargo">solid</option>
+                                                                <option value="Dangerous Cargo">liquid</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-6 col-sm-12">
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <label class="fieldlabels">flash point </label>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <input class="d-inline" type="text" size="10"><p class="d-inline celsius"> C</p>
+                                                            <p class="celsius-text">Celsius</p>
+                                                            
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <input class="d-inline" type="text" size="10"><p class="d-inline celsius"> F</p>
+                                                            <p class="celsius-text">farenheit</p>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </form>
                                         </div>
+
+
+
                                         <div class="row">
                                             <form id="perishable">
                                                 <div class="form-group col-6 d-inline">
@@ -491,7 +634,7 @@
                                                             </label>
                                                     </div>   
                                                     <div class="form-check col-lg-4 col-md-4 col-sm-4">
-                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
                                                         <label class="form-check-label" for="flexRadioDefault2">
                                                           Yes
                                                         </label>
@@ -510,19 +653,19 @@
                                                 <div class="row">
                                                     <div class="form-check col-lg-4 col-md-4 col-sm-4">
                                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
-                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault2">
                                                               Stackable
                                                             </label>
                                                     </div>   
                                                     <div class="form-check col-lg-4 col-md-4 col-sm-4">
-                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
-                                                        <label class="form-check-label" for="flexRadioDefault2">
+                                                        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault3">
+                                                        <label class="form-check-label" for="flexRadioDefault3">
                                                           Yes
                                                         </label>
                                                     </div>
                                                     <div class="form-check col-lg-4 col-md-4 col-sm-4">
-                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
-                                                        <label class="form-check-label" for="flexRadioDefault1">
+                                                        <input class="form-check-input" type="radio" name="flexRadioDefault1" id="flexRadioDefault4">
+                                                        <label class="form-check-label" for="flexRadioDefault4">
                                                           No
                                                         </label>
                                                     </div>
@@ -534,31 +677,27 @@
                                                 <div class="row">
                                                     <div class="form-check col-lg-4 col-md-4 col-sm-4">
                                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
-                                                            <label class="form-check-label" for="flexCheckDefault">
+                                                            <label class="form-check-label" for="flexCheckDefault3">
                                                               Turnable
                                                             </label>
                                                     </div>   
                                                     <div class="form-check col-lg-4 col-md-4 col-sm-4">
-                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5" checked>
-                                                        <label class="form-check-label" for="flexRadioDefault2">
+                                                        <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault5">
+                                                        <label class="form-check-label" for="flexRadioDefault5">
                                                           Yes
                                                         </label>
                                                     </div>
                                                     <div class="form-check col-lg-4 col-md-4 col-sm-4">
-                                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
-                                                        <label class="form-check-label" for="flexRadioDefault1">
+                                                        <input class="form-check-input" type="radio" name="flexRadioDefault2" id="flexRadioDefault5">
+                                                        <label class="form-check-label" for="flexRadioDefault5">
                                                           No
                                                         </label>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div> -->
                                     
                                     </div>
-                                    
-
-
                                 </div>
 
 
