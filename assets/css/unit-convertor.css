@@ -69,3 +69,12 @@
         display: none;
     }
 }
+
+#v-pills-tabContent {
+    border-left: 1px solid black;
+}
+
+#v-pills-tab .active {
+    background-color: rgb(197, 196, 196);
+    
+}
